@@ -67,6 +67,7 @@ h6 {
   clear: both;
 }
 
+
 p {
   margin-bottom: 1.5em;
 }
@@ -171,6 +172,7 @@ Header:
   border-bottom: 1px solid hsl(0, 0%, 90%);
 }
 
+
 /*--------------------------------------------------------------
 Navigation:
 --------------------------------------------------------------*/
@@ -178,6 +180,7 @@ Navigation:
   padding: 1em;
   font-size: 1.1em;
   background: #b6d4dc;
+  overflow-y: auto;
 }
 
 .trigger {
@@ -209,6 +212,7 @@ Navigation:
   margin: 0;
   padding: 0;
   list-style-type: none;
+
 }
 
 
@@ -220,6 +224,7 @@ Navigation:
   color: #292b2c;
   width: 225px;
   border-radius: 50px;
+  
 }
 
 .main-nav a:hover,
@@ -231,6 +236,10 @@ Navigation:
   cursor: url(images/glove2.png), auto;
 }
 
+.dropdown-menu {
+  background: #b6d4dc;
+  border: none;
+}
 
 
 /*--------------------------------------------------------------

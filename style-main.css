@@ -40,6 +40,7 @@ Typography
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  
 }
 
 body,
@@ -170,6 +171,7 @@ Header:
   text-align: center;
   background: #ebf3f5;
   border-bottom: 1px solid hsl(0, 0%, 90%);
+  width: 100vw;
 }
 
 
@@ -181,6 +183,8 @@ Navigation:
   font-size: 1.1em;
   background: #b6d4dc;
   overflow-y: auto;
+  width: 16em;
+  z-index: 1;
 }
 
 .trigger {
@@ -222,7 +226,7 @@ Navigation:
   padding: 0.4em 0.8em;
   text-decoration: none;
   color: #292b2c;
-  width: 225px;
+  width: 250px;
   border-radius: 50px;
   
 }
@@ -298,6 +302,7 @@ Sidebar:
   background: #b6d4dc;
   color: #292b2c;
   text-align: center;
+
 }
 
 .twin:last-of-type {
@@ -318,6 +323,8 @@ Footer:
   text-decoration: none;
   list-style-type: none;
   font-size: 1.5em;
+ width: 100vw;
+ overflow: auto;
 }
 
 .nav a {
@@ -335,6 +342,7 @@ Footer:
   color:  #f7f7f7;
   transition: 1s ease;
   cursor: url(images/glove2.png), auto;
+  text-shadow: none;
 }
 
 
@@ -346,7 +354,7 @@ CSS Grid layout for wider screens, when browser supports grid:
   @media screen and (min-width: 27em) {
     .site {
       position: relative;
-      left: -14em;
+      left: -16em;
       overflow-x: hidden;
       display: grid;
       grid-template-columns: 15em calc(100% - 1em);
@@ -401,7 +409,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
 
     .reveal .trigger {
-      left: 14em;
+      left: 16em;
     }
 
     .cards {
@@ -449,7 +457,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 
   @media screen and (min-width: 78em) {
     .site {
-      grid-template-columns: 15em calc(100% - 16em) 15em;
+      grid-template-columns: 16em calc(100% - 16em) 16em;
       grid-template-areas:
         "nav header header"
         "nav main sidebar"

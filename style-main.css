@@ -191,7 +191,7 @@ Navigation:
   display: none;
   padding: 0.1em 0.5em;
   color: #292b2c;
-  background: #81b5c3;
+  background: #b6d4dc;
   border: none;
   transform: rotate(90deg);
 }
@@ -199,7 +199,7 @@ Navigation:
 .trigger:focus,
 .trigger:hover {
   outline: 2px dotted hsl(0, 0%, 10%);
-  background: #234149;
+  background: #4f93a6;
   color: #f7f7f7;
   
   cursor: url(images/glove2.png), auto;
@@ -233,7 +233,7 @@ Navigation:
 
 .main-nav a:hover,
 .main-nav a:focus {
-  background: #234149;
+  background: #599db0;
   color: #f7f7f7;
   transition: ease 1s;
   text-decoration: none;
@@ -244,6 +244,7 @@ Navigation:
   background: #b6d4dc;
   border: none;
 }
+
 
 
 /*--------------------------------------------------------------

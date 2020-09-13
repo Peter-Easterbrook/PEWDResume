@@ -183,25 +183,26 @@ Navigation:
   font-size: 1.1em;
   background: #b6d4dc;
   overflow-y: auto;
-  width: 16em;
+  width: 15em;
   z-index: 1;
+
 }
 
 .trigger {
   display: none;
-  padding: 0.1em 0.5em;
+  padding: 0.3em 0.5em;
   color: #292b2c;
   background: #b6d4dc;
   border: none;
   transform: rotate(90deg);
-}
+  border-radius: .5rem;
+  }
 
 .trigger:focus,
 .trigger:hover {
   outline: 2px dotted hsl(0, 0%, 10%);
   background: #4f93a6;
-  color: #f7f7f7;
-  
+  color: #f7f7f7;  
   cursor: url(images/glove2.png), auto;
 }
 
@@ -227,7 +228,7 @@ Navigation:
   text-decoration: none;
   color: #292b2c;
   width: 250px;
-  border-radius: 50px;
+  border-radius: .5rem;
   
 }
 
@@ -235,16 +236,17 @@ Navigation:
 .main-nav a:focus {
   background: #599db0;
   color: #f7f7f7;
-  transition: ease 1s;
+  transition: ease .5s;
   text-decoration: none;
   cursor: url(images/glove2.png), auto;
 }
 
 .dropdown-menu {
-  background: #b6d4dc;
+  background: #599db0;
   border: none;
-  color: #292b2c;
+  color: #000;
   font-size: .9em;
+  border-radius: .5rem;
 }
 
 
@@ -305,7 +307,6 @@ Sidebar:
   background: #b6d4dc;
   color: #292b2c;
   text-align: center;
-
 }
 
 .twin:last-of-type {
@@ -328,6 +329,7 @@ Footer:
   font-size: 1.5em;
  width: 100vw;
  overflow: auto;
+ 
 }
 
 .nav a {
@@ -338,6 +340,7 @@ Footer:
   text-decoration: none;
   list-style-type: none;
   text-shadow: #515c6b 0 3px 4px;
+  
 }
 
 .nav a:hover {
@@ -383,6 +386,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 
     .sidebar {
       grid-area: sidebar;
+      z-index: 1;
     }
 
     .footer {

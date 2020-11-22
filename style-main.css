@@ -40,7 +40,18 @@ Typography
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  background: rgb(227,236,244);
+background: linear-gradient(0deg, rgba(227,236,244,1) 0%, rgba(171,198,222,1) 100%);
   
+}
+body::-webkit-scrollbar {
+  width: 3px;
+}
+body::-webkit-scrollbar-track {
+  background: #ddd;
+}
+body::-webkit-scrollbar-thumb {
+  background: #aaa;
 }
 
 body,
@@ -186,20 +197,21 @@ Navigation:
 .main-nav {
   padding: 1em;
   font-size: 1.1em;
-  background: #b6d4dc;
+  background: #e3ecf4;
   overflow-y: auto;
   width: 15em;
   z-index: 1;
+  border: 1px solid #ccc;
 }
 
 .trigger {
   display: none;
   padding: 0.3em 0.5em;
   color: #292b2c;
-  background: #b6d4dc;
-  border: none;
+  background: #e3ecf4;
   transform: rotate(90deg);
   border-radius: .5rem;
+  border: 1px solid #ccc;
 	
 }
 
@@ -212,7 +224,7 @@ Navigation:
 }
 
 .trigger:focus {
-  outline-color: white;
+  outline-color: #80a9cd;
 }
 
 .main-nav ul {
@@ -308,14 +320,14 @@ Sidebar:
 
 .twin {
   padding: 1em;
-  background: #b6d4dc;
+  background: #d1e3e8;
   color: #292b2c;
   text-align: center;
 
 }
 
 .twin:last-of-type {
-  background: #d1e3e8;
+  background: #e3ecf4;
   text-align: left;
 }
 

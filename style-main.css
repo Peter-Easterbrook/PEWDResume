@@ -218,7 +218,7 @@ Navigation:
 .trigger:focus,
 .trigger:hover {
   outline: 2px dotted hsl(0, 0%, 10%);
-  background: #4f93a6;
+  background: #9fbad6;
   color: #f7f7f7;  
   cursor: url(images/glove2.png), auto;
 }
@@ -251,7 +251,7 @@ Navigation:
 
 .main-nav a:hover,
 .main-nav a:focus {
-  background: #599db0;
+  background: #9fbad6;
   color: #f7f7f7;
   transition: ease .5s;
   text-decoration: none;
@@ -259,7 +259,7 @@ Navigation:
 }
 
 .dropdown-menu {
-  background: #599db0;
+  background: #9fbad6;
   border: none;
   color: #000;
   font-size: .9em;

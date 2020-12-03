@@ -271,17 +271,20 @@ Navigation:
 Cards:
 --------------------------------------------------------------*/
 
+
 .cards {
   max-width: 25em;
   margin: 1em auto;
   padding: 0;
   list-style-type: none;
+
 }
 
 .cards a {
   display: block;
   margin-bottom: 1em;
   text-decoration: none;
+  
 }
 
 .caption {

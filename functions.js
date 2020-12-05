@@ -47,7 +47,7 @@ function clickTarget(e) {
   }
 }
 
-// Liten for clicks on TRIGGER button:
+// Listen for clicks on TRIGGER button:
 TRIGGER.addEventListener("click", revealMenu, false);
 
 // Listen for focus changes:

@@ -89,9 +89,10 @@ p {
   margin-bottom: 1.5em;
 }
 
-
-
-
+b,
+strong {
+  font-weight: bold;
+}
 
 figure {
   margin: 0;

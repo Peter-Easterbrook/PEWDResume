@@ -203,6 +203,7 @@ Navigation:
 Cards:
 --------------------------------------------------------------*/
 .card-item {
+
   transition: transform 1s ease;
 }
 .card-item:hover {
@@ -212,6 +213,7 @@ Cards:
   transform: scale(1.1);
   z-index: 1;
 }
+
 .cards {
   max-width: 25em;
   margin: 1em auto;

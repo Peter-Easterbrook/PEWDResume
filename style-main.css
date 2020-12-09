@@ -40,8 +40,8 @@ Typography
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  background: rgb(227,236,244);
-background: linear-gradient(0deg, rgba(227,236,244,1) 0%, rgba(171,198,222,1) 100%);
+  background: rgb(162,191,244);
+background: linear-gradient(180deg, rgba(162,191,244,1) 0%, rgba(214,227,250,1) 100%);
   
 }
 body::-webkit-scrollbar {
@@ -55,7 +55,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 body,
-button,
 input,
 select,
 textarea {
@@ -80,7 +79,7 @@ h6 {
 }
 
 .side-nav {
-  color: #0e0f12;
+  color: #16191d;
  text-shadow: rgba(0,0,0,.2) 1px 1px 1px,rgba(255,255,255,.4) 0 -3px 15px;
 }
 
@@ -115,13 +114,30 @@ Header:
 --------------------------------------------------------------*/
 
 .masthead {
+  color: #fff;
   padding: 0 1em;
   text-align: center;
-  background: #f1f5f9;
+  background-color: #EBF3F5;
   border-bottom: 1px solid #ccc;
   width: 100vw;
 }
-
+.toggle {
+  float: right;
+  margin-top: .5rem;
+  margin-right: 5rem;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  height:5rem;
+  width: 5rem;
+  border: 0;
+  border-radius: 50%;;
+  padding: 8px 12px;
+    /* top: 100px; */
+}
+.toggle:focus {
+  outline: none;
+}
 
 /*--------------------------------------------------------------
 Navigation:
@@ -129,7 +145,7 @@ Navigation:
 .main-nav {
   padding: 1em;
   font-size: 1.1em;
-  background: #e3ecf4;
+  background-color:#EBF3F5;
   overflow-y: auto;
   width: 15em;
   z-index: 1;
@@ -153,6 +169,7 @@ Navigation:
   background: #9fbad6;
   color: #f7f7f7;  
   cursor: url(images/glove2.png), auto;
+  border-radius: .5rem;
 }
 
 .trigger:focus {
@@ -175,7 +192,7 @@ Navigation:
   display: block;
   padding: 0.4em 0.8em;
   text-decoration: none;
-  color: #292b2c;
+  color: #16191d;
   width: 250px;
   border-radius: .5rem;
   
@@ -183,22 +200,25 @@ Navigation:
 
 .main-nav a:hover,
 .main-nav a:focus {
-  background: #9fbad6;
-  color: #f7f7f7;
-  transition: ease .5s;
+  background-color: #a2bff4;
+ 
+    transition: ease .5s;
   text-decoration: none;
   cursor: url(images/glove2.png), auto;
 }
 
 .dropdown-menu {
-  background: #9fbad6;
+  background-color: #a2bff4;
   border: none;
   color: #000;
   font-size: .9em;
   border-radius: .5rem;
 }
+.dropdown-item {
+color: #d6e3fa;
+  border: #0a2351;
 
-
+}
 /*--------------------------------------------------------------
 Cards:
 --------------------------------------------------------------*/
@@ -265,14 +285,14 @@ Sidebar:
 
 .twin {
   padding: 1em;
-  background: #d1e3e8;
+  background: #90b3f1;
   color: #292b2c;
   text-align: center;
 
 }
 
 .twin:last-of-type {
-  background: #e3ecf4;
+  background: #a1bff3;
   text-align: left;
 }
 

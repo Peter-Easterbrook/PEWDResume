@@ -196,30 +196,31 @@ Navigation:
   color: #16191d;
   width: 250px;
   border-radius: .5rem;
+  color: #000;
   
 }
 
 .main-nav a:hover,
 .main-nav a:focus {
   background-color: #a2bff4;
- 
-    transition: ease .5s;
+  transition: ease .5s;
   text-decoration: none;
   cursor: url(images/glove2.png), auto;
+  color: white;
 }
 
 .dropdown-menu {
   background-color: #a2bff4;
   border: none;
-  color: #000;
-  font-size: .9em;
+color: white;
+  font-size: 1.2rem;
   border-radius: .5rem;
 }
-.dropdown-item {
-color: #d6e3fa;
-  border: #0a2351;
-
+.dropdown-menu a:hover {
+  background-color: #EBF3F5;
+  color: #000;
 }
+
 /*--------------------------------------------------------------
 Cards:
 --------------------------------------------------------------*/

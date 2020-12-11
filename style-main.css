@@ -124,8 +124,10 @@ Header:
   background-color: #EBF3F5;
   border-bottom: 1px solid #ccc;
   width: 100vw;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+z-index: 1;
 }
-.toggle {
+/* .toggle {
   float: right;
   margin-top: .5rem;
   margin-right: 5rem;
@@ -137,11 +139,11 @@ Header:
   border: 0;
   border-radius: 50%;;
   padding: 8px 12px;
-    /* top: 100px; */
+     top: 100px;
 }
 .toggle:focus {
   outline: none;
-}
+} */
 
 .round-container {
     margin: 1em 0.5em;
@@ -176,15 +178,20 @@ Header:
   width: 64px;
   height: 64px;
   border-radius:80px;
+  cursor: url(images/glove2.png), auto;
+    animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes pulse {
+    to {
+      box-shadow: 0 0 0 25px rgba(230, 237, 255, 0);
+    }
 }
 
  .round-content:hover {
     background: #fff;
     color: #90b3f1;
      transition: 500ms ease;
-  }
-
- .round-content:active {
     transform: scale(0.9);
        }
 
@@ -208,9 +215,21 @@ Navigation:
   color: #292b2c;
   background: #e3ecf4;
   transform: rotate(90deg);
-  border-radius: .5rem;
+  border-radius:0.5rem 0.5rem 0 0;
   border: 1px solid #ccc;
-	
+  animation: pulseAnim 2s infinite;
+}
+
+@keyframes pulseAnim {
+    0% {
+        box-shadow: 0 0 0 0 rgba(88, 120, 243, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(88, 120, 243, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(88, 120, 243, 0);
+    }
 }
 
 .trigger:focus,
@@ -219,7 +238,7 @@ Navigation:
   background: #9fbad6;
   color: #f7f7f7;  
   cursor: url(images/glove2.png), auto;
-  border-radius: .5rem;
+ 
 }
 
 .trigger:focus {

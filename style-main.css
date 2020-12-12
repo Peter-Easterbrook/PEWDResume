@@ -116,16 +116,20 @@ Header:
 --------------------------------------------------------------*/
 
 .masthead {
-
+  position: fixed;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  right: 0;
   color: #fff;
   padding: 0 1em;
   text-align: center;
- 
+ width: 100vw;
   background-color: #EBF3F5;
   border-bottom: 1px solid #ccc;
   width: 100vw;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
-z-index: 1;
+z-index:2;
 }
 /* .toggle {
   float: right;
@@ -168,7 +172,6 @@ z-index: 1;
   transition: transform 200ms ease-in;
   background-color: #90b3f1;
   box-shadow:0 2px 7px #555;
-  text-shadow:0 -1px 1px #111;
   position: absolute;
   text-align: center;
   color: #EBF3F5;
@@ -205,7 +208,7 @@ Navigation:
   background-color:#EBF3F5;
   overflow-y: auto;
   width: 15em;
-  z-index: 1;
+  z-index: 3;
   border: 1px solid #ccc;
 }
 
@@ -234,11 +237,10 @@ Navigation:
 
 .trigger:focus,
 .trigger:hover {
-  outline: 2px dotted hsl(0, 0%, 10%);
   background: #9fbad6;
   color: #f7f7f7;  
   cursor: url(images/glove2.png), auto;
- 
+  transition: 500ms ease;
 }
 
 .trigger:focus {
@@ -292,8 +294,11 @@ color: white;
 /*--------------------------------------------------------------
 Cards:
 --------------------------------------------------------------*/
-.card-item {
+.main-area {
+  margin-top: 7rem;
+}
 
+.card-item {
   transition: transform 1s ease;
 }
 .card-item:hover {
@@ -352,8 +357,13 @@ Cards:
 /*--------------------------------------------------------------
 Sidebar:
 --------------------------------------------------------------*/
+.sidebar {
+  margin-top: 9rem;
+}
 
 .twin {
+      margin-top: 8rem;
+  
   padding: 1em;
   background: #90b3f1;
   color: #292b2c;
@@ -488,9 +498,11 @@ CSS Grid layout for wider screens, when browser supports grid:
       cursor: url(images/glove2.png), auto;
     }
     .twin {
+     
       padding: 2em;
       margin-left: 3em;
      }
+  
   
   }
 
@@ -519,7 +531,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       padding: 1em;
       margin-left: 2em;
      }
-
+    
   }
 
   @media screen and (min-width: 78em) {
@@ -534,4 +546,5 @@ CSS Grid layout for wider screens, when browser supports grid:
       padding: 1;
      margin: 0;
      }
+  
   }

@@ -134,7 +134,7 @@ z-index:2;
 
 
 .round-container {
-    margin: 1em 0.5em;
+  margin: 1em 0.5em;
   display: inline-block;
   position: relative;
   width: 80px;
@@ -143,15 +143,11 @@ z-index:2;
 }
 
 .round-content {
-
   display: block;
-
-  backface-visibility: hidden;
-  transition: transform 200ms ease-in;
-  background-color: #90b3f1;
-   position: absolute;
-  text-align: center;
+  background: #a1bff3;
   color: #EBF3F5;
+  position: absolute;
+  text-align: center;
   font-size: 40px;
   line-height: 64px;
   margin: 8px;
@@ -161,6 +157,7 @@ z-index:2;
   cursor: url(images/glove2.png), auto;
   animation: pulseAnim 2s infinite;
 }
+
 
 @keyframes pulseAnim {
     0% {
@@ -174,16 +171,14 @@ z-index:2;
     }
 }
 
- .round-content:hover {
-    background: #90b3f1;
-    color: #000;
-     transition: 500ms ease;
-  
-       }
+.round-content:hover {
+color: #0e3275;
+transition: 500ms ease;
+}
 .round-content:active {
- 
- transition: 500ms ease;
- transform: scale(0.9);
+background-color:#90b3f1 ;
+transition: 500ms ease;
+transform: scale(0.9);
 }
 
 /*--------------------------------------------------------------
@@ -201,6 +196,7 @@ Navigation:
 
 .trigger {
   display: none;
+  margin-left: 0.4rem;
   padding: 0.3em 0.5em;
   color: #292b2c;
   background: #e3ecf4;
@@ -228,6 +224,7 @@ Navigation:
   color: #f7f7f7;  
   cursor: url(images/glove2.png), auto;
   transition: 500ms ease;
+  border-radius:0.5rem 0.5rem 0 0;
 }
 
 .trigger:focus {
@@ -269,7 +266,7 @@ Navigation:
 .dropdown-menu {
   background-color: #a2bff4;
   border: none;
-color: white;
+  color: #fff;
   font-size: 1.2rem;
   border-radius: .5rem;
 }

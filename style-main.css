@@ -249,7 +249,7 @@ Navigation:
   text-decoration: none;
   color: #16191d;
   width: 250px;
-  border-radius: .5rem;
+  border-radius: 0.3rem;
   color: #000;
   
 }
@@ -260,19 +260,23 @@ Navigation:
   transition: ease .5s;
   text-decoration: none;
   cursor: url(images/glove2.png), auto;
-  color: white;
+  color: #000;
 }
 
 .dropdown-menu {
   background-color: #a2bff4;
   border: none;
   color: #fff;
-  font-size: 1.2rem;
-  border-radius: .5rem;
+  font-size: 1.1rem;
+  border-radius: 0.3rem;
+}
+.dropdown-menu .dropdown-item {
+  color: #fff;
 }
 .dropdown-menu a:hover {
   background-color: #EBF3F5;
   color: #000;
+  border-radius: 0;
 }
 
 /*--------------------------------------------------------------

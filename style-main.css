@@ -1,46 +1,8 @@
-/*--------------------------------------------------------------
-Accessibility
---------------------------------------------------------------*/
-/* Text meant only for screen readers */
-
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.screen-reader-text:hover,
-.screen-reader-text:active,
-.screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  color: #21759b;
-  display: block;
-  font-size: 14px;
-  font-weight: bold;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000; /* Above WP toolbar */
-}
-
-/*--------------------------------------------------------------
-Typography
---------------------------------------------------------------*/
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body {
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  background: rgb(162,191,244);
+margin: 0;
+font-family: 'Open Sans', sans-serif;
+background: rgb(162,191,244);
 background: linear-gradient(180deg, rgba(162,191,244,1) 0%, rgba(214,227,250,1) 100%);
   
 }
@@ -59,12 +21,12 @@ button,
 input,
 select,
 textarea {
-  font-family: "Lato", sans-serif;
+ font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   line-height: 1.5;
 }
 h1 {
-  font-family: "Lato", sans-serif;
+ font-family: 'Open Sans', sans-serif;
   font-weight: bold 700;
   
 }
@@ -174,6 +136,7 @@ z-index:2;
 .round-content:hover {
 color: #0e3275;
 transition: 500ms ease;
+animation: none;
 }
 .round-content:active {
 background-color:#90b3f1 ;
@@ -195,16 +158,15 @@ Navigation:
 }
 
 .trigger {
-  display: none;
-  margin-left: 0.4rem;
-  padding: 0.3em 0.5em;
-  color: #292b2c;
+  margin-left: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  color: #16191d;
   background: #e3ecf4;
-  transform: rotate(90deg);
-  border-radius:0.5rem 0.5rem 0 0;
+  border-radius: 0 0.3rem 0.3rem 0;
   border: 1px solid #ccc;
   animation: pulseAnim 2s infinite;
 }
+
 
 @keyframes pulseAnim {
     0% {
@@ -224,11 +186,9 @@ Navigation:
   color: #f7f7f7;  
   cursor: url(images/glove2.png), auto;
   transition: 500ms ease;
-  border-radius:0.5rem 0.5rem 0 0;
-}
-
-.trigger:focus {
-  outline-color: #80a9cd;
+  border-radius: 0 0.3rem 0.3rem 0;
+  animation: none;
+  outline: 0;
 }
 
 .main-nav ul {

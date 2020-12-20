@@ -2,9 +2,7 @@
 body {
 margin: 0;
 font-family: 'Open Sans', sans-serif;
-background: rgb(162,191,244);
-background: linear-gradient(180deg, rgba(162,191,244,1) 0%, rgba(214,227,250,1) 100%);
-  
+
 }
 body::-webkit-scrollbar {
   width: 3px;
@@ -66,13 +64,37 @@ General styling
 --------------------------------------------------------------*/
 
 img {
+  margin: auto;
   display: block;
   border: 0;
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 0.2em;
 }
+.float {
+  animation: up-down 1s infinite alternate;
+}
 
+@keyframes up-down {
+  from {
+    transform: translateY(-4px);
+  }
+  to {
+    transform: translateY(4px);
+  }
+}
+.googleshield {
+  width: 80%;
+}
+.electron    { 
+animation:spin 6s linear infinite;
+}
+
+@keyframes spin { 
+  100% { 
+    transform:rotate(360deg); 
+  }
+}
 /*--------------------------------------------------------------
 Header:
 --------------------------------------------------------------*/
@@ -83,15 +105,13 @@ Header:
   top: 0;
   left: 0;
   right: 0;
-  color: #fff;
   padding: 0 1em;
   text-align: center;
- width: 100vw;
+  width: 100vw;
   background-color: #EBF3F5;
   border-bottom: 1px solid #ccc;
   width: 100vw;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
-z-index:2;
+  z-index:2;
 }
 
 
@@ -112,7 +132,7 @@ z-index:2;
   text-align: center;
   font-size: 40px;
   line-height: 64px;
-  margin: 8px;
+  margin:0.5rem;
   width: 64px;
   height: 64px;
   border-radius:80px;
@@ -254,7 +274,7 @@ Cards:
     0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)
   );
   transform: scale(1.1);
-  z-index: 1;
+  z-index: 3;
 }
 
 .cards {
@@ -310,18 +330,18 @@ Sidebar:
 }
 
 .twin {
-      margin-top: 8rem;
-  
+  margin-top: 8rem;
   padding: 1em;
-  background: #90b3f1;
+  background: #d8e4fa;
   color: #292b2c;
   text-align: center;
-
+border-radius: 0.3rem 0 0 0;
 }
 
 .twin:last-of-type {
-  background: #a1bff3;
+  background: #e9f0fc;
   text-align: left;
+  border-radius: 0;
 }
 
 /*--------------------------------------------------------------
@@ -446,9 +466,9 @@ CSS Grid layout for wider screens, when browser supports grid:
       cursor: url(images/glove2.png), auto;
     }
     .twin {
-     
       padding: 2em;
       margin-left: 3em;
+
      }
   
   
@@ -478,6 +498,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     .twin {
       padding: 1em;
       margin-left: 2em;
+  
      }
     
   }
@@ -491,8 +512,8 @@ CSS Grid layout for wider screens, when browser supports grid:
         "nav footer footer";
     }
     .twin {
-      padding: 1;
-     margin: 0;
+      margin: 0;
+   
      }
   
   }

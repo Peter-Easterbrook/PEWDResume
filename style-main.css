@@ -108,7 +108,7 @@ Header:
   padding: 0 1em;
   text-align: center;
   width: 100vw;
-  background-color: #EBF3F5;
+  background-color: #e9f0fc;
   border-bottom: 1px solid #ccc;
   width: 100vw;
   z-index:3;
@@ -126,9 +126,9 @@ Header:
 
 .round-content {
   display: block;
-  background: #a1bff3;
-  color: #EBF3F5;
-  position: absolute;
+  background: #fff;
+  color: #a1bff3;
+    position: absolute;
   text-align: center;
   font-size: 40px;
   line-height: 64px;
@@ -154,7 +154,8 @@ Header:
 }
 
 .round-content:hover {
-color: #0e3275;
+  background: #a1bff3;
+  color: #e9f0fc;
 transition: 500ms ease;
 animation: none;
 }
@@ -170,7 +171,7 @@ Navigation:
 .main-nav {
   padding: 1em;
   font-size: 1.1em;
-  background-color:#EBF3F5;
+  background-color:#e9f0fc;
   overflow-y: auto;
   width: 15em;
   z-index: 3;
@@ -254,7 +255,7 @@ Navigation:
   color: #fff;
 }
 .dropdown-menu a:hover {
-  background-color: #EBF3F5;
+  background-color: #e9f0fc;
   color: #000;
   border-radius: 0;
 }
@@ -351,7 +352,7 @@ Footer:
 
 .footer {
   padding: 2em;
-  background: #ebf3f5;
+  background: #e9f0fc;
   border-top: 1px solid #ccc;
   text-align: center;
   text-decoration: none;
@@ -456,7 +457,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       margin: 1em 0;
       padding: 0.5em;
       display: grid;
-      background: #ebf3f5;
+      background: #e9f0fc;
       grid-template-columns: 8em auto;
     }
 

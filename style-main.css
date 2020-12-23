@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  --primary-color: #e9f0fc;
+  --secondary-color: #ffffff;
+
+}
+
+
+  
 body {
 margin: 0;
 font-family: 'Open Sans', sans-serif;
+background-color: var(--secondary-color);
 
 }
 body::-webkit-scrollbar {
@@ -107,10 +117,9 @@ Header:
   right: 0;
   padding: 0 1em;
   text-align: center;
-  width: 100vw;
-  background-color: #e9f0fc;
+  max-width: 100%;
+  background-color: var(--primary-color);
   border-bottom: 1px solid #ccc;
-  width: 100vw;
   z-index:3;
 }
 
@@ -126,9 +135,9 @@ Header:
 
 .round-content {
   display: block;
-  background: #fff;
+  background-color: var(--secondary-color);
   color: #a1bff3;
-    position: absolute;
+  position: absolute;
   text-align: center;
   font-size: 40px;
   line-height: 64px;
@@ -155,7 +164,7 @@ Header:
 
 .round-content:hover {
   background: #a1bff3;
-  color: #e9f0fc;
+  color:var(--primary-color);;
 transition: 500ms ease;
 animation: none;
 }
@@ -171,7 +180,7 @@ Navigation:
 .main-nav {
   padding: 1em;
   font-size: 1.1em;
-  background-color:#e9f0fc;
+  background-color:var(--primary-color);;
   overflow-y: auto;
   width: 15em;
   z-index: 3;
@@ -247,15 +256,15 @@ Navigation:
 .dropdown-menu {
   background-color: #a2bff4;
   border: none;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 1.1rem;
   border-radius: 0.3rem;
 }
 .dropdown-menu .dropdown-item {
-  color: #fff;
+  color: var(--secondary-color);
 }
 .dropdown-menu a:hover {
-  background-color: #e9f0fc;
+  background-color:var(--primary-color);;
   color: #000;
   border-radius: 0;
 }
@@ -312,7 +321,7 @@ Cards:
 
 .cards a:focus .caption,
 .cards a:hover .caption {
-  background: hsl(0, 0%, 97%);
+  background: var(--secondary-color);
   cursor: url(images/glove2.png), auto;
 
 }
@@ -340,7 +349,7 @@ border-radius: 0.3rem 0 0 0;
 }
 
 .twin:last-of-type {
-  background: #e9f0fc;
+  background:var(--primary-color);;
   text-align: left;
   border-radius: 0;
 }
@@ -352,7 +361,7 @@ Footer:
 
 .footer {
   padding: 2em;
-  background: #e9f0fc;
+  background:var(--primary-color);;
   border-top: 1px solid #ccc;
   text-align: center;
   text-decoration: none;
@@ -457,7 +466,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       margin: 1em 0;
       padding: 0.5em;
       display: grid;
-      background: #e9f0fc;
+      background:var(--primary-color);;
       grid-template-columns: 8em auto;
     }
 

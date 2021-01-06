@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
-  --primary-color: #e9f0fc;
-  --secondary-color: #ffffff;
-
+--primary-color: #e9f0fc;
+--secondary-color: #ffffff;
+--tertiary-color: #b3cbf5;
+--quaternary-color: #90b3f1;
 }
 
 
@@ -124,55 +125,6 @@ Header:
   z-index:3;
 }
 
-
-.round-container {
-  margin: 1em 0.5em;
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  border-radius: 100px;
-}
-
-.round-content {
-  display: block;
-  background-color: var(--secondary-color);
-  color: #a1bff3;
-  position: absolute;
-  text-align: center;
-  font-size: 40px;
-  line-height: 64px;
-  margin:0.5rem;
-  width: 64px;
-  height: 64px;
-  border-radius:80px;
-  cursor: url(images/glove2.png), auto;
-  animation: pulseAnim 2s infinite;
-}
-@keyframes pulseAnim {
-    0% {
-        box-shadow: 0 0 0 0 rgba(88, 120, 243, 0.4);
-    }
-    70% {
-        box-shadow: 0 0 0 20px rgba(88, 120, 243, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(88, 120, 243, 0);
-    }
-}
-
-.round-content:hover {
-  background: #a1bff3;
-  color:var(--primary-color);;
-transition: 500ms ease;
-animation: none;
-}
-.round-content:active {
-background-color:#90b3f1 ;
-transition: 500ms ease;
-transform: scale(0.9);
-}
-
 /*--------------------------------------------------------------
 Navigation:
 --------------------------------------------------------------*/
@@ -194,21 +146,10 @@ Navigation:
   border: 1px solid #ccc;
   animation: pulseAnim 2s infinite;
 }
-@keyframes pulseAnim {
-    0% {
-        box-shadow: 0 0 0 0 rgba(88, 120, 243, 0.4);
-    }
-    70% {
-        box-shadow: 0 0 0 20px rgba(88, 120, 243, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(88, 120, 243, 0);
-    }
-}
 
 .trigger:focus,
 .trigger:hover {
-  background: #9fbad6;
+  background:  var(--quaternary-color);
   color: #f7f7f7;  
   cursor: url(images/glove2.png), auto;
   transition: 500ms ease;
@@ -249,7 +190,7 @@ Navigation:
 }
 
 .dropdown-menu {
-  background-color: #a2bff4;
+  background-color: var(--tertiary-color);
   border: none;
   color: var(--secondary-color);
   font-size: 1rem;
@@ -347,7 +288,7 @@ border-radius: 0.3rem 0 0 0;
 }
 
 .twin:last-of-type {
-  background:var(--primary-color);;
+  background:var(--primary-color);
   text-align: left;
   border-radius: 0;
 }
@@ -362,32 +303,64 @@ Footer:
   background:var(--primary-color);;
   border-top: 1px solid #ccc;
   text-align: center;
-  text-decoration: none;
-  list-style-type: none;
-  font-size: 1.5em;
- width: 100vw;
- overflow: auto;
+  width: 100vw;
+  overflow: auto;
 }
 
-.nav a {
-  color: #16191d;
-  margin: 4px;
-  border-radius: .5rem;
+
+.round-container {
+  margin: 1em 0.5em;
   display: inline-block;
-  text-decoration: none;
-  list-style-type: none;
-  text-shadow: #515c6b 0 3px 4px;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background:  var(--tertiary-color);
+animation: pulseAnim 2s infinite;
+
+}
+@keyframes pulseAnim {
+    0% {
+        box-shadow: 0 0 0 0 rgba(88, 120, 243, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(88, 120, 243, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(88, 120, 243, 0);
+    }
+}
+.round-container:hover{
+  background-color: var(--secondary-color);
+  animation: none;
 }
 
-.nav a:hover {
-  background-color:  #292b2c;
-  color:  #f7f7f7;
-  transition: 1s ease;
+.round-content i {
+  display: block;
+  background-color: var(--secondary-color);
+  color: var(--quaternary-color);
+  position: absolute;
+  text-align: center;
+  font-size: 40px;
+  line-height: 64px;
+  margin:0.5rem;
+  width: 64px;
+  height: 64px;
+  border-radius:80px;
   cursor: url(images/glove2.png), auto;
-  text-shadow: none;
 }
 
+.round-content:hover i {
+  background-color: var(--quaternary-color);
+  color: var(--secondary-color);
+transition: 500ms ease;
 
+}
+.round-content:active i {
+background-color:#7fa7ef ;
+transition: 300ms ease;
+transform: scale(0.9);
+}
 
 /*--------------------------------------------------------------
 CSS Grid layout for wider screens, when browser supports grid:

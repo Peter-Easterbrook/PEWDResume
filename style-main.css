@@ -360,11 +360,11 @@ Footer:
 }
 
 .round-container {
-  margin: 1em 0.5em;
+  margin: 1em .5em;
   display: inline-block;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50px;
   background-color: var(--quaternary-color);
 animation: pulseAnim 2s infinite;
@@ -391,12 +391,12 @@ animation: pulseAnim 2s infinite;
   color: var(--quaternary-color);
   position: absolute;
   text-align: center;
-  font-size: 40px;
-  line-height: 64px;
-  margin:0.5rem;
-  width: 64px;
-  height: 64px;
-  border-radius:80px;
+  font-size: 1.8rem;
+  line-height: 45px;
+  margin:0.48rem;
+  width: 45px;
+  height: 45px;
+  border-radius:50px;
   cursor: url(images/glove2.png), auto;
 }
 

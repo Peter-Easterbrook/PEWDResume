@@ -367,8 +367,11 @@ Footer:
   height: 60px;
   border-radius: 50px;
   background-color: var(--quaternary-color);
-animation: pulseAnim 2s infinite;
 
+
+}
+.trigger, .masthead .round-container{
+  animation: pulseAnim 2s infinite;
 }
 @keyframes pulseAnim {
     0% {

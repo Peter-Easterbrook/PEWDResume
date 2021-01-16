@@ -1,3 +1,23 @@
+const textEl = document.getElementById('text');
+
+/* const speedEl = document.getElementById('speed') */
+let idx = 1;
+const text = 'Peter Easterbrook';
+let speed = 100;
+
+writeText();
+
+function writeText() {
+  textEl.innerText = text.slice(0, idx);
+
+  idx++;
+
+  if (idx > text.length) {
+    idx = 1;
+  }
+  setTimeout(writeText, speed);
+}
+
 const SITE = document.querySelector('.site');
 const TRIGGER = document.querySelector('.trigger');
 const REVEAL = document.querySelector('.main-nav');

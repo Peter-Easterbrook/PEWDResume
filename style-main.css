@@ -132,7 +132,9 @@ Header:
   background-color: var(--primary-color);
   border-bottom: 1px solid #ccc;
   z-index:3;
+
 }
+
 
 /*--------------------------------------------------------------
 Navigation:
@@ -142,16 +144,18 @@ Navigation:
   font-size: 1rem;
   background-color:var(--primary-color);;
   overflow-y: auto;
-  width: 18.3rem;
+  width: 16.3rem;
   z-index: 3;
   border: 1px solid #ccc;
+ 
 }
 
 .trigger {
   padding: 0.3rem 0.6rem;
+  margin-left:2rem;
   color: #16191d;
   background: #e3ecf4;
-  border-radius: 0 0.3rem 0.3rem 0;
+  border-radius: 0.3rem;
   border: 1px solid #ccc;
   animation: pulseAnim 2s infinite;
 }
@@ -162,7 +166,7 @@ Navigation:
   color: #f7f7f7;  
   cursor: url(images/glove2.png), auto;
   transition: 500ms ease;
-  border-radius: 0 0.3rem 0.3rem 0;
+  border-radius:0.3rem ;
   animation: none;
   outline: 0;
 }
@@ -221,6 +225,7 @@ Cards:
 --------------------------------------------------------------*/
 .main-area {
   margin-top: 7rem;
+  
 }
 
 
@@ -309,13 +314,17 @@ Footer:
 
 
 .footer {
+ 
   padding: 2em;
-  background:var(--primary-color);;
+ background:var(--primary-color); */
   border-top: 1px solid #ccc;
   text-align: center;
   width: 100vw;
+  margin-bottom: 0;
   overflow: auto;
 }
+
+
 .fab, .fa {
   animation: backgroundColorPalette 10s ease-in-out infinite;
 }

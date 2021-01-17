@@ -1,22 +1,22 @@
-const textEl = document.getElementById('text');
+// const textEl = document.getElementById('text');
 
-/* const speedEl = document.getElementById('speed') */
-let idx = 1;
-const text = 'Peter Easterbrook';
-let speed = 100;
+// /* const speedEl = document.getElementById('speed') */
+// let idx = 1;
+// const text = 'Peter Easterbrook';
+// let speed = 100;
 
-writeText();
+// writeText();
 
-function writeText() {
-  textEl.innerText = text.slice(0, idx);
+// function writeText() {
+//   textEl.innerText = text.slice(0, idx);
 
-  idx++;
+//   idx++;
 
-  if (idx > text.length) {
-    idx = 1;
-  }
-  setTimeout(writeText, speed);
-}
+//   if (idx > text.length) {
+//     idx = 1;
+//   }
+//   setTimeout(writeText, speed);
+// }
 
 const SITE = document.querySelector('.site');
 const TRIGGER = document.querySelector('.trigger');

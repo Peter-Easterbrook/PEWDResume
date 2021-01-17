@@ -50,8 +50,9 @@ textarea {
   font-family: 'Open Sans', sans-serif;
   color: #fffff7;
   font-weight: 300;
+  text-shadow: rgba(0,0,0,.2) 2px 2px 2px,rgba(255,255,255,.4) 0 -4px 20px;
 }
-h1,
+
 h2,
 h3 {
   color: #16191d;
@@ -135,9 +136,27 @@ Header:
   border-bottom: 1px solid #173b80;
   z-index:3;
   color: #fffff7;
+  -moz-animation:gm-slidein 3s 1;
+  -ms-animation:gm-slidein 3s 1;
+  -o-animation:gm-slidein 3s 1;
+  -webkit-animation:gm-slidein 3s 1;
+  animation:gm-slidein 3s 1;
 
 }
 
+@keyframes gm-slidein {
+  from {
+      -webkit-transform:translate3d(0,-100%,0);
+      opacity:0;
+      transform:translate3d(0,-100%,0);
+  }
+
+  to {
+      -webkit-transform:none;
+      opacity:1;
+      transform:none;
+  }
+}
 
 /*--------------------------------------------------------------
 Navigation:

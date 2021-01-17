@@ -184,6 +184,7 @@ Navigation:
   border-radius: 0.3rem;
   border: 1px solid #FFF;
   animation: pulseAnim 2s infinite;
+  z-index: 4;
 }
 
 .trigger:focus,

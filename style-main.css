@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #e9f0fc;
-  --secondary-color: #ffffff;
+  --secondary-color: #fffff7;
   --tertiary-color: #050d1d;
   --quaternary-color: #08142d;
   }
@@ -180,16 +180,16 @@ Navigation:
   padding: 0.3rem 0.6rem;
   margin-left:2rem;
   color: #16191d;
-  background: #e3ecf4;
+  background: var(--primary-color);
   border-radius: 0.3rem;
-  border: 1px solid #ccc;
+  border: 1px solid #FFF;
   animation: pulseAnim 2s infinite;
 }
 
 .trigger:focus,
 .trigger:hover {
   background:  var(--quaternary-color);
-  color: #f7f7f7;  
+  color:var(--secondary-color);  
   cursor: url(images/glove2.png), auto;
   transition: 500ms ease;
   border-radius:0.3rem ;
@@ -204,11 +204,7 @@ Navigation:
   margin: 0;
   padding: 0;
   list-style-type: none;
-
 }
-
-
-
 .main-nav a {
   display: block;
   padding: 0.4em 0.8em;
@@ -216,12 +212,11 @@ Navigation:
   color: #16191d;
    border-radius: 0.3rem;
   color: #000;
- 
 }
 
 .main-nav a:hover,
 .main-nav a:focus {
-  background-color: #a2bff4;
+  background-color: var(--primary-color);
   transition: ease .5s;
   text-decoration: none;
   cursor: url(images/glove2.png), auto;
@@ -340,24 +335,72 @@ Footer:
 --------------------------------------------------------------*/
 
 
-.footer {
- 
+.footer { 
   position: absolute;
   left: 0;
   right: 0;
   padding: 0 1em;
   bottom: 0;
   width: 100%;
- background:var(--tertiary-color); */
+  background:var(--tertiary-color); */
   border-top: 1px solid #112b5e;
   text-align: center;
-margin-top: 10rem;
+  margin-top: 10rem;
   margin-bottom: 0;
   overflow: auto;
 }
 
+.trigger, .masthead .icon-button {
+  animation: pulseAnim 2s infinite;
+}
+@keyframes pulseAnim {
+    0% {
+        box-shadow: 0 0 0 0 rgba(217, 227, 248, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(217, 227, 248, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(217, 227, 248, 0);
+    }
+}
 
-.fab, .fa {
+
+/* Wrapper */
+.icon-button {
+	border-radius: 3.6rem;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+	margin: 1rem 0.3rem;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	
+}
+
+
+/* Icons */
+.icon-button i {
+	color: white;
+	height: 3rem;
+	left: 0;
+	line-height: 3rem;
+	position: absolute;
+	top: 0;
+	width: 3rem;
+  border-radius: 3.6rem;
+  z-index: 10;
+  cursor: url(images/glove2.png), auto;
+}
+
+
+.icon-button .fab,.icon-button .fa,.icon-button .fas  {
   animation: backgroundColorPalette 10s ease-in-out infinite;
 }
 
@@ -409,63 +452,10 @@ margin-top: 10rem;
     color: #e9f0fc;
 }
 }
-
-.round-container {
-  margin: 1em .5em;
-  display: inline-block;
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  background-color: var(--quaternary-color);
-
-
-}
-.trigger, .masthead .round-container{
-  animation: pulseAnim 2s infinite;
-}
-@keyframes pulseAnim {
-    0% {
-        box-shadow: 0 0 0 0 rgba(217, 227, 248, 0.4);
-    }
-    70% {
-        box-shadow: 0 0 0 20px rgba(217, 227, 248, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(217, 227, 248, 0);
-    }
-}
-.round-container:hover{
+.fab:hover, .fa:hover, .fas:hover {
   animation: none;
-}
-
-.round-content i {
-  display: block;
-  background-color: var(--secondary-color);
-  color: var(--tertiary-color);
-  position: absolute;
-  text-align: center;
-  font-size: 1.8rem;
-  line-height: 45px;
-  margin-left: .17rem;
-  margin-top: 3px;
-  width: 45px;
-  height: 45px;
-  border-radius:50px;
-  cursor: url(images/glove2.png), auto;
-}
-
-.round-content:hover i {
-  /* background-color: var(--quaternary-color);
-  color: var(--secondary-color);
-transition: 500ms ease; */
-animation: none;
-}
-.round-content:active i {
-background-color:#7fa7ef ;
-transition: 300ms ease;
-transform: scale(0.9);
-}
+  background: #050d1d;
+} 
 
 /*--------------------------------------------------------------
 CSS Grid layout for wider screens, when browser supports grid:

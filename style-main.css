@@ -214,7 +214,7 @@ Navigation:
   text-decoration: none;
   border-radius: 0.3rem;
   color: #000;
-  
+  font-weight: 400;
 }
 
 .main-nav a:hover,
@@ -325,9 +325,7 @@ Sidebar:
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
   font-weight: 300;
-  /* background: #d8e4fa; */
-  /* color: #292b2c; */
-  text-align: center;
+ text-align: center;
 border-radius: 0.3rem 0 0 0;
 
 }
@@ -335,7 +333,7 @@ border-radius: 0.3rem 0 0 0;
 .twin:last-of-type {
   background-color: var(--quaternary-color);
   text-align: left;
-  border-radius:0 0 0  0.3rem ;
+  border-radius:0 0 0 0.3rem ;
 }
 
 /*--------------------------------------------------------------
@@ -349,7 +347,7 @@ Footer:
   right: 0;
   padding: 0 1em;
   bottom: 0;
-  width: 100%;
+  min-width: 100vw;
   background:var(--tertiary-color); */
   border-top: 1px solid #112b5e;
   text-align: center;
@@ -463,7 +461,7 @@ Footer:
 .fab:hover, .fa:hover, .fas:hover {
   animation: none;
   background: #050d1d;
-} 
+  } 
 
 /*--------------------------------------------------------------
 CSS Grid layout for wider screens, when browser supports grid:
@@ -495,17 +493,12 @@ CSS Grid layout for wider screens, when browser supports grid:
 
     .main-area {
       grid-area: main;
-    }
+     }
 
     .sidebar {
       grid-area: sidebar;
-    }
-
-    .footer {
-      grid-area: footer;
-      min-width: 100vw;
-     
-    }
+      margin-bottom: 5rem;
+    }   
 
     .main-nav {
       grid-area: nav;
@@ -554,11 +547,22 @@ CSS Grid layout for wider screens, when browser supports grid:
     .twin {
       margin: 0 auto;
       margin-left: 3rem;
+      padding: 2rem;
       border-radius: none;
-   
-     }
+      border-radius: 0.3rem 0.3rem 0 0;
+   }
+    .twin:last-of-type {
+     margin-bottom: 4rem;
+     border-radius:0 0 0.3rem 0.3rem ;
+        }
   
-  
+        .footer {
+          grid-area: footer;
+          min-width: 100vw;
+          margin-top: 0;
+ 
+         
+        }
   }
 
   @media screen and (min-width: 60em) {
@@ -583,11 +587,24 @@ CSS Grid layout for wider screens, when browser supports grid:
       display: block;
     }
     .twin {
-      padding: 1em;
-      margin-left: 2em;
+      margin: 0 auto;
+      margin-left: 3rem;
+      padding: 2rem;
+      border-radius: none;
+      border-radius: 0.3rem 0.3rem 0 0;
+   }
+    .twin:last-of-type {
+     margin-bottom: 4rem;
+     border-radius:0 0 0.3rem 0.3rem ;
+        }
   
-     }
+        .footer {
+          grid-area: footer;
+          min-width: 100vw;
     
+ 
+         
+        }
   }
 
   @media screen and (min-width: 78em) {

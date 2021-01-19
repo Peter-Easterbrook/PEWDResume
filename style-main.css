@@ -48,14 +48,14 @@ textarea {
   font-size: 18px;
   line-height: 1.5;
 }
-.site-title, .site-subtitle, h2 {
+.site-title, .site-subtitle, h2, .twin h3  {
   font-family: 'Open Sans', sans-serif;
   color: #fffff7;
   font-weight: 300;
   text-shadow: rgba(0,0,0,.2) 2px 2px 2px,rgba(255,255,255,.4) 0 -4px 20px;
 }
 
-h3 {
+{
 color: #16191d;
  text-shadow: rgba(0,0,0,.2) 2px 2px 2px,rgba(255,255,255,.4) 0 -4px 20px;
 }
@@ -321,7 +321,7 @@ Sidebar:
 
 .twin {
   margin-top: 8rem;
-  padding: 0.3em;
+  font-size: 1rem;
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
   font-weight: 300;
@@ -617,7 +617,11 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
     .twin {
       margin: 0;
+      border-radius: 0.3rem 0 0 0 ;
    
      }
+     .twin:last-of-type {
+      border-radius:0 0 0 0.3rem ;
+    }
   
   }

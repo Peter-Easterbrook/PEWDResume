@@ -536,8 +536,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       margin: 1em 0;
       padding: 0.5em;
       display: grid;
-      /* background:var(--primary-color); */
-    background: rgba(0,0,0,0.7);
+    background: rgba(	2, 6, 12,0.8);
     color: var(--secondary-color);
       grid-template-columns: 8em auto;
     }

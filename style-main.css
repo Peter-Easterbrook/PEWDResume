@@ -254,6 +254,7 @@ Navigation:
 /*--------------------------------------------------------------
 Cards:
 --------------------------------------------------------------*/
+
 .main-area {
   margin-top: 7rem;
   margin-bottom: 10rem;;
@@ -536,9 +537,9 @@ CSS Grid layout for wider screens, when browser supports grid:
       margin: 1em 0;
       padding: 0.5em;
       display: grid;
-    background: rgba(	2, 6, 12,0.8);
-    color: var(--secondary-color);
-      grid-template-columns: 8em auto;
+      background-color: rgba(	2, 6, 12, 0.8);
+      color: var(--secondary-color);
+      grid-template-columns: 8em auto;|
     }
 
     .cards a:focus,

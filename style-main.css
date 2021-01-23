@@ -7,7 +7,7 @@
   --quaternary-color: #08142d;
   }
 html {
-  min-height: 100vh;
+  min-height: 100%;
 }
   
 body {
@@ -49,7 +49,7 @@ textarea {
   line-height: 1.5;
   font-weight: 300;
 }
-.site-title, .site-subtitle, h2  {
+.site-title, .site-subtitle  {
   font-family: 'Open Sans', sans-serif;
   color: #fffff7;
   font-weight: 300;
@@ -265,9 +265,9 @@ Cards:
   transition: transform 1s ease;
 }
 .card-item:hover {
-  filter: drop-shadow(
+  /* filter: drop-shadow(
     0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)
-  );
+  );  */
   transform: scale(1.1);
   z-index: 2;
 }
@@ -281,29 +281,29 @@ Cards:
 
 .cards a {
   display: block;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   text-decoration: none;
   }
 
 .caption {
-  padding: 1em;
+  padding: 1rem;
   font-size: 90%;
  }
 
 .caption-title {
   margin: 0;
-  font-size: 1.4em;
-  line-height: 1em;
+  font-size: 1.4rem;
+  line-height: 1rem;
 }
 
 .caption p {
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
   margin-bottom: 0;
 }
 
 .cards a:focus .caption,
 .cards a:hover .caption {
-  background: var(--tertiary-color);
+  /* background: var(--tertiary-color); */
   cursor: url(images/glove2.png), auto;
 
 }
@@ -491,6 +491,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 
     .masthead {
       grid-area: header;
+
     }
 
     .main-area {
@@ -577,6 +578,8 @@ CSS Grid layout for wider screens, when browser supports grid:
       grid-gap: 1em;
       justify-content: center;
     }
+ 
+    
 
     .card {
       margin: 0;
@@ -626,5 +629,5 @@ CSS Grid layout for wider screens, when browser supports grid:
      .twin:last-of-type {
       border-radius:0 0 0 0.3rem ;
     }
-  
+
   }

@@ -38,11 +38,11 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+
     <script
       src="https://kit.fontawesome.com/93b32f94da.js"
       crossorigin="anonymous"
     ></script>
-
     <link rel="stylesheet" href="style-main.css" type="text/css" media="all" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -604,29 +604,40 @@
             </figure>
           </a>
         </li>
-
         <li class="card-item">
-          <a
-            href="https://www.coursera.org/account/accomplishments/certificate/VN3EKPL25CN7"
-            target="_blank"
-          >
-            <figure class="card">
-              <img
-                src="images/python.png"
-                alt="Link to python certificate."
-                style="filter: drop-shadow(0px 1px 1px #e9f0fc)"
-              />
-              <figcaption class="caption">
-                <h4 class="caption-title">Google Python Crash Course</h4>
-                <p>
-                  This course covered the foundations in order to write simple
-                  programs using the most common structures.
-                </p>
-                <br />
-              </figcaption>
-            </figure>
-          </a>
+          <figure class="card">
+            <img
+              src="images/javascript.gif"
+              alt="Link to JavaScript certificates."
+              style="
+                filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+                border: 1px solid #fffff7;
+              "
+            />
+            <figcaption class="caption">
+              <h4 class="caption-title">JavaScript</h4>
+              <p>What website would be complete without JavaScript?</p>
+              <div class="btn-group btn-group-justified float-right">
+                <a
+                  href="https://user-images.githubusercontent.com/59874288/98726492-e17c0500-2396-11eb-80d5-7dd7aac5c196.png"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-dark btn-outline-light shadow"
+                  >&nbsp;JS 2020&nbsp;</a
+                >
+
+                <a
+                  href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-cf1ebbc4-af39-4839-817c-5a86326e326c.pdf"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-dark btn-outline-light shadow"
+                  >Modern JS</a
+                >
+              </div>
+            </figcaption>
+          </figure>
         </li>
+
         <li class="card-item">
           <figure class="card">
             <img
@@ -777,8 +788,8 @@
               <figcaption class="caption">
                 <h4 class="caption-title">JS Boot Camp</h4>
                 <p>
-                  A comprehensive four month deep dive backend JS libraries and
-                  databases from Flavio Copes.
+                  A comprehensive four month deep dive into backend JS libraries
+                  and databases from Flavio Copes.
                 </p>
               </figcaption>
             </figure>
@@ -807,37 +818,26 @@
           </a>
         </li>
         <li class="card-item">
-          <figure class="card">
-            <img
-              src="images/javascript.gif"
-              alt="Link to JavaScript certificates."
-              style="
-                filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
-                border: 1px solid #fffff7;
-              "
-            />
-            <figcaption class="caption">
-              <h4 class="caption-title">JavaScript</h4>
-              <p>What website would be complete without JavaScript?</p>
-              <div class="btn-group btn-group-justified float-right">
-                <a
-                  href="https://user-images.githubusercontent.com/59874288/98726492-e17c0500-2396-11eb-80d5-7dd7aac5c196.png"
-                  target="_blank"
-                  type="button"
-                  class="btn btn-dark btn-outline-light shadow"
-                  >&nbsp;JS 2020&nbsp;</a
-                >
-
-                <a
-                  href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-cf1ebbc4-af39-4839-817c-5a86326e326c.pdf"
-                  target="_blank"
-                  type="button"
-                  class="btn btn-dark btn-outline-light shadow"
-                  >Modern JS</a
-                >
-              </div>
-            </figcaption>
-          </figure>
+          <a
+            href="https://www.coursera.org/account/accomplishments/certificate/VN3EKPL25CN7"
+            target="_blank"
+          >
+            <figure class="card">
+              <img
+                src="images/python.png"
+                alt="Link to python certificate."
+                style="filter: drop-shadow(0px 1px 1px #e9f0fc)"
+              />
+              <figcaption class="caption">
+                <h4 class="caption-title">Google Python Crash Course</h4>
+                <p>
+                  This course covered the foundations in order to write simple
+                  programs using the most common structures.
+                </p>
+                <br />
+              </figcaption>
+            </figure>
+          </a>
         </li>
       </ul>
     </main>
@@ -904,12 +904,9 @@
     <script>
       VANTA.CELLS({
         el: '#vantajs',
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
         minHeight: 200.0,
         minWidth: 200.0,
-        scale: 1.0,
+        scale: 1,
         color1: 0x318c,
         color2: 0x35baf2,
       });

@@ -7,12 +7,11 @@
   --quaternary-color: #08142d;
   }
 html {
-  min-height: 120%;
+  min-height: 100%;
 }
-  
+
 body {
-  margin: 0;
-  min-height:100%;
+margin: 0;
 font-family: 'Open Sans', sans-serif;
 animation: fadeInAnimation ease 3s; 
 animation-iteration-count: 1; 
@@ -54,15 +53,9 @@ textarea {
   font-weight: 300;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.63);
 }
-h4,h3{
-  font-weight: 300;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.63);
-  line-height: 150%;
-
-}
 
 .side-nav {
-  color: #16191d;
+  color: var(--tertiary-color);
  text-shadow: rgba(0,0,0,.2) 1px 1px 1px,rgba(255,255,255,.4) 0 -3px 15px;
 }
 
@@ -172,6 +165,92 @@ Header:
     }
 }
 
+/* Wrapper */
+.masthead .icon-button {
+	border-radius: 3.6rem;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+	margin: 1rem 0.3rem;
+	position: relative;
+	text-align: center;
+}
+
+
+/* Icons */
+.masthead .icon-button i {
+	color: white;
+	height: 3rem;
+	left: 0;
+	line-height: 3rem;
+	position: absolute;
+	top: 0;
+	width: 3rem;
+  border-radius: 3.6rem;
+  z-index: 10;
+  cursor: url(images/glove2.png), auto;
+}
+
+
+.masthead .icon-button i  {
+  animation: backgroundColorPalette 10s ease-in-out infinite;
+}
+.masthead .icon-button i:hover {
+  animation: none;
+  background: #050d1d;
+}
+
+@keyframes backgroundColorPalette {
+  0% {
+    background: #050d1d;
+    color: #e9f0fc;
+  }
+  10% {
+    background: #e9f0fc;
+    color: #050d1d;
+  
+  }
+  20%{
+    background: #050d1d;
+    color: #e9f0fc;
+  }
+  30%{
+    background:#e9f0fc;
+    color: #050d1d;
+  }
+  40%{
+    background: #050d1d;
+    color: #e9f0fc;
+  }
+  50% {
+    background: #e9f0fc;
+    color: #050d1d;
+  }
+  60% {
+    background: #050d1d;
+    color: #e9f0fc;
+      }
+  70% {
+    background: #e9f0fc;
+    color: #050d1d;
+  }
+  80% {
+    background: #050d1d;
+    color: #e9f0fc;
+  }
+  90% {
+    background: #e9f0fc;
+    color: #050d1d;
+
+  }
+100% {
+    background: #050d1d;
+    color: #e9f0fc;
+}
+}
+
 
 /*--------------------------------------------------------------
 Navigation:
@@ -268,7 +347,7 @@ Cards:
 
 .main-area {
   margin-top: 7rem;
-  margin-bottom: 10rem;;
+
 }
 
 
@@ -304,6 +383,9 @@ Cards:
   margin: 0;
   font-size: 1.2rem;
   line-height: 1rem;
+  font-weight: 300;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.63);
+  
 }
 
 .caption p {
@@ -313,8 +395,7 @@ Cards:
 
 .cards a:focus .caption,
 .cards a:hover .caption {
-  /* background: var(--tertiary-color); */
-  cursor: url(images/glove2.png), auto;
+   cursor: url(images/glove2.png), auto;
 
 }
 .btn-group {
@@ -359,11 +440,14 @@ Footer:
   justify-content: center;
   background:var(--tertiary-color); 
   border-top: 1px solid #112b5e;
+
+
+   
 }
 
 
 /* Wrapper */
-.masthead .icon-button, .footer .icon-button{
+ .footer .icon-button {
 	border-radius: 3.6rem;
 	display: inline-block;
 	font-size: 2.0rem;
@@ -377,7 +461,7 @@ Footer:
 
 
 /* Icons */
-.masthead .icon-button i, .footer .icon-button i {
+.footer .icon-button i {
 	color: white;
 	height: 3rem;
 	left: 0;
@@ -391,10 +475,10 @@ Footer:
 }
 
 
-.masthead .icon-button i, .footer .icon-button i {
+ .footer .icon-button i {
   animation: backgroundColorPalette 10s ease-in-out infinite;
 }
-.masthead .icon-button i:hover, .footer .icon-button i:hover{
+ .footer .icon-button i:hover{
   animation: none;
   background: #050d1d;
 }
@@ -487,7 +571,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     }   
     .footer {
       grid-area: footer;
-   
+      
     }
 
     .main-nav {
@@ -507,27 +591,27 @@ CSS Grid layout for wider screens, when browser supports grid:
     .trigger {
       position: fixed;
       display: block;
-      top: 1.5em;
-      left: 0.2em;
+      top: 1.5rem;
+      left: 0.2rem;
       transition: left 0.6s;
     }
 
     .reveal .trigger {
-      left: 16em;
+      left: 16rem;
     }
 
     .cards {
       margin: 0 auto;
-      padding: 1em;
+      padding: 1rem;
     }
 
     .card {
-      margin: 1em 0;
-      padding: 0.5em;
+      margin: 1rem 0;
+      padding: 0.5rem;
       display: grid;
-      background-color: rgba(	2, 6, 12, 0.8);
+      background-color: rgba(	5, 13, 29, 0.8);
       color: var(--secondary-color);
-      grid-template-columns: 8em auto;|
+      grid-template-columns: 8rem auto;|
     }
 
     .cards a:focus,
@@ -591,6 +675,7 @@ CSS Grid layout for wider screens, when browser supports grid:
         "nav header header"
         "nav main sidebar"
         "nav footer footer";
+     
     }
     .twin {
       margin: 0;

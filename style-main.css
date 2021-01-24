@@ -7,10 +7,12 @@
   --quaternary-color: #08142d;
   }
 html {
-  min-height: 100%;
+  min-height: 160vh;
+
 }
 
 body {
+  background-color: transparent;
 margin: 0;
 font-family: 'Open Sans', sans-serif;
 animation: fadeInAnimation ease 3s; 
@@ -128,10 +130,6 @@ Header:
   background-color: var(--tertiary-color);
   border-bottom: 1px solid #173b80;
   z-index:3;
-  -moz-animation:gm-slidein 3s 1;
-  -ms-animation:gm-slidein 3s 1;
-  -o-animation:gm-slidein 3s 1;
-  -webkit-animation:gm-slidein 3s 1;
   animation:gm-slidein 3s 1;
 
 }
@@ -347,6 +345,7 @@ Cards:
 
 .main-area {
   margin-top: 7rem;
+  margin-bottom: 4rem;
 
 }
 
@@ -432,19 +431,12 @@ border-radius: 0.3rem 0 0 0;
 /*--------------------------------------------------------------
 Footer:
 --------------------------------------------------------------*/
-
-
-
 .footer {
   text-align: center;
   justify-content: center;
   background:var(--tertiary-color); 
-  border-top: 1px solid #112b5e;
-
-
-   
+    /* border-top: 1px solid #112b5e;    */
 }
-
 
 /* Wrapper */
  .footer .icon-button {
@@ -458,7 +450,6 @@ Footer:
 	position: relative;
 	text-align: center;
 }
-
 
 /* Icons */
 .footer .icon-button i {

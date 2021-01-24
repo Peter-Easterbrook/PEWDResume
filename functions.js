@@ -82,4 +82,4 @@ SITE.addEventListener(
   true
 );
 
-SITE.addEventListener('transitionend', 'removeMenu, false');
+// SITE.addEventListener('transitionend', 'removeMenu, false');

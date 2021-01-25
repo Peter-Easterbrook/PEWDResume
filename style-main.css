@@ -86,7 +86,7 @@ img {
   margin: auto;
   display: block;
   border: 0;
-  width: 90%;
+  width:90%;
   height: auto;
   border-radius: 0.3em;
 }
@@ -619,6 +619,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     .card {
       margin: 1rem 0;
       padding: 0.5rem;
+      max-width: 30rem;
       display: grid;
       background-color: rgba(	5, 13, 29, 0.8);
       color: var(--secondary-color);

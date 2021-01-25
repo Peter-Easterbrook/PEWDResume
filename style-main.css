@@ -57,7 +57,7 @@ textarea {
 }
 
 .side-nav {
-  color: var(--tertiary-color);
+ color: var(--tertiary-color);
  text-shadow: rgba(0,0,0,.2) 1px 1px 1px,rgba(255,255,255,.4) 0 -3px 15px;
 }
 
@@ -396,6 +396,26 @@ Cards:
 .cards a:hover .caption {
    cursor: url(images/glove2.png), auto;
 
+}
+
+.git {
+  font-size: 6rem;
+  margin: 0 0.5rem 0 1.5rem;
+  
+}
+.git .fab {
+  color: #000;
+  animation: github 1s ease-in-out infinite alternate;
+}
+@keyframes github {
+  from {
+    text-shadow: 0 0 2px #49a4ff, 0 0 4px #49a4ff, 0 0 8px #49a4ff,
+      0 0 12px #49a4ff, 0 0 16px #49a4ff, 0 0 20px #49a4ff, 0 0 24px #49a4ff;
+  }
+  to {
+    text-shadow: 0 0 3px #0073e6, 0 0 5px #0073e6, 0 0 10px #0073e6,
+      0 0 20px #0073e6, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6;
+  }
 }
 .btn-group {
   margin-top: 20px;

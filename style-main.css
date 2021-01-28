@@ -49,7 +49,7 @@ textarea {
   line-height: 1.5;
   font-weight: 300;
 }
-.site-title, .site-subtitle  {
+.site-title, .site-subtitle, .content-title  {
   font-family: 'Open Sans', sans-serif;
   color: #fffff7;
   font-weight: 300;
@@ -65,6 +65,7 @@ textarea {
 p {
   margin-bottom: 1.5em;
   color: var(--secondary-color);
+ 
 }
 .list {
   color: var(--secondary-color);
@@ -466,14 +467,14 @@ Footer:
 	height: 3rem;
   width: 3rem;
   line-height: 3rem;
-	margin: 3rem 0.3rem;
+	margin: 2rem 0.3rem;
 	position: relative;
 	text-align: center;
 }
 
 /* Icons */
 .footer .icon-button i {
-	color: white;
+  color: white;
 	height: 3rem;
 	left: 0;
 	line-height: 3rem;
@@ -481,12 +482,7 @@ Footer:
 	top: 0;
 	width: 3rem;
   border-radius: 3.6rem;
-
   cursor: url(images/glove2.png), auto;
-}
-
-
- .footer .icon-button i {
   animation: backgroundColorPalette 10s ease-in-out infinite;
 }
  .footer .icon-button i:hover{
@@ -542,7 +538,9 @@ Footer:
     color: #e9f0fc;
 }
 }
-
+.impressum p {
+  font-size: small;
+}
 /*--------------------------------------------------------------
 CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/

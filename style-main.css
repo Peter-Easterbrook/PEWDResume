@@ -43,9 +43,9 @@ body,
 button,
 input,
 select,
-textarea {
+p, li {
  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+ font-size: 0.9rem;
   line-height: 1.5;
   font-weight: 300;
 }
@@ -128,6 +128,7 @@ Header:
   padding: 0 1em;
   text-align: center;
   max-width: 100%;
+  height: 8rem;
   background-color: var(--tertiary-color);
   border-bottom: 1px solid #173b80;
   z-index:3;
@@ -268,11 +269,12 @@ Navigation:
 }
 .side-nav li a {
   color: var(--secondary-color);
+  font-size: 1rem;
   font-weight: 300;
 }
 
 .trigger {
-  padding: 0.3rem 0.6rem;
+  padding: 0.5rem 0.6rem;
   margin-left:2rem;
   color: #16191d;
   background: var(--primary-color);
@@ -280,6 +282,9 @@ Navigation:
   border: 1px solid #FFF;
   animation: pulseAnim 2s infinite;
   z-index: 4;
+}
+.trigger i {
+  font-size: 1rem;
 }
 
 .trigger:focus,

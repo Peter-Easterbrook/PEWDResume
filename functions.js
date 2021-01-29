@@ -1,29 +1,8 @@
-// const textEl = document.getElementById('text');
-
-// /* const speedEl = document.getElementById('speed') */
-// let idx = 1;
-// const text = 'Peter Easterbrook';
-// let speed = 100;
-
-// writeText();
-
-// function writeText() {
-//   textEl.innerText = text.slice(0, idx);
-
-//   idx++;
-
-//   if (idx > text.length) {
-//     idx = 1;
-//   }
-//   setTimeout(writeText, speed);
-// }
-
 const SITE = document.querySelector('.site');
 const TRIGGER = document.querySelector('.trigger');
 const REVEAL = document.querySelector('.main-nav');
 const MENUITEMS = REVEAL.querySelectorAll('nav a');
 const MENUARRAY = Array.apply(null, MENUITEMS);
-let screenReaderText = document.querySelector('.trigger .screen-reader-text');
 
 // Toggle reveal class on body element, set aria-expanded and screen reader text on TRIGGER:
 function revealMenu() {
@@ -32,9 +11,6 @@ function revealMenu() {
   TRIGGER.getAttribute('aria-expanded') == 'false'
     ? TRIGGER.setAttribute('aria-expanded', true)
     : TRIGGER.setAttribute('aria-expanded', false);
-  screenReaderText.innerHTML == 'Reveal menu'
-    ? (screenReaderText.innerHTML = 'Hide menu')
-    : (screenReaderText.innerHTML = 'Reveal menu');
 }
 
 // Hide nav area when focus shifts away:
@@ -53,10 +29,11 @@ function catchFocus() {
 }
 
 function removeMenu() {
-  if (TRIGGER.getAttribute('aria-expanded') === 'false') {
+  if (TRIGGER.getAttribute('aria-expanded') == 'false') {
     REVEAL.classList.remove('open');
   }
 }
+
 // Hide nav area when touch or click happens elsewhere:
 function clickTarget(e) {
   if (
@@ -82,4 +59,4 @@ SITE.addEventListener(
   true
 );
 
-// SITE.addEventListener('transitionend', 'removeMenu, false');
+SITE.addEventListener('transitionend', removeMenu, false);

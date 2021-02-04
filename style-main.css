@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 :root {
@@ -53,10 +54,12 @@ p, li {
 .site-title, .site-subtitle, .content-title  {
   font-family: 'Open Sans', sans-serif;
   color: #fffff7;
-  font-weight: 300;
+  font-weight: 200;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.63);
 }
-
+.sidebar .twin .content-title {
+  text-align: left;
+}
 .side-nav {
  color: var(--tertiary-color);
  text-shadow: rgba(0,0,0,.2) 1px 1px 1px,rgba(255,255,255,.4) 0 -3px 15px;
@@ -130,8 +133,12 @@ Header:
   text-align: center;
   max-width: 100%;
   height: 8rem;
-  background-color: var(--tertiary-color);
-  border-bottom: 1px solid #173b80;
+  /* background-color: var(--tertiary-color); */
+  background: rgba( 5, 13, 29, 0.20 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2.5px );
+-webkit-backdrop-filter: blur( 2.5px );
+border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
   z-index:3;
   animation:gm-slidein 3s 1;
 
@@ -261,14 +268,23 @@ Navigation:
   padding: 1rem;
   font-size: 1rem;
   font-weight: 300;
-  background-color:var(--tertiary-color);;
+  /* background-color:var(--tertiary-color);; */
   overflow-y: auto;
   width: 16rem;
   z-index: 4;
-  border-right: 1px solid #0e244e;
+  /* border-right: 1px solid #0e244e; */
+  background: rgba( 5, 13, 29, 0.20 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-right: 1px solid rgba( 255, 255, 255, 0.18 );
  
 }
-.side-nav li a {
+.onestep {
+width: 6.5rem;
+height: auto;
+}
+.side-nav li a {  
   color: var(--secondary-color);
   font-size: 1rem;
   font-weight: 300;
@@ -441,16 +457,27 @@ Sidebar:
 .twin {
   margin-top: 8rem;
   font-size: 1rem;
-  background-color: var(--tertiary-color);
+  /* background-color: var(--tertiary-color); */
   color: var(--secondary-color);
   font-weight: 300;
  text-align: center;
+ background: rgba( 5, 13, 29, 0.20 );
+ box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+ backdrop-filter: blur( 2.5px );
+ -webkit-backdrop-filter: blur( 2.5px );
+ border: 1px solid rgba( 255, 255, 255, 0.18 );
 border-radius: 0.3rem 0 0 0;
-
 }
 
+
 .twin:last-of-type {
-  background-color: var(--quaternary-color);
+  /* background-color: var(--quaternary-color); */
+  background: rgba( 5, 13, 29, 0.20 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2.5px );
+-webkit-backdrop-filter: blur( 2.5px );
+
+border: 1px solid rgba( 255, 255, 255, 0.18 );
   text-align: left;
   border-radius:0 0 0 0.3rem ;
 }
@@ -491,7 +518,7 @@ Footer:
   cursor: url(images/glove2.png), auto;
   animation: backgroundColorPalette 10s ease-in-out infinite;
 }
- .footer .icon-button i:hover{
+ .footer .icon-button i:hover {
   animation: none;
   background: #050d1d;
 }
@@ -625,9 +652,15 @@ CSS Grid layout for wider screens, when browser supports grid:
       padding: 0.5rem;
       max-width: 30rem;
       display: grid;
-      background-color: rgba(	5, 13, 29, 0.8);
+      /* background-color: rgba(	5, 13, 29, 0.8); */
       color: var(--secondary-color);
-      grid-template-columns: 8rem auto;|
+      grid-template-columns: 8rem auto;
+      background: rgba( 5, 13, 29, 0.20 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 2.5px );
+      -webkit-backdrop-filter: blur( 2.5px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 
     .cards a:focus,

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WebDev Resume</title>
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -31,7 +31,7 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="description" content="WebDev Resume" />
-
+    <title>WebDev Resume</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -53,12 +53,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+    <audio id="audio" src="images/gong.mp3" autostart="false"></audio>
   </head>
 
   <body class="site">
     <header class="masthead">
       <div class="float-left ml-5 trigger" aria-expanded="false">
-        <a class="icon-button">
+        <a class="icon-button" value="PLAY" onclick="play()">
           <i class="far fa-arrow-alt-circle-left"></i>
         </a>
       </div>
@@ -867,7 +868,7 @@
     <!---------Sidebar Section------------------------------------------------>
     <section class="sidebar">
       <aside class="twin">
-        <h5 class="content-title" style="align: left">About this page:</h5>
+        <h5 class="content-title" style="text-align: left">About this page:</h5>
         <p>
           Nachdem ich Photoshop in den fr&#252;hen 2000er Jahren entdeckt hatte,
           habe ich die "Adobe Classroom in a Book" Anleitung durchgearbeitet und
@@ -945,7 +946,12 @@
       });
     </script>
     <script src="functions.js" defer></script>
-    <!-- <script src="https://use.fontawesome.com/f66e74fef3.js"></script> -->
+    <script>
+      function play() {
+        var audio = document.getElementById('audio');
+        audio.play();
+      }
+    </script>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

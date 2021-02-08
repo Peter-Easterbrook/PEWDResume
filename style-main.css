@@ -158,8 +158,7 @@ border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
       transform:none;
   }
 }
-
-.trigger, .masthead .icon-button {
+.masthead .icon-button {
   animation: pulseAnim 2s infinite;
 }
 @keyframes pulseAnim {
@@ -187,7 +186,9 @@ border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
 	text-align: center;
 }
 
-
+.masthead .trigger i {
+  font-size: 2.2rem;
+}
 /* Icons */
 .masthead .icon-button i {
 	color: white;
@@ -205,10 +206,6 @@ border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .masthead .icon-button i  {
   animation: backgroundColorPalette 10s ease-in-out infinite;
-}
-.masthead .icon-button i:hover {
-  animation: none;
-  background: #050d1d;
 }
 
 @keyframes backgroundColorPalette {
@@ -259,6 +256,14 @@ border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
     color: #e9f0fc;
 }
 }
+.masthead .icon-button i:hover {
+  animation: none;
+  background: #050d1d;
+}
+.masthead .icon-button:hover {
+  animation: none;
+  background: #050d1d;
+}
 
 
 /*--------------------------------------------------------------
@@ -290,31 +295,6 @@ height: auto;
   color: var(--secondary-color);
   font-size: 1rem;
   font-weight: 300;
-}
-
-.trigger {
-  padding: 0.4rem 0.6rem;
-  margin-left:2rem;
-  color: #16191d;
-  background: var(--primary-color);
-  border-radius: 0.3rem;
-  border: 1px solid #FFF;
-  animation: pulseAnim 2s infinite;
-  z-index: 4;
-}
-.trigger i {
-  font-size: 1rem;
-}
-
-.trigger:focus,
-.trigger:hover {
-  background:  var(--tertiary-color);
-  color:var(--secondary-color);  
-  cursor: url(images/glove2.png), auto;
-  transition: 500ms ease;
-  border-radius:0.3rem ;
-  animation: none;
-  outline: 0;
 }
 
 .main-nav ul {

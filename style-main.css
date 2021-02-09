@@ -19,7 +19,8 @@ margin: 0;
 font-family: 'Open Sans', sans-serif;
 animation: fadeInAnimation ease 3s; 
 animation-iteration-count: 1; 
-animation-fill-mode: forwards; 
+animation-fill-mode: forwards;
+will-change: opacity;   
 }
 @keyframes fadeInAnimation { 
   0% { 
@@ -97,6 +98,7 @@ img {
 }
 .float {
   animation: up-down 1s infinite alternate;
+  
 }
 
 @keyframes up-down {
@@ -112,6 +114,7 @@ img {
 }
 .electron    { 
 animation:spin 6s linear infinite;
+will-change: transform;
 }
 
 @keyframes spin { 
@@ -142,7 +145,7 @@ backdrop-filter: blur( 2.5px );
 border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
   z-index:3;
   animation:gm-slidein 3s 1;
-
+  will-change: transform;
 }
 
 @keyframes gm-slidein {
@@ -150,6 +153,7 @@ border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
       -webkit-transform:translate3d(0,-100%,0);
       opacity:0;
       transform:translate3d(0,-100%,0);
+      
   }
 
   to {
@@ -306,6 +310,7 @@ Cards:
 
 .card-item {
   transition: transform 1s ease;
+  will-change: transform;
 }
 .card-item:hover {
   /* filter: drop-shadow(
@@ -313,6 +318,7 @@ Cards:
   );  */
   transform: scale(1.1);
   z-index: 2;
+ 
 }
 
 .cards {  

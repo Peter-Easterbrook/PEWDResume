@@ -208,62 +208,11 @@ border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
   animation: backgroundColorPalette 10s ease-in-out infinite;
 }
 
-@keyframes backgroundColorPalette {
-  0% {
-    background: #050d1d;
-    color: #e9f0fc;
-  }
-  10% {
-    background: #e9f0fc;
-    color: #050d1d;
-  
-  }
-  20%{
-    background: #050d1d;
-    color: #e9f0fc;
-  }
-  30%{
-    background:#e9f0fc;
-    color: #050d1d;
-  }
-  40%{
-    background: #050d1d;
-    color: #e9f0fc;
-  }
-  50% {
-    background: #e9f0fc;
-    color: #050d1d;
-  }
-  60% {
-    background: #050d1d;
-    color: #e9f0fc;
-      }
-  70% {
-    background: #e9f0fc;
-    color: #050d1d;
-  }
-  80% {
-    background: #050d1d;
-    color: #e9f0fc;
-  }
-  90% {
-    background: #e9f0fc;
-    color: #050d1d;
+.masthead .icon-button i:hover, .icon-button:hover  {
+  animation: none;
+  background: #050d1d;
+}
 
-  }
-100% {
-    background: #050d1d;
-    color: #e9f0fc;
-}
-}
-.masthead .icon-button i:hover {
-  animation: none;
-  background: #050d1d;
-}
-.masthead .icon-button:hover {
-  animation: none;
-  background: #050d1d;
-}
 
 
 /*--------------------------------------------------------------
@@ -509,6 +458,7 @@ Footer:
 }
 
 @keyframes backgroundColorPalette {
+ 
   0% {
     background: #050d1d;
     color: #e9f0fc;
@@ -531,7 +481,7 @@ Footer:
     color: #e9f0fc;
   }
   50% {
-    background: #e9f0fc;
+    background:#e9f0fc;
     color: #050d1d;
   }
   60% {
@@ -539,7 +489,7 @@ Footer:
     color: #e9f0fc;
       }
   70% {
-    background: #e9f0fc;
+    background:#e9f0fc;
     color: #050d1d;
   }
   80% {

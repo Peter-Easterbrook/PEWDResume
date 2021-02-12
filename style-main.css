@@ -232,7 +232,7 @@ Navigation:
   backdrop-filter: blur( 2.5px );
   -webkit-backdrop-filter: blur( 2.5px );
   border-right: 1px solid rgba( 255, 255, 255, 0.18 );
- position: fixed;
+  position: fixed;
 }
 .onestep {
 width: 6.5rem;

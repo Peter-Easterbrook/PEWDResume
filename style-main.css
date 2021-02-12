@@ -66,7 +66,6 @@ p, li {
  text-shadow: rgba(0,0,0,.2) 1px 1px 1px,rgba(255,255,255,.4) 0 -3px 15px;
 }
 
-
 p {
   margin-bottom: 1.5em;
   color: var(--secondary-color);
@@ -136,8 +135,6 @@ Header:
   text-align: center;
   max-width: 100%;
   height: 8rem;
-  /* background-color: var(--tertiary-color); */
-  /* background: rgba( 5, 13, 29, 0.20 ); */
   background: rgba( 255, 255, 255, 0.1 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 2.5px );
@@ -227,18 +224,15 @@ Navigation:
   padding: 1rem;
   font-size: 1rem;
   font-weight: 300;
-  /* background-color:var(--tertiary-color);; */
-  overflow-y: auto;
+  overflow-y: none;
   width: 16rem;
-  z-index: 4;
-  /* border-right: 1px solid #0e244e; */
-  /* background: rgba( 5, 13, 29, 0.20 ); */
+  z-index: 6;
   background: rgba( 255, 255, 255, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 2.5px );
   -webkit-backdrop-filter: blur( 2.5px );
   border-right: 1px solid rgba( 255, 255, 255, 0.18 );
- 
+ position: fixed;
 }
 .onestep {
 width: 6.5rem;
@@ -394,11 +388,9 @@ Sidebar:
 .twin {
   margin-top: 8rem;
   font-size: 1rem;
-  /* background-color: var(--tertiary-color); */
   color: var(--secondary-color);
   font-weight: 300;
  text-align: center;
- /* background: rgba( 5, 13, 29, 0.20 ); */
  background: rgba( 255, 255, 255, 0.1 );
  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
  backdrop-filter: blur( 2.5px );
@@ -410,8 +402,6 @@ border-radius: 0.3rem 0 0 0;
 
 
 .twin:last-of-type {
-  /* background-color: var(--quaternary-color); */
-  /* background: rgba( 5, 13, 29, 0.20 ); */
   background: rgba( 255, 255, 255, 0.1 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 2.5px );
@@ -430,6 +420,7 @@ Footer:
   justify-content: center;
   background:var(--tertiary-color); 
    border-top: 1px solid #112b5e;   
+   z-index: 5;
 }
 
 /* Wrapper */
@@ -593,10 +584,8 @@ CSS Grid layout for wider screens, when browser supports grid:
       padding: 0.5rem;
       max-width: 30rem;
       display: grid;
-      /* background-color: rgba(	5, 13, 29, 0.8); */
       color: var(--secondary-color);
       grid-template-columns: 8rem auto;
-      /* background: rgba( 5, 13, 29, 0.20 ); */
       background: rgba( 255, 255, 255, 0.1 );
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
       backdrop-filter: blur( 2.5px );

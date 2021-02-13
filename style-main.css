@@ -10,7 +10,7 @@
 html {
   min-height: 160vh;
   scrollbar-width: thin;
-  scrollbar-color:#fffff7  #050d1d ;
+  scrollbar-color:#fffff7, #050d1d ;
 }
 
 body {
@@ -510,7 +510,7 @@ Footer:
 CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
 @supports (grid-area: auto) {
-  @media screen and (min-width: 27rem) {
+  @media only screen and (min-width: 27rem) {
     .site {
       position: relative;
       left: -16rem;
@@ -611,13 +611,13 @@ CSS Grid layout for wider screens, when browser supports grid:
         }
     }
 
-  @media screen and (min-width: 60rem) {
+  @media only screen and (min-width: 60rem) {
     .cards {
       max-width: none;
       margin: 1rem 0;
       display: grid;
       grid-template-columns: repeat(2, 28rem);
-      grid-gap: 1em;
+      grid-gap: 1rem;
       justify-content: center;
     }
     
@@ -646,7 +646,7 @@ CSS Grid layout for wider screens, when browser supports grid:
    
   }
 
-  @media screen and (min-width: 78rem) {
+  @media only screen and (min-width: 78rem) {
     .site {
       grid-template-columns: 16rem calc(100% - 16rem) 16rem;
       grid-template-areas:

@@ -225,7 +225,6 @@ Navigation:
   padding: 1rem;
   font-size: 1rem;
   font-weight: 300;
-  overflow-y: none;
   width: 16rem;
   z-index: 6;
   background: rgba( 255, 255, 255, 0.1 );
@@ -604,7 +603,6 @@ CSS Grid layout for wider screens, when browser supports grid:
       margin: 0 auto;
       margin-left: 3rem;
       padding: 2rem;
-      border-radius: none;
       border-radius: 0.3rem 0.3rem 0 0;
    }
     .twin:last-of-type {
@@ -638,7 +636,6 @@ CSS Grid layout for wider screens, when browser supports grid:
     .twin {
       margin: 0 auto;
       padding: 1rem;
-      border-radius: none;
       border-radius: 0.3rem 0.3rem 0 0;
    }
     .twin:last-of-type {

@@ -51,8 +51,13 @@
       src="https://www.googletagmanager.com/gtag/js?id=UA-158549795-1"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+    <script>
+      function play() {
+        var audio = document.getElementById('audio');
+        audio.play();
+      }
+    </script>
     <audio id="audio" src="images/gong.mp3" autostart="false"></audio>
   </head>
 
@@ -913,12 +918,6 @@
     </script>
 
     <script src="functions.js" defer></script>
-    <script>
-      function play() {
-        var audio = document.getElementById('audio');
-        audio.play();
-      }
-    </script>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

@@ -213,8 +213,14 @@ border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
   background: #050d1d;
 }
 
+.bounce i {
+  font-size: 2.4rem; 
+  color: #fff;
+}
+
 .bounce {
-  animation: bounce 2s;
+
+animation: bounce 2s;
 animation-iteration-count: infinite;
 }
 
@@ -234,6 +240,10 @@ transform: translateX(-12px);
 }
 }
 
+.bounce:hover {
+  animation: none;
+  cursor: url(images/glove2.png), auto;
+}
 
 
 

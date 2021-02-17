@@ -6,6 +6,14 @@
   --secondary-color: #fffff7;
   --tertiary-color: #050d1d;
   --quaternary-color: #08142d;
+  --text-color: hsla(210, 50%, 85%, 1);
+  --shadow-color: hsla(210, 40%, 52%, .4);
+
+  --bg-color: #141218;
+  }
+
+  * {
+    font-family: 'Open Sans', sans-serif;
   }
 html {
   min-height: 160vh;
@@ -13,10 +21,10 @@ html {
   scrollbar-color:#fffff7, #050d1d ;
 }
 
+
 body {
 background-color: var(--tertiary-color);
 margin: 0;
-font-family: 'Open Sans', sans-serif;
 animation: fadeInAnimation ease 3s; 
 animation-iteration-count: 1; 
 animation-fill-mode: forwards;
@@ -43,17 +51,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 body,
-button,
 input,
 select,
+button,
 p, li {
- font-family: 'Open Sans', sans-serif;
+
  font-size: 0.9rem;
   line-height: 1.5;
   font-weight: 300;
 }
 .site-title, .site-subtitle, .content-title  {
-  font-family: 'Open Sans', sans-serif;
   color: #fffff7;
   font-weight: 200;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.63);
@@ -74,10 +81,6 @@ p {
 }
 .list {
   color: var(--secondary-color);
-}
-b,
-strong {
-  font-weight: bold;
 }
 
 figure {
@@ -219,7 +222,6 @@ border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .bounce {
-
 animation: bounce 2s;
 animation-iteration-count: infinite;
 }
@@ -328,22 +330,20 @@ Cards:
 .main-area {
   margin-top: 7rem;
   margin-bottom: 4rem;
-
 }
 
 
-.card-item {
+/* .card-item {
   transition: transform 1s ease;
   will-change: transform;
 }
 .card-item:hover {
-  /* filter: drop-shadow(
+  filter: drop-shadow(
     0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)
-  );  */
+  );  
   transform: scale(1.1);
-  z-index: 2;
- 
-}
+  z-index: 2; 
+} */
 
 .cards {  
   margin: 1rem auto;
@@ -367,8 +367,7 @@ Cards:
   font-size: 1.2rem;
   line-height: 1rem;
   font-weight: 300;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.63);
-  
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.63);  
 }
 
 .caption p {
@@ -379,13 +378,11 @@ Cards:
 .cards a:focus .caption,
 .cards a:hover .caption {
    cursor: url(images/glove2.png), auto;
-
 }
 
 .git {
   font-size: 6rem;
-  margin: 0 0.5rem 0 1.5rem;
-  
+  margin: 0 0.5rem 0 1.5rem;  
 }
 .git .fab {
   color: #000;
@@ -403,10 +400,62 @@ Cards:
 }
 .btn-group {
   margin-top: 20px;
-  margin-bottom: 0;
- 
+  margin-bottom: 0; 
+}
+/*--------------------------------------------------------------
+Buttons:
+----------------------------------------------------------------*/
+.btn-group  a {
+position:relative;
+padding: 5px 10px;  
+background: transparent;
+font-weight: 300;
+text-transform: uppercase;
+font-size: small;  
+color: var(--text-color);
+box-shadow: var(--shadow-color) 2px 2px 22px;
+overflow: hidden;   
+border: 1px solid #fff; 
+float: left; /* Float the buttons side by side */
+outline: none;
 }
 
+
+.btn-group > a:hover  {
+color: #000;
+background-color:#fff;
+font-weight: bold;
+}
+.btn:focus {
+  outline: none;
+}
+
+/* bubbles */
+.btn-group a::before {
+content: '';
+pointer-events: none;
+opacity: 0.7;
+background:
+  radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+  radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+  radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+width: 100%;
+height: 300%;
+top: 0;
+left: 0;
+position: absolute;
+animation: bubbles 3s linear infinite both;
+}
+
+@keyframes bubbles {
+from {
+  transform: translate();
+}
+to {
+  transform: translate(0, -66.666%);
+}
+}
 
 /*--------------------------------------------------------------
 Sidebar:
@@ -436,7 +485,6 @@ border-radius: 0.3rem 0 0 0;
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 2.5px );
 -webkit-backdrop-filter: blur( 2.5px );
-
 border: 1px solid rgba( 255, 255, 255, 0.18 );
   text-align: left;
   border-radius:0 0 0 0.3rem ;

@@ -62,7 +62,7 @@
         audio.play();
       }
     </script>
-    <audio id="audio" src="images/gong.mp3"></audio>
+    <audio id="audio" src="images/gong.mp3" autostart="false"></audio>
   </head>
 
   <body class="site">
@@ -70,7 +70,7 @@
       <div
         class="float-left ml-5 trigger bounce"
         value="PLAY"
-        onmouseover="play()"
+        onmousedown="play()"
         aria-expanded="false"
       >
         <i class="bi bi-arrow-left-circle"></i>
@@ -482,21 +482,21 @@
                   href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-8a31bb56-f477-4fe6-bb31-6677a84652ed.pdf"
                   target="_blank"
                   type="button"
-                  class="btn btn-light btn-outline-dark shadow"
+                  class="btn"
                   >React</a
                 >
                 <a
                   href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-d68570d4-3b56-43c3-97d0-71d8524b56d6.pdf"
                   target="_blank"
                   type="button"
-                  class="btn btn-light btn-outline-dark shadow"
+                  class="btn"
                   >Native</a
                 >
                 <a
                   href="https://user-images.githubusercontent.com/59874288/105337528-d0434600-5bda-11eb-82e7-f84ab0a2717f.png"
                   target="_blank"
                   type="button"
-                  class="btn btn-light btn-outline-dark shadow"
+                  class="btn"
                   >React</a
                 >
               </div>
@@ -526,14 +526,14 @@
                   href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-00c3fdd8-f902-4b5c-adea-05075390bd1c.pdf"
                   target="_blank"
                   type="button"
-                  class="btn btn-light btn-outline-dark shadow"
+                  class="btn"
                   >VueJS 3</a
                 >
                 <a
                   href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-15c9b0f6-ac26-45ef-b675-ae03a817d3d7.pdf"
                   target="_blank"
                   type="button"
-                  class="btn btn-light btn-outline-dark shadow"
+                  class="btn"
                   >VueJS 3</a
                 >
               </div>
@@ -625,7 +625,7 @@
                   href="https://user-images.githubusercontent.com/59874288/98726492-e17c0500-2396-11eb-80d5-7dd7aac5c196.png"
                   target="_blank"
                   type="button"
-                  class="btn btn-light btn-outline-dark shadow"
+                  class="btn"
                   >&nbsp;JS 2020&nbsp;</a
                 >
 
@@ -633,7 +633,7 @@
                   href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-cf1ebbc4-af39-4839-817c-5a86326e326c.pdf"
                   target="_blank"
                   type="button"
-                  class="btn btn-light btn-outline-dark shadow"
+                  class="btn"
                   >Modern JS</a
                 >
               </div>
@@ -664,21 +664,21 @@
                   href="https://www.freecodecamp.org/certification/fcc37ed5d52-0362-42c4-a9a0-fadf438edd30/javascript-algorithms-and-data-structures"
                   target="_blank"
                   type="button"
-                  class="btn btn-light btn-outline-dark shadow"
+                  class="btn"
                   >A&amp;D</a
                 >
                 <a
                   href="https://www.freecodecamp.org/certification/fcc37ed5d52-0362-42c4-a9a0-fadf438edd30/responsive-web-design"
                   target="_blank"
                   type="button"
-                  class="btn btn-light btn-outline-dark shadow"
+                  class="btn"
                   >&nbsp;RWD&nbsp;</a
                 >
                 <a
                   href="https://www.freecodecamp.org/certification/fcc37ed5d52-0362-42c4-a9a0-fadf438edd30/front-end-libraries"
                   target="_blank"
                   type="button"
-                  class="btn btn-light btn-outline-dark shadow"
+                  class="btn"
                   >&nbsp;FEL&nbsp;</a
                 >
               </div>
@@ -942,7 +942,15 @@
       integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
       crossorigin="anonymous"
     ></script>
-
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll('.card'), {
+        max: 25,
+        speed: 1000,
+        glare: true,
+        'max-glare': 0.5,
+      });
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {

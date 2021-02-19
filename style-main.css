@@ -8,7 +8,6 @@
   --quaternary-color: #08142d;
   --text-color: hsla(210, 50%, 85%, 1);
   --shadow-color: hsla(210, 40%, 52%, .4);
-
   --bg-color: #141218;
   }
 
@@ -23,12 +22,12 @@ html {
 
 
 body {
-background-color: var(--tertiary-color);
 margin: 0;
+background-color: var(--tertiary-color);
+will-change: opacity;   
 animation: fadeInAnimation ease 3s; 
 animation-iteration-count: 1; 
 animation-fill-mode: forwards;
-will-change: opacity;   
 }
 @keyframes fadeInAnimation { 
   0% { 
@@ -55,8 +54,7 @@ input,
 select,
 button,
 p, li {
-
- font-size: 0.9rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   font-weight: 300;
 }
@@ -389,14 +387,14 @@ Cards:
       0 0 20px #0073e6, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6;
   }
 }
-.btn-group-lg {
-  margin-top: 20px;
-  margin-bottom: 0; 
+.btn-group {
+ 
+  margin-top: 1.2rem; 
 }
 /*--------------------------------------------------------------
 Buttons:
 ----------------------------------------------------------------*/
-.btn-group-lg  a {
+.btn-group  a {
 position:relative;
 padding: 5px 10px;  
 background: transparent;
@@ -412,7 +410,7 @@ outline: none;
 }
 
 
-.btn-group-lg > a:hover  {
+.btn-group > a:hover  {
 color: #000;
 background-color:#fff;
 font-weight: bold;
@@ -422,7 +420,7 @@ font-weight: bold;
 }
 
 /* bubbles */
-.btn-group-lg a::before {
+.btn-group a::before {
 content: '';
 pointer-events: none;
 opacity: 0.7;

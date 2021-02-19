@@ -56,12 +56,6 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
-    <script>
-      function play() {
-        var audio = document.getElementById('audio');
-        audio.play();
-      }
-    </script>
     <audio id="audio" src="images/gong.mp3" autostart="false"></audio>
   </head>
 
@@ -76,6 +70,12 @@
         <i class="bi bi-arrow-left-circle"></i>
         <!-- <i class="far fa-arrow-alt-circle-left bounce"></i> -->
       </div>
+      <script>
+        function play() {
+          var audio = document.getElementById('audio');
+          audio.play();
+        }
+      </script>
 
       <div class="float-right mr-5 mt-4">
         <a
@@ -104,10 +104,12 @@
           </div>
         </div>
         <ul>
+          <p class="text-light font-weight-light text-uppercase px-3 pb-4 mb-0">
+            projects
+          </p>
           <li class="nav-item dropdown mt-1">
             <a
               class="nav-link dropdown-toggle"
-              href="#"
               id="navbarDropdownMenuLink"
               role="button"
               data-toggle="dropdown"
@@ -410,16 +412,30 @@
               >
             </div>
           </li>
-          <li>
-            <a href="https://qualifications-employment.vercel.app/"
+
+          <p class="text-light font-weight-light text-uppercase px-3 py-4 mb-0">
+            about
+          </p>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://qualifications-employment.vercel.app/"
               >All Certificates &amp; Work</a
             >
           </li>
-          <li><a href="http://www.easterbrook.at">Easterbrook.at</a></li>
-          <li>
-            <a href="https://www.linkedin.com/in/petere70/">LinkedIn Profile</a>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.easterbrook.at"
+              >Easterbrook.at</a
+            >
           </li>
-          <li><a href="mailto:peter@easterbrook.at">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/petere70/"
+              >LinkedIn Profile</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:peter@easterbrook.at">Contact</a>
+          </li>
         </ul>
       </nav>
     </section>

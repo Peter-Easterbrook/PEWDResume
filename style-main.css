@@ -14,7 +14,7 @@
 
 html {
   box-sizing: border-box;
-  min-height: 160vh;
+  
   scrollbar-width: thin;
   scrollbar-color:#fffff7, #050d1d ;
 }
@@ -488,7 +488,7 @@ Footer:
   justify-content: center;
   background:var(--tertiary-color); 
    border-top: 1px solid #112b5e;   
-   z-index: 5;
+   z-index: -1;
 }
 
 /* Wrapper */

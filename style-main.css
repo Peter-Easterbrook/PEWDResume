@@ -11,20 +11,23 @@
   --bg-color: #141218;
   }
 
-  * {
-    font-family: 'Open Sans', sans-serif;
-  }
+
 html {
+  box-sizing: border-box;
   min-height: 160vh;
   scrollbar-width: thin;
   scrollbar-color:#fffff7, #050d1d ;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+} 
 
 
 body {
 margin: 0;
 background-color: var(--tertiary-color);
 will-change: opacity;   
+font-family: 'Open Sans', sans-serif;
 animation: fadeInAnimation ease 3s; 
 animation-iteration-count: 1; 
 animation-fill-mode: forwards;
@@ -394,11 +397,11 @@ Cards:
 /*--------------------------------------------------------------
 Buttons:
 ----------------------------------------------------------------*/
+
 .btn-group  a {
 position:relative;
-padding: 5px 10px;  
 background: transparent;
-font-weight: 300;
+
 text-transform: uppercase;
 font-size: small;  
 color: var(--text-color);

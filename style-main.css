@@ -390,8 +390,7 @@ Cards:
       0 0 20px #0073e6, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6;
   }
 }
-.btn-group {
- 
+.btn-group { 
   margin-top: 1.2rem; 
 }
 /*--------------------------------------------------------------
@@ -401,7 +400,6 @@ Buttons:
 .btn-group  a {
 position:relative;
 background: transparent;
-
 text-transform: uppercase;
 font-size: small;  
 color: var(--text-color);
@@ -413,11 +411,10 @@ outline: none;
 
 
 .btn-group > a:hover  {
-color: #000;
-background-color:#fff;
-}
-.btn:focus {
-  outline: none;
+background-color: transparent;
+outline: 1px solid #fff;
+outline-offset: -4px;
+color: #FFF;
 }
 
 /* bubbles */

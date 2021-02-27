@@ -6,6 +6,7 @@
   --secondary-color: #fffff7;
   --tertiary-color: #050d1d;
   --quaternary-color: #08142d;
+  --quinary-color: #0074D5;
   --text-color: hsla(210, 50%, 85%, 1);
   --shadow-color: hsla(210, 40%, 52%, .4);
   --bg-color: #141218;
@@ -45,13 +46,14 @@ animation-fill-mode: forwards;
 }
 
 body::-webkit-scrollbar {
-  width: 3px;
+  width: 6px;
 }
 body::-webkit-scrollbar-track {
   background-color: var(--tertiary-color);
 }
 body::-webkit-scrollbar-thumb {
-  background: var(--secondary-color);
+    border-radius: 6px;
+  border: 3px solid var(--quinary-color);
 }
 
 body,

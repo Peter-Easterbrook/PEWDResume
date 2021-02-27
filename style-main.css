@@ -14,7 +14,9 @@
 
 html {
   box-sizing: border-box;
-  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   scrollbar-width: thin;
   scrollbar-color:#fffff7, #050d1d ;
 }
@@ -409,6 +411,10 @@ border: 1px solid #fff;
 outline: none;
 }
 
+.btn-group a:focus {
+  box-shadow: none !important;
+}
+
 
 .btn-group > a:hover  {
 background-color: transparent;
@@ -485,8 +491,8 @@ Footer:
   justify-content: center;
   background:var(--tertiary-color); 
    border-top: 1px solid #112b5e;   
-   z-index: -1;
-}
+  
+ }
 
 /* Wrapper */
  .footer .icon-button {

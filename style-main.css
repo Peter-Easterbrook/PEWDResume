@@ -18,6 +18,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   scrollbar-width: thin;
   scrollbar-color:#fffff7, #050d1d ;
 }
@@ -71,8 +72,10 @@ p, li {
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.63);
  
 }
-.sidebar .twin .content-title {
-  text-align: left;
+.hyphen {
+  
+  hyphens: auto;
+  text-align: justify;
 }
 .side-nav {
  color: var(--tertiary-color);
@@ -327,8 +330,6 @@ Cards:
   margin-top: 7rem;
   margin-bottom: 4rem;
 }
-
-
 /* .card-item {
   transition: transform 1s ease;
   will-change: transform;
@@ -426,6 +427,7 @@ color: #FFF;
 }
 
 /* bubbles */
+
 .btn-group a::before {
 content: '';
 pointer-events: none;

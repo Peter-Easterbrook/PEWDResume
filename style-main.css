@@ -170,8 +170,12 @@ border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
       transform:none;
   }
 }
-.masthead .github {
-  animation: pulseAnim 2s infinite;
+
+.masthead .fa-github {
+  font-size: 2.8rem;
+  color: #fff;
+  border-radius: 3.6rem;
+   animation: pulseAnim 2s infinite;
 }
 @keyframes pulseAnim {
     0% {
@@ -185,48 +189,14 @@ border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 }
 
-/* Wrapper */
-.masthead .icon-button {
-	border-radius: 3.6rem;
-	display: inline-block;
-	font-size: 2.4rem;
-  font-weight: lighter;
-	height: 3rem;
-  width: 3rem;
-  line-height: 3rem;
-	margin: 1rem 0.3rem;
-	position: relative;
-	text-align: center;
-}
-
-/* Icons */
-.masthead .icon-button i {
-  color: white;
-	height: 3rem;
-	left: 0;
-	line-height: 3rem;
-	position: absolute;
-	top: 0;
-	width: 3rem;
-  border-radius: 3.6rem;
-  z-index: 10;
-  cursor: url(images/glove2.png), auto;
-}
-
-
-.masthead .github i  {
-  animation: backgroundColorPalette 10s ease-in-out infinite;
-}
-
-.masthead .icon-button i:hover, .icon-button:hover  {
+.masthead .fa-github:hover, .icon-button:hover  {
   animation: none;
-  background: #050d1d;
-}
-
-.bounce i {
-  font-size: 2.4rem; 
-  color: #fff;
-}
+  cursor: url(images/glove2.png), auto;
+  }
+  .masthead .fa-github:active {
+    transform: scale(0.9);
+  
+  }
 
 .bounce {
 animation: bounce 2s;
@@ -412,6 +382,9 @@ overflow: hidden;
 border: 1px solid #fff; 
 outline: none;
 }
+.btn:hover{
+  cursor: url(images/glove2.png), auto;
+}
 
 .btn-group a:focus {
   box-shadow: none !important;
@@ -423,6 +396,7 @@ background-color: transparent;
 outline: 1px solid #fff;
 outline-offset: -4px;
 color: #FFF;
+cursor: url(images/glove2.png), auto;
 }
 
 /* bubbles */
@@ -494,8 +468,7 @@ Footer:
   justify-content: center;
   background:var(--tertiary-color); 
    border-top: 1px solid #112b5e;   
-  
- }
+   }
 
 /* Wrapper */
  .footer .icon-button {
@@ -528,16 +501,14 @@ Footer:
   background: #050d1d;
 }
 
-@keyframes backgroundColorPalette {
- 
+@keyframes backgroundColorPalette { 
   0% {
     background: #050d1d;
     color: #e9f0fc;
   }
   10% {
     background: #e9f0fc;
-    color: #050d1d;
-  
+    color: #050d1d;  
   }
   20%{
     background: #050d1d;
@@ -570,7 +541,6 @@ Footer:
   90% {
     background: #e9f0fc;
     color: #050d1d;
-
   }
 100% {
     background: #050d1d;

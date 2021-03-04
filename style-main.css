@@ -138,22 +138,22 @@ Header:
 --------------------------------------------------------------*/
 
 .masthead {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 0 1em;
-  text-align: center;
-  max-width: 100%;
-  height: 8rem;
-  background: rgba( 255, 255, 255, 0.1 );
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+padding: 0 1em;
+text-align: center;
+max-width: 100%;
+height: 8rem;
+background: rgba( 255, 255, 255, 0.1 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 2.5px );
 -webkit-backdrop-filter: blur( 2.5px );
 border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
-  z-index:3;
-  animation:gm-slidein 3s 1;
-  will-change: transform;
+z-index:3;
+animation:gm-slidein 3s 1;
+will-change: transform;
 }
 
 @keyframes gm-slidein {
@@ -171,11 +171,8 @@ border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
   }
 }
 
-.masthead .fa-github {
-  font-size: 2.8rem;
-  color: #fff;
-  border-radius: 3.6rem;
-   animation: pulseAnim 2s infinite;
+.masthead .github {
+  animation: pulseAnim 2s infinite;
 }
 @keyframes pulseAnim {
     0% {
@@ -189,15 +186,48 @@ border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 }
 
-.masthead .fa-github:hover, .icon-button:hover  {
-  animation: none;
-  cursor: url(images/glove2.png), auto;
-  }
-  .masthead .fa-github:active {
-    transform: scale(0.9);
-  
-  }
+/* Wrapper */
+.masthead .icon-button {
+	border-radius: 3.6rem;
+	display: inline-block;
+	font-size: 2rem;
+  font-weight: lighter;
+	height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+	margin: 1rem 0.3rem;
+	position: relative;
+	text-align: center;
+}
 
+/* Icons */
+.masthead .icon-button i {
+  color: white;
+	height: 3rem;
+	left: 0;
+	line-height: 3rem;
+	position: absolute;
+	top: 0;
+	width: 3rem;
+  border-radius: 3.6rem;
+  z-index: 10;
+  cursor: url(images/glove2.png), auto;
+}
+
+
+.masthead .github i  {
+  animation: backgroundColorPalette 10s ease-in-out infinite;
+}
+
+.masthead .icon-button i:hover, .icon-button:hover  {
+  animation: none;
+  background: #050d1d;
+}
+
+.bounce i {
+  font-size: 2.4rem; 
+  color: #fff;
+}
 .bounce {
 animation: bounce 2s;
 animation-iteration-count: infinite;

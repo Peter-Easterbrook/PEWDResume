@@ -330,7 +330,7 @@ Cards:
   margin-bottom: 4rem;
 }
 /* .card-item {
-  transition: transform 1s ease;
+  transition: all transform 1s ease;
   will-change: transform;
 }
 .card-item:hover {
@@ -596,7 +596,7 @@ CSS Grid layout for wider screens, when browser supports grid:
         "nav main"
         "nav sidebar"
         "nav footer";
-      transition: left 0.6s;
+      transition: left ease-out 0.6s;
      
     }
 

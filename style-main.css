@@ -296,7 +296,7 @@ Navigation:
 .main-nav a:hover,
 .main-nav a:focus {
   background-color: var(--primary-color);
-  transition: ease .5s;
+  transition: all ease .5s;
   text-decoration: none;
   cursor: url(images/glove2.png), auto;
   color: #000;

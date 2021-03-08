@@ -14,27 +14,21 @@
 
 
 html {
-  box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  box-sizing: border-box; 
   background-size: cover;
   scrollbar-width: thin;
-  scrollbar-color:#fffff7, #050d1d ;
-}
+  scrollbar-color:#0074D5, black;
+ 
+  }
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 } 
-
-
 body {
-margin: 0;
 background-color: var(--tertiary-color);
-will-change: opacity;   
 font-family: 'Open Sans', sans-serif;
-animation: fadeInAnimation ease 3s; 
-animation-iteration-count: 1; 
-animation-fill-mode: forwards;
+animation: fadeInAnimation ease-out 3s 1 forwards; 
 }
 @keyframes fadeInAnimation { 
   0% { 
@@ -64,7 +58,7 @@ button,
 p, li {
   font-size: 0.9rem;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 200;
 }
 .site-title, .site-subtitle, .content-title  {
   color: #fffff7;
@@ -72,8 +66,7 @@ p, li {
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.63);
  
 }
-.hyphen {
-  
+.hyphen {  
   hyphens: auto;
   text-align: justify;
 }
@@ -83,12 +76,14 @@ p, li {
 }
 
 p {
+  font-size: 0.9rem;
   margin-bottom: 1.5em;
   color: var(--secondary-color);
  
 }
 .list {
   color: var(--secondary-color);
+  padding-left: 2rem;
 }
 
 figure {
@@ -108,8 +103,7 @@ img {
   border-radius: 0.3em;
 }
 .float {
-  animation: up-down 1s infinite alternate;
-  
+  animation: up-down 1s infinite alternate;  
 }
 
 @keyframes up-down {
@@ -125,7 +119,6 @@ img {
 }
 .electron    { 
 animation:spin 6s linear infinite;
-will-change: transform;
 }
 
 @keyframes spin { 
@@ -152,8 +145,8 @@ backdrop-filter: blur( 2.5px );
 -webkit-backdrop-filter: blur( 2.5px );
 border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
 z-index:3;
+font-size: 1rem;
 animation:gm-slidein 3s 1;
-will-change: transform;
 }
 
 @keyframes gm-slidein {
@@ -212,6 +205,7 @@ will-change: transform;
   border-radius: 3.6rem;
   z-index: 10;
   cursor: url(images/glove2.png), auto;
+  transition: .2s ease;
 }
 
 
@@ -260,11 +254,11 @@ transform: translateX(-12px);
 Navigation:
 --------------------------------------------------------------*/
 .main-nav {
-  
   min-height: 100%;
+  top: 8rem;
   padding: 1rem;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 200;
   width: 16rem;
   z-index: 6;
   background: rgba( 255, 255, 255, 0.1 );
@@ -273,7 +267,7 @@ Navigation:
   -webkit-backdrop-filter: blur( 2.5px );
   border-right: 1px solid rgba( 255, 255, 255, 0.18 );
   position: fixed;
-  top: 8rem;
+    transition: .3s ease;
 }
 
 .main-nav ul {
@@ -282,7 +276,18 @@ Navigation:
   padding: 0;
   list-style-type: none;
 }
+.main-nav a {
+  transition: .3s ease;
+}
 
+.main-nav a:hover,
+.main-nav a:focus {
+  background-color: var(--primary-color);
+  text-decoration: none;
+  cursor: url(images/glove2.png), auto;
+  color: #000;
+  
+}
 .side-nav li a {  
   color: var(--secondary-color);
   font-size: 1rem;
@@ -292,29 +297,19 @@ Navigation:
   border-radius: 0.3rem;
 }
 
-
-.main-nav a:hover,
-.main-nav a:focus {
-  background-color: var(--primary-color);
-  transition: all ease .5s;
-  text-decoration: none;
-  cursor: url(images/glove2.png), auto;
-  color: #000;
-  
-}
-
 .dropdown-menu {
   background-color: var(--tertiary-color);
   border: none;
   color: var(--secondary-color);
-  font-size: 1rem;
-  font-weight: 300;
-  border-radius: 0.3rem;
+    border-radius: 0.3rem;
   width: 12.8rem;
   line-height: 1.3;
   border: 1px dashed #FFFFF7;
 }
-
+.dropdown-item {
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
 .dropdown-menu a:hover {
   background-color:var(--primary-color);;
   color: #000;
@@ -331,7 +326,6 @@ Cards:
 }
 /* .card-item {
   transition: all transform 1s ease;
-  will-change: transform;
 }
 .card-item:hover {
   filter: drop-shadow(
@@ -394,12 +388,13 @@ Cards:
       0 0 20px #0073e6, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6;
   }
 }
-.btn-group { 
-  margin-top: 1.2rem; 
-}
+
 /*--------------------------------------------------------------
 Buttons:
 ----------------------------------------------------------------*/
+.btn-group { 
+  margin-top: 1.2rem; 
+}
 
 .btn-group  a {
 position:relative;
@@ -411,6 +406,7 @@ box-shadow: var(--shadow-color) 2px 2px 22px;
 overflow: hidden;   
 border: 1px solid #fff; 
 outline: none;
+transition: .3s ease-out;
 }
 .btn:hover{
   cursor: url(images/glove2.png), auto;
@@ -524,11 +520,11 @@ Footer:
 	width: 3rem;
   border-radius: 3.6rem;
   cursor: url(images/glove2.png), auto;
+  transition: .3s ease;
   animation: backgroundColorPalette 10s ease-in-out infinite;
 }
  .footer .icon-button i:hover {
-  animation: none;
-  background: #050d1d;
+  animation: none;  
 }
 
 @keyframes backgroundColorPalette { 

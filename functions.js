@@ -13,21 +13,6 @@ function revealMenu() {
     : TRIGGER.setAttribute('aria-expanded', false);
 }
 
-// // Hide nav area when focus shifts away:
-// function catchFocus() {
-//   if (
-//     TRIGGER.getAttribute('aria-expanded') == 'true' &&
-//     !(
-//       MENUARRAY.includes(document.activeElement) ||
-//       document.activeElement === TRIGGER
-//     )
-//   ) {
-//     revealMenu();
-//   } else {
-//     return;
-//   }
-// }
-
 function removeMenu() {
   if (TRIGGER.getAttribute('aria-expanded') == 'false') {
     REVEAL.classList.remove('open');

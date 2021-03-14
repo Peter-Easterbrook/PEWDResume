@@ -20,6 +20,9 @@ html {
   scrollbar-color:#0074D5, black;
  
   }
+  #vantasjs {
+    object-fit: cover;
+  }
 *, *:before, *:after {
   box-sizing: inherit;
   margin: 0;
@@ -27,7 +30,6 @@ html {
 } 
 body {
 background-color: var(--tertiary-color);
-font-family: 'Open Sans', sans-serif;
 animation: fadeInAnimation ease-out 3s 1 forwards; 
 }
 @keyframes fadeInAnimation { 
@@ -56,6 +58,7 @@ input,
 select,
 button,
 p, li {
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.9rem;
   line-height: 1.5;
   font-weight: 200;

@@ -1,47 +1,49 @@
-const SITE = document.querySelector('.site');
-const TRIGGER = document.querySelector('.trigger');
-const REVEAL = document.querySelector('.main-nav');
-const MENUITEMS = REVEAL.querySelectorAll('nav a');
-const MENUARRAY = Array.apply(null, MENUITEMS);
+document.addEventListener('DOMContentLoaded', () => {
+  const SITE = document.querySelector('.site');
+  const TRIGGER = document.querySelector('.trigger');
+  const REVEAL = document.querySelector('.main-nav');
+  const MENUITEMS = REVEAL.querySelectorAll('nav a');
+  const MENUARRAY = Array.apply(null, MENUITEMS);
 
-// Toggle reveal class on body element, set aria-expanded and screen reader text on TRIGGER:
-function revealMenu() {
-  SITE.classList.toggle('reveal');
-  REVEAL.classList.add('open');
-  TRIGGER.getAttribute('aria-expanded') == 'false'
-    ? TRIGGER.setAttribute('aria-expanded', true)
-    : TRIGGER.setAttribute('aria-expanded', false);
-}
-
-function removeMenu() {
-  if (TRIGGER.getAttribute('aria-expanded') == 'false') {
-    REVEAL.classList.remove('open');
+  // Toggle reveal class on body element, set aria-expanded and screen reader text on TRIGGER:
+  function revealMenu() {
+    SITE.classList.toggle('reveal');
+    REVEAL.classList.add('open');
+    TRIGGER.getAttribute('aria-expanded') == 'false'
+      ? TRIGGER.setAttribute('aria-expanded', true)
+      : TRIGGER.setAttribute('aria-expanded', false);
   }
-}
 
-// Hide nav area when touch or click happens elsewhere:
-function clickTarget(e) {
-  if (
-    TRIGGER.getAttribute('aria-expanded') == 'true' &&
-    !REVEAL.contains(e.target)
-  ) {
-    revealMenu();
+  function removeMenu() {
+    if (TRIGGER.getAttribute('aria-expanded') == 'false') {
+      REVEAL.classList.remove('open');
+    }
   }
-}
 
-// Listen for clicks on TRIGGER button:
-TRIGGER.addEventListener('click', revealMenu, false);
+  // Hide nav area when touch or click happens elsewhere:
+  function clickTarget(e) {
+    if (
+      TRIGGER.getAttribute('aria-expanded') == 'true' &&
+      !REVEAL.contains(e.target)
+    ) {
+      revealMenu();
+    }
+  }
 
-// Listen for focus changes:
-SITE.addEventListener('focusin', catchFocus, true);
+  // Listen for clicks on TRIGGER button:
+  TRIGGER.addEventListener('click', revealMenu, false);
 
-// Listen for clicks:
-SITE.addEventListener(
-  'click',
-  function (e) {
-    clickTarget(e);
-  },
-  true
-);
+  // Listen for focus changes:
+  SITE.addEventListener('focusin', catchFocus, true);
 
-SITE.addEventListener('transitionend', removeMenu, false);
+  // Listen for clicks:
+  SITE.addEventListener(
+    'click',
+    function (e) {
+      clickTarget(e);
+    },
+    true
+  );
+
+  SITE.addEventListener('transitionend', removeMenu, false);
+});

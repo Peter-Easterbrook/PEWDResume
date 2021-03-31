@@ -186,7 +186,7 @@ animation:gm-slidein 3s 1;
 .masthead .icon-button {
 	border-radius: 3.6rem;
 	display: inline-block;
-	font-size: 2rem;
+	font-size: 2.25rem;
   font-weight: lighter;
 	height: 3rem;
   width: 3rem;
@@ -272,6 +272,8 @@ Navigation:
   position: fixed;
   overflow-x: hidden;
   transition: .5s ease;
+  scrollbar-width: thin;
+  scrollbar-color:#0074D5, black;
 }
 .main-nav::-webkit-scrollbar {
   width: 6px;
@@ -309,6 +311,16 @@ Navigation:
   padding: 0.4em 0.8em;
   text-decoration: none;
   border-radius: 0.3rem;
+}
+
+.list-unstyled {
+  background-color: var(--tertiary-color);
+  border: none;
+  color: var(--secondary-color);
+    border-radius: 0.3rem;
+  width: 12.8rem;
+  line-height: 1.3;
+  border: 1px dashed #FFFFF7;
 }
 
 .dropdown-menu {
@@ -490,10 +502,11 @@ Footer:
  .footer .icon-button {
 	border-radius: 3.6rem;
 	display: inline-block;
-	font-size: 2.0rem;
-	height: 3rem;
-  width: 3rem;
-  line-height: 3rem;
+	font-size: 1.4rem;
+  font-weight: lighter;
+	height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
 	margin: 2rem 0.3rem;
 	position: relative;
 	text-align: center;
@@ -502,14 +515,15 @@ Footer:
 /* Icons */
 .footer .icon-button i {
   color: white;
-	height: 3rem;
+	height: 2rem;
+  width: 2rem;
 	left: 0;
-	line-height: 3rem;
+	line-height: 2rem;
 	position: absolute;
 	top: 0;
-	width: 3rem;
   border-radius: 3.6rem;
   cursor: url(images/glove2.png), auto;
+  
   transition: .3s ease;
   animation: backgroundColorPalette 10s ease-in-out infinite;
 }

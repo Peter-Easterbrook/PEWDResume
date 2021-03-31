@@ -403,11 +403,12 @@ Cards:
   }
 }
 
-btn---------------------------------------------------------
-Buttons:
+/* ---------------------------------------------------------
+Buttons
 ----------------------------------------------------------------*/
+
 .btn-group { 
-  margin-top: 1.2rem; 
+  margin-top: 1rem; 
 }
 
 .btn {
@@ -473,37 +474,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   text-align: left;
   border-radius:0 0 0 0.3rem ;
 }
-/* bubbles */
 
-.card::before {
-  content: '';
-  pointer-events: none;
-  opacity: 0.7;
-  background:
-    radial-gradient(circle at 20% 35%, transparent 0, transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
-    radial-gradient(circle at 75% 44%, transparent 0, transparent 3px, var(--text-color) 4px, var(--text-color) 5px, transparent 5px),
-    radial-gradient(circle at 46% 52%, transparent 0, transparent 5px, var(--text-color) 6px, var(--text-color) 7px, transparent 7px);
-  
-  width: 100%;
-  height: 200%;
-  
-  position: absolute;
-  animation: bubbles 5s linear infinite both;
-  }
-  
-  @keyframes bubbles {
-  0% {
-    transform: translate();
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate(0, -66.666%);
-    opacity: 0;
-  }
-  }
 
 /*--------------------------------------------------------------
 Footer:

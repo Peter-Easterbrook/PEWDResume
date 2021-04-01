@@ -213,7 +213,7 @@ animation:gm-slidein 3s 1;
 
 
 .masthead .github i  {
-  animation: backgroundColorPalette 10s ease-in-out infinite;
+  animation: iconColorSwitch 10s ease-in-out infinite;
 }
 
 .masthead .icon-button i:hover, .icon-button:hover  {
@@ -499,9 +499,8 @@ Footer:
 	font-size: 1.4rem;
   font-weight: lighter;
 	height: 2rem;
-  width: 2rem;
-  line-height: 2rem;
-	margin: 2rem 0.3rem;
+  width: 2rem; 
+	margin: 1rem 0.3rem;
 	position: relative;
 	text-align: center;
 }
@@ -512,20 +511,19 @@ Footer:
 	height: 2rem;
   width: 2rem;
 	left: 0;
-	line-height: 2rem;
+	line-height: 1.9rem;
 	position: absolute;
 	top: 0;
   border-radius: 3.6rem;
-  cursor: url(images/glove2.png), auto;
-  
+  cursor: url(images/glove2.png), auto;  
   transition: .3s ease;
-  animation: backgroundColorPalette 10s ease-in-out infinite;
+  animation: iconColorSwitch 10s ease-in-out infinite;
 }
  .footer .icon-button i:hover {
   animation: none;  
 }
 
-@keyframes backgroundColorPalette { 
+@keyframes iconColorSwitch { 
   0% {
     background: #050d1d;
     color: #e9f0fc;

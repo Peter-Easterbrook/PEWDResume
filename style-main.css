@@ -327,16 +327,17 @@ Navigation:
   background-color: var(--tertiary-color);
   border: none;
   color: var(--secondary-color);
-    border-radius: 0.3rem;
+  border-radius: 0.3rem;
   width: 12.8rem;
   line-height: 1.3;
   border: 1px dashed #FFFFF7;
+  transition: transform 0.3s ease-out;
 }
 .dropdown-item {
   font-size: 0.8rem;
   font-weight: lighter;
 }
-.dropdown-menu a:hover {
+.dropdown-menu a:hover {  
   background-color:var(--primary-color);;
   color: #000;
   border-radius: 0;
@@ -439,7 +440,6 @@ transition: all 0.3s ease-out;
 .btn:focus {
   box-shadow: none !important;
 }
-
 
 .btn:hover  {
 background-color: transparent;

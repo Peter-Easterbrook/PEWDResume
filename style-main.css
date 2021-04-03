@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
 
 :root {
   --primary-color: #e9f0fc;
@@ -58,7 +58,7 @@ input,
 select,
 button,
 p, li {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 0.9rem;
   line-height: 1.5;
   font-weight: 200;
@@ -187,7 +187,7 @@ animation:gm-slidein 3s 1;
 	border-radius: 3.6rem;
 	display: inline-block;
 	font-size: 2.25rem;
-  font-weight: lighter;
+  font-weight: 100;
 	height: 3rem;
   width: 3rem;
   line-height: 3rem;
@@ -286,38 +286,47 @@ Navigation:
   border: 3px solid var(--quinary-color);
 }
 
-.main-nav ul {
+.dropdown-toggle {
+border-radius: 0.3rem;
+}
+
+.main-nav ul, .nav-link{
   justify-content: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  border-radius: 0.3rem;
+  font-weight: 200;
 }
-.main-nav a {
-  transition: .3s ease;
+.nav-link:hover {
+  color: #000;
+  font-weight: 200;
 }
 
-.main-nav a:hover,
-.main-nav a:focus {
-  background-color: var(--primary-color);
-  text-decoration: none;
-  cursor: url(images/glove2.png), auto;
-  color: #000;
-  
-}
-.side-nav li a {  
+.main-nav li a {
   color: var(--secondary-color);
   font-size: 1rem;
   display: block;
   padding: 0.4em 0.8em;
   text-decoration: none;
-  border-radius: 0.3rem;
+  transition: .3s ease;
 }
+
+.main-nav li a:hover,
+.main-nav li a:focus
+ {
+  background-color: var(--primary-color);
+  text-decoration: none;
+  cursor: url(images/glove2.png), auto;
+  color: #000;
+  font-size: 1rem;
+  border-radius: none;
+  }
 
 .list-unstyled {
   background-color: var(--tertiary-color);
   border: none;
-  color: var(--secondary-color);
-    border-radius: 0.3rem;
+  color: var(--secondary-color);   
   width: 12.8rem;
   line-height: 1.3;
   border: 1px dashed #FFFFF7;
@@ -325,23 +334,19 @@ Navigation:
 
 .dropdown-menu {
   background-color: var(--tertiary-color);
-  border: none;
   color: var(--secondary-color);
-  border-radius: 0.3rem;
   width: 12.8rem;
   line-height: 1.3;
   border: 1px dashed #FFFFF7;
   transition: transform 0.3s ease-out;
 }
-.dropdown-item {
-  font-size: 0.8rem;
-  font-weight: lighter;
-}
-.dropdown-menu a:hover {  
-  background-color:var(--primary-color);;
+
+.dropdown-menu .dropdown-item:hover {  
+  background-color:var(--primary-color);
   color: #000;
-  border-radius: 0;
+  border-radius: none;
 }
+
 
 /*--------------------------------------------------------------
 Cards:
@@ -498,7 +503,7 @@ Footer:
 	border-radius: 3.6rem;
 	display: inline-block;
 	font-size: 1.4rem;
-  font-weight: lighter;
+  font-weight: 100;
 	height: 2rem;
   width: 2rem; 
 	margin: 1rem 0.3rem;

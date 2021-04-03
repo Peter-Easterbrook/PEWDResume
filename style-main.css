@@ -442,7 +442,8 @@ transition: all 0.3s ease-out;
 }
 
 .btn:hover  {
-background-color: transparent;
+background-color: #08142d;
+color: #fff;
 outline: 1px solid #fff;
 outline-offset: -4px;
 cursor: url(images/glove2.png), auto;

@@ -129,6 +129,18 @@ animation:spin 6s linear infinite;
     transform:rotate(360deg); 
   }
 }
+.logo-pulse {
+  transition: transform 1s;
+  animation: in-out 1s infinite alternate;
+}
+@keyframes in-out {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 /*--------------------------------------------------------------
 Header:
 --------------------------------------------------------------*/
@@ -220,7 +232,7 @@ animation:gm-slidein 3s 1;
   animation: none;
   background: #050d1d;
 }
-
+/*-----Pointer sidenav---------*/
 .bounce i {
   font-size: 2.4rem; 
   color: #fff;
@@ -439,7 +451,7 @@ box-shadow: var(--shadow-color) 2px 2px 22px;
 overflow: hidden;   
 border: 1px solid #fff;  
 outline: none;
-transition: all 0.3s ease-out;
+transition: all 0.3s ease;
 }
 
 .btn:focus {
@@ -447,9 +459,9 @@ transition: all 0.3s ease-out;
 }
 
 .btn:hover  {
-background-color: #08142d;
-color: #fff;
-outline: 1px solid #fff;
+background-color: var(--primary-color);
+color: var(--tertiary-color);
+outline: 1px solid #000;
 outline-offset: -4px;
 cursor: url(images/glove2.png), auto;
 }

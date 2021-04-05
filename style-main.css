@@ -260,7 +260,7 @@ transform: translateX(-12px);
 
 .bounce:hover {
   animation: none;
-  cursor: url(images/glove2.png), auto;
+  cursor: url('images/glove2.png'), auto;
 }
 
 
@@ -409,11 +409,6 @@ Cards:
   margin-bottom: 0;
 }
 
-.cards a:focus .caption,
-.cards a:hover .caption {
-   cursor: url(images/glove2.png), auto;
-}
-
 .git {
   font-size: 6rem;
   margin: 0 0.5rem 0 1.5rem;  
@@ -439,8 +434,7 @@ Buttons
 
 .btn-group { 
   margin-top: 1rem; 
-  cursor: url(glove2.png), auto;
-}
+  }
 
 .btn {
 position:relative;
@@ -453,7 +447,7 @@ overflow: hidden;
 border: 1px solid #fff;  
 outline: none;
 transition: all 0.3s ease;
-cursor: url(glove2.png), auto;
+
 }
 
 .btn:focus {
@@ -461,12 +455,18 @@ cursor: url(glove2.png), auto;
 }
 
 .btn:hover  {
+cursor: url('image/glove2.png'), auto;
 background-color: var(--primary-color);
 color: var(--tertiary-color);
 outline: 1px solid #000;
 outline-offset: -4px;
-cursor: url(glove2.png), auto;
+
 }
+
+
+/* .btn:hover {
+   cursor: url('image/glove2.png'), auto;
+} */
 
 /*--------------------------------------------------------------
 Sidebar:
@@ -678,7 +678,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     .cards a:focus,
     .cards a:hover {
    
-      cursor: url(images/glove2.png), auto;
+      cursor: url('images/glove2.png'), auto;
     }
     .twin {
       margin: 0 auto;

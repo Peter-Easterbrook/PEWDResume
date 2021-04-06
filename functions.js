@@ -1,4 +1,4 @@
-(() => {
+() => {
   const SITE = document.querySelector('.site');
   const TRIGGER = document.querySelector('.trigger');
   const REVEAL = document.querySelector('.main-nav');
@@ -46,4 +46,4 @@
   );
 
   SITE.addEventListener('transitionend', removeMenu, false);
-})();
+};

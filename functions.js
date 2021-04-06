@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+(() => {
   const SITE = document.querySelector('.site');
   const TRIGGER = document.querySelector('.trigger');
   const REVEAL = document.querySelector('.main-nav');
@@ -20,15 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Hide nav area when touch or click happens elsewhere:
-  function clickTarget(e) {
-    if (
-      TRIGGER.getAttribute('aria-expanded') == 'true' &&
-      !REVEAL.contains(e.target)
-    ) {
-      revealMenu();
-    }
-  }
+  // // Hide nav area when touch or click happens elsewhere:
+  // function clickTarget(e) {
+  //   if (
+  //     TRIGGER.getAttribute('aria-expanded') == 'true' &&
+  //     !REVEAL.contains(e.target)
+  //   ) {
+  //     revealMenu();
+  //   }
+  // }
 
   // Listen for clicks on TRIGGER button:
   TRIGGER.addEventListener('click', revealMenu, false);
@@ -46,4 +46,4 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 
   SITE.addEventListener('transitionend', removeMenu, false);
-});
+})();

@@ -88,6 +88,32 @@ p {
   color: var(--secondary-color);
   padding-left: 2rem;
 }
+.list > ::marker {
+  font-size: 0.8rem;
+  content: '\f0e7';
+  font-family: "Font Awesome 5 Free";
+  color: var(--secondary-color);
+  font-weight: 700;
+  
+}
+.list > li {
+  padding-left: 0.5rem;
+}
+.side-list {
+  color: var(--secondary-color);
+  padding-left: 2rem;
+}
+.side-list > ::marker {
+  font-size: 0.8rem;
+  content: '\f0a4';
+  font-family: "Font Awesome 5 Free";
+  color: var(--secondary-color);
+  font-weight: 700;
+  
+}
+.side-list > li {
+  padding-left: 0.5rem;
+}
 
 figure {
   margin: 0;

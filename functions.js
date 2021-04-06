@@ -23,13 +23,13 @@ TRIGGER.addEventListener('click', revealMenu, false);
 // // Listen for focus changes:
 // SITE.addEventListener('focusin', catchFocus, true);
 
-// Listen for clicks:
-SITE.addEventListener(
-  'click',
-  function (e) {
-    clickTarget(e);
-  },
-  true
-);
+// // Listen for clicks:
+// SITE.addEventListener(
+//   'click',
+//   function (e) {
+//     clickTarget(e);
+//   },
+//   true
+// );
 
 SITE.addEventListener('transitionend', removeMenu, false);

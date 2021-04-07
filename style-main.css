@@ -147,9 +147,8 @@ img {
   width: 80%;
 }
 .electron    { 
-animation:spin 6s linear infinite;
+ animation: spin 6s linear infinite;
 }
-
 @keyframes spin { 
   100% { 
     transform:rotate(360deg); 

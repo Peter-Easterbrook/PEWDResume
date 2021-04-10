@@ -15,14 +15,10 @@
 
 html {
   box-sizing: border-box; 
-  background-size: cover;
-  scrollbar-width: thin;
-  scrollbar-color:#0074D5, black;
- 
+    scrollbar-width: thin;
+  scrollbar-color:#0074D5, black; 
   }
-  #vantasjs {
-    object-fit: cover;
-  }
+
 *, *:before, *:after {
   box-sizing: inherit;
   margin: 0;

@@ -101,7 +101,7 @@ p {
 }
 .side-list > ::marker {
   font-size: 0.8rem;
-  content: '\f0a4';
+  content: '\f185';
   font-family: "Font Awesome 5 Free";
   color: var(--secondary-color);
   font-weight: 700;

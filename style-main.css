@@ -494,17 +494,12 @@ transition: all 0.3s ease;
 }
 .btn:hover {
   background-color: transparent;
+  cursor: url('image/glove2.png'), auto;
   
 }
 .btn:hover:before {
   transform: translateY(0);
 }
-
-
-
-/* .btn:hover {
-   cursor: url('image/glove2.png'), auto;
-} */
 
 /*--------------------------------------------------------------
 Sidebar:

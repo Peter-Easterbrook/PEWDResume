@@ -125,11 +125,10 @@ General styling
 img {
   margin: auto;
   display: block;
-  border: 0;
-  width:90%;
+  /* border: 0; */
+  width: 90%;
   height: auto;
-  border-radius: 0.3em;
-}
+  }
 .float {
   animation: up-down 1s infinite alternate;  
 }
@@ -185,7 +184,8 @@ backdrop-filter: blur( 2.5px );
 border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
 z-index:3;
 font-size: 1rem;
-animation:gm-slidein 3s 1;
+transition: all 0.3s ease-in-out;
+animation: gm-slidein 3s 1;
 }
 
 @keyframes gm-slidein {
@@ -256,6 +256,7 @@ animation:gm-slidein 3s 1;
   animation: none;
   background: #050d1d;
 }
+
 /*-----Pointer sidenav---------*/
 .bounce i {
   font-size: 2.4rem; 
@@ -539,6 +540,9 @@ Tooltips:
 .logoImg {
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
   border: 1px solid #fffff7;
+  width: 130px;
+  height: 130px;
+  border-radius: 0.3rem;
 }
 /*--------------------------------------------------------------
 Footer:

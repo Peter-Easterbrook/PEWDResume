@@ -364,7 +364,7 @@ border-radius: 0.3rem;
   background-color: var(--tertiary-color);
   border: none;
   color: var(--secondary-color);   
-  width: 12.8rem;
+  width: 12.6rem;
   line-height: 1.3;
   border: 1px dashed #FFFFF7;
 }
@@ -380,7 +380,7 @@ border-radius: 0.3rem;
 
 .dropdown-menu .dropdown-item:hover {  
   background-color:var(--primary-color);
-  color: #000;
+  color: var(--tertiary-color);
   border-radius: none;
 }
 

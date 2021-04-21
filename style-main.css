@@ -164,6 +164,7 @@ img {
     transform: scale(1);
   }
 }
+
 /*--------------------------------------------------------------
 Header:
 --------------------------------------------------------------*/
@@ -452,6 +453,28 @@ Cards:
       0 0 20px #0073e6, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6;
   }
 }
+.logoImg {
+  drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+  border: 1px solid #fffff7;
+  width: 130px;
+  height: 130px;
+  border-radius: 0.3rem;
+}
+.opacity{
+  animation: stretch 1.5s ease-out alternate infinite;  
+}
+
+@keyframes stretch {
+  0% {
+    
+   opacity: 1;
+  }
+
+  100% {
+   
+    opacity: 0;
+  }
+}
 
 /* ---------------------------------------------------------
 Buttons
@@ -537,13 +560,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 /*---------------------------------------------
 Tooltips:
 ----------------------------------------------*/
-.logoImg {
-  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
-  border: 1px solid #fffff7;
-  width: 130px;
-  height: 130px;
-  border-radius: 0.3rem;
-}
+
 /*--------------------------------------------------------------
 Footer:
 --------------------------------------------------------------*/
@@ -580,9 +597,6 @@ Footer:
   cursor: url(images/glove2.png), auto;  
   transition: .3s ease;
   animation: iconColorSwitch 10s ease-in-out infinite;
-}
- .footer .icon-button i:hover {
-  animation: none;  
 }
 
 @keyframes iconColorSwitch { 
@@ -633,6 +647,9 @@ Footer:
 }
 .impressum p {
   font-size: small;
+}
+.footer .icon-button i:hover {
+  animation: none;  
 }
 /*--------------------------------------------------------------
 CSS Grid layout for wider screens, when browser supports grid:

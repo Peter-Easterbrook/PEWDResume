@@ -15,7 +15,7 @@
 
 html {
   box-sizing: border-box; 
-    scrollbar-width: thin;
+  scrollbar-width: thin;
   scrollbar-color:#022648 #00549a; 
   }
 
@@ -311,7 +311,7 @@ Navigation:
   overflow-x: hidden;
   transition: .5s ease;
   scrollbar-width: thin;
-  scrollbar-color:#0074D5, black;
+  scrollbar-color:#022648 #00549a; 
 }
 .main-nav::-webkit-scrollbar {
   width: 6px;
@@ -484,7 +484,7 @@ Buttons
   margin-top: 1rem; 
   }
 
-.btn {
+.btn, .badge {
 position:relative;
 background: transparent;
 text-transform: uppercase;
@@ -498,12 +498,12 @@ transition: all 0.3s ease;
 
 }
 
-.btn:focus {
+.btn:focus, badge:focus {
   outline: none !important;
 }
 
 
-.btn:before {
+.btn:before, .badge:before {
   content: "";
   position: absolute;
   left: 0;
@@ -516,12 +516,13 @@ transition: all 0.3s ease;
   transform: translateY(4rem);
   transition: transform 0.3s ease-out;
 }
-.btn:hover {
+.btn:hover, .badge:hover {
   background-color: transparent;
   cursor: url('image/glove2.png'), auto;
+  color: #000;
   
 }
-.btn:hover:before {
+.btn:hover:before, .badge:hover:before {
   transform: translateY(0);
 }
 

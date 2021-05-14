@@ -80,6 +80,12 @@ p, li {
 .site-subtitle {
   font-size: clamp(1.2rem, 2.3vw, 2.5rem);
 }
+.pointingHand {
+  width: clamp(2.4rem, 5vw, 5rem);
+}
+.gitLogo {
+  width: clamp(2.4rem, 5vw, 5rem);
+}
 
 .hyphen {  
   hyphens: auto;
@@ -142,6 +148,9 @@ img {
   width: 90%;
   height: auto;
   }
+  .trophy {
+    width: clamp(8rem, 20vw, 40rem);
+  }
 .float {
   animation: up-down 1s infinite alternate;  
 }
@@ -154,9 +163,7 @@ img {
     transform: translateY(4px);
   }
 }
-.googleshield {
-  max-width: 80%;
-}
+
 .electron    { 
  animation: spin 6s linear infinite;
 }
@@ -234,12 +241,12 @@ animation: gm-slidein 3s 1;
 
 /* Wrapper */
 .masthead .icon-button {
-	border-radius: 3.6rem;
+	border-radius: 50%;
 	display: inline-block;
 	font-size: 2.25rem;
   font-weight: 100;
-	height: 3rem;
   width: 3rem;
+  height: 3rem;
   line-height: 3rem;
 	margin: 1rem 0.3rem;
 	position: relative;
@@ -249,13 +256,12 @@ animation: gm-slidein 3s 1;
 /* Icons */
 .masthead .icon-button i {
   color: white;
-	height: 3rem;
+  height: 3rem;
+  width: 3rem;
 	left: 0;
 	line-height: 3rem;
-	position: absolute;
-	top: 0;
-	width: 3rem;
-  border-radius: 3.6rem;
+	position: absolute;	
+	border-radius: 3.6rem;
   z-index: 10;
   cursor: url(images/glove2.png), auto;
   transition: .2s ease;

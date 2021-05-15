@@ -83,9 +83,6 @@ p, li {
 .pointingHand {
   width: clamp(2.4rem, 5vw, 5rem);
 }
-.gitLogo {
-  width: clamp(2.4rem, 5vw, 5rem);
-}
 
 .hyphen {  
   hyphens: auto;

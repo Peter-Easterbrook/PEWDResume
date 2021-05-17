@@ -243,23 +243,30 @@ animation: gm-slidein 3s 1;
 	display: inline-block;
 	font-size: 2.25rem;
   font-weight: 100;
-  width: 3rem;
-  height: 3rem;
+  width: 3.2rem;
+  height: 3.05rem;
   line-height: 3rem;
 	margin: 1rem 0.3rem;
 	position: relative;
 	text-align: center;
+  /* Milk-glass code below */
+  background: rgba( 255, 255, 255, 0.20 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 10.0px );
+  border: 1px solid rgba( 255, 255, 255, 0.20 );
 }
 
 /* Icons */
 .masthead .icon-button i {
   color: white;
-  height: 3rem;
+
+  /* height: 3rem;
   width: 3rem;
 	left: 0;
 	line-height: 3rem;
 	position: absolute;	
-	border-radius: 3.6rem;
+	border-radius: 3.6rem; */
   z-index: 10;
   cursor: url(images/glove2.png), auto;
   transition: .2s ease;
@@ -269,11 +276,10 @@ animation: gm-slidein 3s 1;
 .masthead .github i  {
   animation: iconColorSwitch 10s ease-in-out infinite;
 }
+.icon-button:hover {
+  background: rgba( 255, 255, 255, 0.40 );
+  }
 
-.masthead .icon-button i:hover, .icon-button:hover  {
-  animation: none;
-  background: #050d1d;
-}
 
 /*-----Pointer sidenav---------*/
 .bounce i {
@@ -592,32 +598,40 @@ Footer:
 
 /* Wrapper */
  .footer .icon-button {
-	border-radius: 3.6rem;
+	/* border-radius: 3.6rem; */
 	display: inline-block;
 	font-size: 1.4rem;
   font-weight: 100;
-	height: 2rem;
-  width: 2rem; 
+	/* height: 2rem; */
+  width: 2.4rem; 
 	margin: 1rem 0.3rem;
 	position: relative;
 	text-align: center;
+  /* Milk-glass */
+  background: rgba( 255, 255, 255, 0.20 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 10.0px );
+border: 1px solid rgba( 255, 255, 255, 0.20 );
+border-radius: 0.4rem;
+cursor: url(images/glove2.png), auto;
 }
 
 /* Icons */
 .footer .icon-button i {
   color: white;
-	height: 2rem;
-  width: 2rem;
-	left: 0;
-	line-height: 1.9rem;
-	position: absolute;
-	top: 0;
-  border-radius: 3.6rem;
+	/* height: 2rem; */
+  /* width: 2rem; */
+	/* left: 0; */
+	/* line-height: 1.9rem; */
+	/* position: absolute; */
+	/* top: 0; */
+  /* border-radius: 3.6rem; */
   cursor: url(images/glove2.png), auto;  
   transition: .3s ease;
-  animation: iconColorSwitch 10s ease-in-out infinite;
+  /* animation: iconColorSwitch 10s ease-in-out infinite; */
 }
-
+/* 
 @keyframes iconColorSwitch { 
   0% {
     background: #050d1d;
@@ -663,12 +677,17 @@ Footer:
     background: #050d1d;
     color: #e9f0fc;
 }
-}
+} */
 .impressum p {
   font-size: small;
 }
 .footer .icon-button i:hover {
-  animation: none;  
+  /* animation: none;   */
+  color: #000;
+}
+.footer .icon-button:hover {
+  background: rgba( 255, 255, 255, 0.50 );
+  /* animation: none;  */
 }
 /*--------------------------------------------------------------
 CSS Grid layout for wider screens, when browser supports grid:

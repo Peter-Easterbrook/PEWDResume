@@ -63,26 +63,9 @@ p, li {
   line-height: 1.5;
   font-weight: 200;
 }
-.site-title, .site-subtitle, .content-title  {
-  color: #fffff7;
-  font-weight: 200;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.63);
-}
-.title {
-  display: grid;
-  place-items: center;
-  margin-top: 1rem; 
-  
-}
-.site-title {
-  font-size: clamp(1.8rem, 2.5vw, 3rem);
-  margin:  auto 0;
-}
-.site-subtitle {
-  font-size: clamp(1.2rem, 2.3vw, 2.5rem);
-}
+
 .pointingHand {
-  width: clamp(2.4rem, 5vw, 5rem);
+  width: clamp(2.4rem, 5vw, 5rem); 
 }
 
 .hyphen {  
@@ -203,25 +186,55 @@ backdrop-filter: blur( 2.5px );
 border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
 z-index:3;
 font-size: 1rem;
-transition: all 0.3s ease-in-out;
-animation: gm-slidein 3s 1;
+transition: all ease-out;
+animation: gm-slidein 3s ease-out;
 }
 
 @keyframes gm-slidein {
   from {
       -webkit-transform:translate3d(0,-100%,0);
       opacity:0;
-      transform:translate3d(0,-100%,0);
-      
+      transform:translate3d(0,-100%,0);      
   }
-
   to {
       -webkit-transform:none;
       opacity:1;
       transform:none;
   }
 }
+.site-title, .site-subtitle, .content-title  {
+  color: #fffff7;
+  font-weight: 200;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.63);
+}
+.title {
+  display: grid;
+  place-items: center;
+  margin-top: 1rem; 
+  animation: fill-in 2s ease-out 3s;
+  
+}
+.site-title {
+  font-size: clamp(1.8rem, 2.5vw + 1rem, 3rem);
+  margin:  auto 0;
+  opacity: 0;
+  scale: 0;
+  animation: fill-in 2s ease-in 2s forwards;
+}
 
+.site-subtitle {
+  font-size: clamp(1.2rem, 2.3vw + 1rem, 2.5rem);
+  opacity: 0;
+  scale: 0;
+  animation: fill-in 2s ease-in 2.5s forwards;
+}
+
+  @keyframes fill-in {
+       100% {
+      opacity: 1;
+      scale:1;
+    }
+    }
 .masthead .github {
   animation: pulseAnim 2s infinite;
 }

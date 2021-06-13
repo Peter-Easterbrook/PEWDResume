@@ -78,7 +78,6 @@ p, li {
 }
 
 p {
-  font-size: 0.9rem;
   margin-bottom: 1.5em;
   color: var(--secondary-color);
  
@@ -420,12 +419,9 @@ border-radius: 0.3rem;
   color: var(--tertiary-color);
   border-radius: none;
 }
-
-
 /*--------------------------------------------------------------
 Cards:
 --------------------------------------------------------------*/
-
 .main-area {
   margin-top: 7rem;
   margin-bottom: 4rem;

@@ -30,6 +30,7 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="description" content="WebDev Resume" />
+    <!--The code below forces all links to open in a new tab-->
     <base target="_blank" rel="noopener" />
     <title>WebDev Resume</title>
     <link
@@ -45,14 +46,14 @@
     ></script>
     <link rel="stylesheet" href="style-main.css" type="text/css" media="all" />
     <script src="functions.js" defer></script>
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js" async></script>
 
     <audio id="audio" src="images/gong.mp3" autostart="false"></audio>
   </head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script
-    async
     src="https://www.googletagmanager.com/gtag/js?id=UA-158549795-1"
+    async
   ></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -110,7 +111,7 @@
               src="images/Peter.png"
               alt="..."
               style="width: 6rem"
-              class="mx-auto rounded-circle img-thumbnail shadow-sm"
+              class="mx-auto rounded-circle border border-light shadow-lg"
             />
           </div>
         </div>

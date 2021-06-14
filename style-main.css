@@ -128,9 +128,7 @@ img {
   width: 90%;
   height: auto;
   }
-  .trophy {
-    width: clamp(8rem, 20vw, 40rem);
-  }
+
 .float {
   animation: up-down 1s infinite alternate;  
 }

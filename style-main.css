@@ -25,6 +25,7 @@ html {
   padding: 0;
 } 
 body {
+  font-family: 'Raleway', sans-serif;
 background-color: var(--tertiary-color);
 animation: fadeInAnimation ease-out 3s 1 forwards; 
 }

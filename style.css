@@ -81,7 +81,7 @@ p, li {
  text-shadow: rgba(0,0,0,.2) 1px 1px 1px,rgba(255,255,255,.4) 0 -3px 15px;
 }
 
-p {
+p, h6 {
   margin-bottom: 1.5em;
   color: var(--secondary-color);
  

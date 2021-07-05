@@ -72,9 +72,17 @@ p, li {
   width: clamp(2.4rem, 5vw, 5rem); 
 }
 
+.twin p {
+  text-align: left;
+}
+
+.twin p:last-child  {
+  text-align: justify;
+}
+
 .hyphen {  
   hyphens: auto;
-  text-align: justify;
+  text-justify: auto;
 }
 .side-nav {
  color: var(--tertiary-color);

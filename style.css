@@ -26,8 +26,8 @@ html {
 } 
 body {
   font-family: 'Raleway', sans-serif;
-background-color: var(--tertiary-color);
-animation: fadeInAnimation ease-out 3s 1 forwards; 
+  background-color: #01040c;
+  animation: fadeInAnimation ease-out 3s 1 forwards; 
 }
 @keyframes fadeInAnimation { 
   0% { 
@@ -425,16 +425,6 @@ Cards:
   margin-top: 7rem;
   margin-bottom: 4rem;
 }
-/* .card-item {
-  transition: all transform 1s ease;
-}
-.card-item:hover {
-  filter: drop-shadow(
-    0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)
-  );  
-  transform: scale(1.1);
-  z-index: 2; 
-} */
 
 .cards {  
   margin: 1rem auto;
@@ -590,9 +580,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   text-align: left;
   border-radius:0 0 0 0.3rem ;
 }
-/*---------------------------------------------
-Tooltips:
-----------------------------------------------*/
 
 /*--------------------------------------------------------------
 Footer:
@@ -628,64 +615,11 @@ cursor: url(images/glove2.png), auto;
 /* Icons */
 .footer .icon-button i {
   color: white;
-	/* height: 2rem; */
-  /* width: 2rem; */
-	/* left: 0; */
-	/* line-height: 1.9rem; */
-	/* position: absolute; */
-	/* top: 0; */
-  /* border-radius: 3.6rem; */
   cursor: url(images/glove2.png), auto;  
   transition: .3s ease;
-  /* animation: iconColorSwitch 10s ease-in-out infinite; */
+ 
 }
-/* 
-@keyframes iconColorSwitch { 
-  0% {
-    background: #050d1d;
-    color: #e9f0fc;
-  }
-  10% {
-    background: #e9f0fc;
-    color: #050d1d;  
-  }
-  20%{
-    background: #050d1d;
-    color: #e9f0fc;
-  }
-  30%{
-    background:#e9f0fc;
-    color: #050d1d;
-  }
-  40%{
-    background: #050d1d;
-    color: #e9f0fc;
-  }
-  50% {
-    background:#e9f0fc;
-    color: #050d1d;
-  }
-  60% {
-    background: #050d1d;
-    color: #e9f0fc;
-      }
-  70% {
-    background:#e9f0fc;
-    color: #050d1d;
-  }
-  80% {
-    background: #050d1d;
-    color: #e9f0fc;
-  }
-  90% {
-    background: #e9f0fc;
-    color: #050d1d;
-  }
-100% {
-    background: #050d1d;
-    color: #e9f0fc;
-}
-} */
+
 .impressum p {
   font-size: small;
 }
@@ -697,6 +631,7 @@ cursor: url(images/glove2.png), auto;
   background: rgba( 255, 255, 255, 0.50 );
   /* animation: none;  */
 }
+
 /*--------------------------------------------------------------
 CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
@@ -828,9 +763,7 @@ CSS Grid layout for wider screens, when browser supports grid:
      margin-bottom: 4rem;
      border-radius:0 0 0.3rem 0.3rem ;
         }
-  
-   
-  }
+     }
 
   @media only screen and (min-width: 78rem) {
     .site {
@@ -838,8 +771,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       grid-template-areas:
         "nav header header"
         "nav main sidebar"
-        "nav footer footer";
-     
+        "nav footer footer";     
     }
     .twin {
       margin: 0;
@@ -849,6 +781,5 @@ CSS Grid layout for wider screens, when browser supports grid:
      .twin:last-of-type {
       border-radius:0 0 0 0.3rem ;
     }
-
   }
 }

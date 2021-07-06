@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
 
 :root {
@@ -6,64 +5,94 @@
   --secondary-color: #fffff7;
   --tertiary-color: #050d1d;
   --quaternary-color: #08142d;
-  --quinary-color: #0074D5;
+  --quinary-color: #0074d5;
   --text-color: hsla(210, 50%, 85%, 1);
-  --shadow-color: hsla(210, 40%, 52%, .4);
+  --shadow-color: hsla(210, 40%, 52%, 0.4);
   --bg-color: #141218;
-  }
-
+}
 
 html {
-  box-sizing: border-box; 
+  box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color:#022648 #00549a; 
-  }
+  scrollbar-color: #022648 #00549a;
+}
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-} 
+}
+
 body {
   font-family: 'Raleway', sans-serif;
-  /* background-color: #01040c;
-  
-background-image: linear-gradient(180deg, #01040c
-0%, #030a1f 80%); */
-background-color: #01040c;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%23001894' fill-opacity='0.4' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E");
-  animation: fadeInAnimation ease-out 3s 1 forwards; 
+  animation: fadeInAnimation ease-out 3s 1 forwards;
 }
-@keyframes fadeInAnimation { 
-  0% { 
-      opacity: 0; 
-  } 
-  100% { 
-      opacity: 1; 
-  } 
-
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-body::-webkit-scrollbar {
+/* background: linear-gradient(-45deg, #000914, #001b3b, #050d1d, #00244e);
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+/* Let's get this party started */
+::-webkit-scrollbar {
   width: 6px;
 }
-body::-webkit-scrollbar-track {
-  background-color: #00549a;
-  }
-body::-webkit-scrollbar-thumb {
-    border-radius: 6px;
-    background-color: var(--tertiary-color);
-    border: 3px solid #00549a:
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
-body::-webkit-scrollbar-thumb:hover {
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background: #49a4ff;
+}
+::-webkit-scrollbar-thumb:window-inactive {
   background: #49a4ff;
 }
 
+/* ::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: #00549a;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: var(--tertiary-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #49a4ff;
+} */
+
 body,
-input,
-select,
 button,
-p, li {
+p,
+li {
   font-family: 'Raleway', sans-serif;
   font-size: 0.9rem;
   line-height: 1.5;
@@ -71,30 +100,31 @@ p, li {
 }
 
 .pointingHand {
-  width: clamp(2.4rem, 5vw, 5rem); 
+  width: clamp(2.4rem, 3.5vw, 5rem);
 }
 
 .twin p {
   text-align: left;
 }
 
-.twin p:last-child  {
+.twin p:last-child {
   text-align: justify;
 }
 
-.hyphen {  
+.hyphen {
   hyphens: auto;
   text-justify: auto;
 }
 .side-nav {
- color: var(--tertiary-color);
- text-shadow: rgba(0,0,0,.2) 1px 1px 1px,rgba(255,255,255,.4) 0 -3px 15px;
+  color: var(--tertiary-color);
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px,
+    rgba(255, 255, 255, 0.4) 0 -3px 15px;
 }
 
-p, h6 {
+p,
+h6 {
   margin-bottom: 1.5em;
   color: var(--secondary-color);
- 
 }
 .list {
   color: var(--secondary-color);
@@ -103,10 +133,9 @@ p, h6 {
 .list > ::marker {
   font-size: 0.8rem;
   content: '\f0e7';
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   color: var(--secondary-color);
   font-weight: 700;
-  
 }
 .list > li {
   padding-left: 0.5rem;
@@ -118,10 +147,9 @@ p, h6 {
 .side-list > ::marker {
   font-size: 0.8rem;
   content: '\f185';
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   color: var(--secondary-color);
   font-weight: 700;
-  
 }
 .side-list > li {
   padding-left: 0.5rem;
@@ -141,10 +169,10 @@ img {
   /* border: 0; */
   width: 90%;
   height: auto;
-  }
+}
 
 .float {
-  animation: up-down 1s infinite alternate;  
+  animation: up-down 1s infinite alternate;
 }
 
 @keyframes up-down {
@@ -156,12 +184,12 @@ img {
   }
 }
 
-.electron    { 
- animation: spin 6s linear infinite;
+.electron {
+  animation: spin 6s linear infinite;
 }
-@keyframes spin { 
-  100% { 
-    transform: rotate(360deg); 
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
   }
 }
 .logo-pulse {
@@ -182,38 +210,40 @@ Header:
 --------------------------------------------------------------*/
 
 .masthead {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-padding: 0 1em;
-text-align: center;
-max-width: 100%;
-height: 8rem;
-background: rgba( 255, 255, 255, 0.1 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 2.5px );
--webkit-backdrop-filter: blur( 2.5px );
-border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
-z-index:3;
-font-size: 1rem;
-transition: all ease-out;
-animation: gm-slidein 3s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 1em;
+  text-align: center;
+  max-width: 100%;
+  height: 8rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 3;
+  font-size: 1rem;
+  transition: all ease-out;
+  animation: gm-slidein 3s ease-out;
 }
 
 @keyframes gm-slidein {
   from {
-      -webkit-transform:translate3d(0,-100%,0);
-      opacity:0;
-      transform:translate3d(0,-100%,0);      
+    -webkit-transform: translate3d(0, -100%, 0);
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
   }
   to {
-      -webkit-transform:none;
-      opacity:1;
-      transform:none;
+    -webkit-transform: none;
+    opacity: 1;
+    transform: none;
   }
 }
-.site-title, .site-subtitle, .content-title  {
+.site-title,
+.site-subtitle,
+.content-title {
   color: #fffff7;
   font-weight: 200;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.63);
@@ -221,64 +251,60 @@ animation: gm-slidein 3s ease-out;
 .title {
   display: grid;
   place-items: center;
-  margin-top: 1rem; 
+  margin-top: 1rem;
   animation: fill-in 2s ease-out 3s;
-  
 }
 .site-title {
   font-size: clamp(1.8rem, 2.5vw + 1rem, 3rem);
-  margin:  auto 0;
+  margin: auto 0;
   opacity: 0;
-  scale: 0;
   animation: fill-in 2s ease-in 2s forwards;
 }
 
 .site-subtitle {
   font-size: clamp(1.2rem, 2.3vw + 1rem, 2.5rem);
   opacity: 0;
-  scale: 0;
   animation: fill-in 2s ease-in 2.5s forwards;
 }
 
-  @keyframes fill-in {
-       100% {
-      opacity: 1;
-      scale:1;
-    }
-    }
+@keyframes fill-in {
+  100% {
+    opacity: 1;
+  }
+}
 .masthead .github {
   animation: pulseAnim 2s infinite;
 }
 @keyframes pulseAnim {
-    0% {
-        box-shadow: 0 0 0 0 rgba(217, 227, 248, 0.6);
-    }
-    70% {
-        box-shadow: 0 0 0 20px rgba(217, 227, 248, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(217, 227, 248, 0);
-    }
+  0% {
+    box-shadow: 0 0 0 0 rgba(217, 227, 248, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(217, 227, 248, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(217, 227, 248, 0);
+  }
 }
 
 /* Wrapper */
 .masthead .icon-button {
-	border-radius: 50%;
-	display: inline-block;
-	font-size: 2.25rem;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 2.25rem;
   font-weight: 100;
   width: 3.2rem;
   height: 3.05rem;
   line-height: 3rem;
-	margin: 1rem 0.3rem;
-	position: relative;
-	text-align: center;
+  margin: 1rem 0.3rem;
+  position: relative;
+  text-align: center;
   /* Milk-glass code below */
-  background: rgba( 255, 255, 255, 0.20 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 5px );
-  -webkit-backdrop-filter: blur( 10.0px );
-  border: 1px solid rgba( 255, 255, 255, 0.20 );
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Icons */
@@ -293,50 +319,46 @@ animation: gm-slidein 3s ease-out;
 	border-radius: 3.6rem; */
   z-index: 10;
   cursor: url(images/glove2.png), auto;
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
-
-.masthead .github i  {
+.masthead .github i {
   animation: iconColorSwitch 10s ease-in-out infinite;
 }
 .icon-button:hover {
-  background: rgba( 255, 255, 255, 0.40 );
-  }
-
+  background: rgba(255, 255, 255, 0.4);
+}
 
 /*-----Pointer sidenav---------*/
 .bounce i {
-  font-size: 2.4rem; 
+  font-size: 2.4rem;
   color: #fff;
 }
 .bounce {
-animation: bounce 2s;
-animation-iteration-count: infinite;
+  animation: bounce 2s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes bounce {
-0%,
-25%,
-50%,
-75%,
-100% {
-transform: translateX(0);
-}
-40% {
-transform: translateX(-20px);
-}
-60% {
-transform: translateX(-12px);
-}
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-20px);
+  }
+  60% {
+    transform: translateX(-12px);
+  }
 }
 
 .bounce:hover {
   animation: none;
   cursor: url('images/glove2.png'), auto;
 }
-
-
 
 /*--------------------------------------------------------------
 Navigation:
@@ -349,33 +371,24 @@ Navigation:
   font-weight: 200;
   width: 16rem;
   z-index: 6;
-  background: rgba( 255, 255, 255, 0.1 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 2.5px );
-  -webkit-backdrop-filter: blur( 2.5px );
-  border-right: 1px solid rgba( 255, 255, 255, 0.18 );
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   overflow-x: hidden;
-  transition: .5s ease;
+  transition: 0.5s ease;
   scrollbar-width: thin;
-  scrollbar-color:#022648 #00549a; 
-}
-.main-nav::-webkit-scrollbar {
-  width: 6px;
-}
-.main-nav::-webkit-scrollbar-track {
-  background-color: var(--tertiary-color);
-}
-.main-nav::-webkit-scrollbar-thumb {
-    border-radius: 6px;
-  border: 3px solid var(--quinary-color);
+  scrollbar-color: #022648 #00549a;
 }
 
 .dropdown-toggle {
-border-radius: 0.3rem;
+  border-radius: 0.3rem;
 }
 
-.main-nav ul, .nav-link{
+.main-nav ul,
+.nav-link {
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -394,27 +407,26 @@ border-radius: 0.3rem;
   display: block;
   padding: 0.4em 0.8em;
   text-decoration: none;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .main-nav li a:hover,
-.main-nav li a:focus
- {
+.main-nav li a:focus {
   background-color: var(--primary-color);
   text-decoration: none;
   cursor: url(images/glove2.png), auto;
   color: #000;
   font-size: 1rem;
-  border-radius: none;
-  }
+  border-radius: 0;
+}
 
 .list-unstyled {
   background-color: var(--tertiary-color);
-  border: none;
-  color: var(--secondary-color);   
+  border: 0;
+  color: var(--secondary-color);
   width: 12.6rem;
   line-height: 1.3;
-  border: 1px dashed #FFFFF7;
+  border: 1px dashed #fffff7;
 }
 
 .dropdown-menu {
@@ -422,14 +434,14 @@ border-radius: 0.3rem;
   color: var(--secondary-color);
   width: 12.8rem;
   line-height: 1.3;
-  border: 1px dashed #FFFFF7;
+  border: 1px dashed #fffff7;
   transition: transform 0.3s ease-out;
 }
 
-.dropdown-menu .dropdown-item:hover {  
-  background-color:var(--primary-color);
+.dropdown-menu .dropdown-item:hover {
+  background-color: var(--primary-color);
   color: var(--tertiary-color);
-  border-radius: none;
+  border-radius: 0;
 }
 /*--------------------------------------------------------------
 Cards:
@@ -439,7 +451,7 @@ Cards:
   margin-bottom: 4rem;
 }
 
-.cards {  
+.cards {
   margin: 1rem auto;
   padding: 0;
   list-style-type: none;
@@ -449,19 +461,19 @@ Cards:
   display: block;
   margin-bottom: 1rem;
   text-decoration: none;
-  }
+}
 
 .caption {
   padding: 1rem;
   font-size: 80%;
- }
+}
 
 .caption-title {
   margin: 0;
   font-size: 1.2rem;
   line-height: 1rem;
   font-weight: 300;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.63);  
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.63);
 }
 
 .caption p {
@@ -471,7 +483,7 @@ Cards:
 
 .git {
   font-size: 6rem;
-  margin: 0 0.5rem 0 1.5rem;  
+  margin: 0 0.5rem 0 1.5rem;
 }
 .git .fab {
   color: #000;
@@ -488,24 +500,22 @@ Cards:
   }
 }
 .logoImg {
-  drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
   border: 1px solid #fffff7;
   width: 130px;
   height: 130px;
   border-radius: 0.3rem;
 }
-.opacity{
-  animation: stretch 1.5s ease-out alternate infinite;  
+.opacity {
+  animation: stretch 1.5s ease-out alternate infinite;
 }
 
 @keyframes stretch {
   0% {
-    
-   opacity: 1;
+    opacity: 1;
   }
 
   100% {
-   
     opacity: 0;
   }
 }
@@ -514,36 +524,37 @@ Cards:
 Buttons
 ----------------------------------------------------------------*/
 
-.btn-group { 
-  margin-top: 1rem; 
-  }
-
-.btn, .badge {
-position:relative;
-background: transparent;
-text-transform: uppercase;
-font-size: small;  
-color: var(--text-color);
-box-shadow: var(--shadow-color) 2px 2px 22px;
-overflow: hidden;   
-border: 1px solid #fff;  
-outline: none;
-transition: all 0.3s ease;
-font-weight: 300;
-
+.btn-group {
+  margin-top: 1rem;
 }
 
-.btn:focus, badge:focus {
+.btn,
+.badge {
+  position: relative;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: small;
+  color: var(--text-color);
+  box-shadow: var(--shadow-color) 2px 2px 22px;
+  overflow: hidden;
+  border: 1px solid #fff;
+  outline: none;
+  transition: all 0.3s ease;
+  font-weight: 300;
+}
+
+.btn:focus,
+.badge:focus {
   outline: none !important;
 }
 
-
-.btn:before, .badge:before {
-  content: "";
+.btn:before,
+.badge:before {
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #FFF;
+  background-color: #fff;
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -551,13 +562,14 @@ font-weight: 300;
   transform: translateY(4rem);
   transition: transform 0.3s ease-out;
 }
-.btn:hover, .badge:hover {
+.btn:hover,
+.badge:hover {
   background-color: transparent;
   cursor: url('image/glove2.png'), auto;
   color: #000;
-  
 }
-.btn:hover:before, .badge:hover:before {
+.btn:hover:before,
+.badge:hover:before {
   transform: translateY(0);
 }
 
@@ -573,25 +585,24 @@ Sidebar:
   font-size: 1rem;
   color: var(--secondary-color);
   font-weight: 300;
- text-align: center;
- background: rgba( 255, 255, 255, 0.1 );
- box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
- backdrop-filter: blur( 2.5px );
- -webkit-backdrop-filter: blur( 2.5px );
- border: 1px solid rgba( 255, 255, 255, 0.18 );
- border-bottom: none;
-border-radius: 0.3rem 0 0 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: none;
+  border-radius: 0.3rem 0 0 0;
 }
 
-
 .twin:last-of-type {
-  background: rgba( 255, 255, 255, 0.1 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 2.5px );
--webkit-backdrop-filter: blur( 2.5px );
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   text-align: left;
-  border-radius:0 0 0 0.3rem ;
+  border-radius: 0 0 0 0.3rem;
 }
 
 /*--------------------------------------------------------------
@@ -600,37 +611,36 @@ Footer:
 .footer {
   text-align: center;
   justify-content: center;
-  background:var(--tertiary-color); 
-   border-top: 1px solid #112b5e;   
-   }
+  background: var(--tertiary-color);
+  border-top: 1px solid #112b5e;
+}
 
 /* Wrapper */
- .footer .icon-button {
-	/* border-radius: 3.6rem; */
-	display: inline-block;
-	font-size: 1.4rem;
+.footer .icon-button {
+  /* border-radius: 3.6rem; */
+  display: inline-block;
+  font-size: 1.4rem;
   font-weight: 100;
-	/* height: 2rem; */
-  width: 2.4rem; 
-	margin: 1rem 0.3rem;
-	position: relative;
-	text-align: center;
+  /* height: 2rem; */
+  width: 2.4rem;
+  margin: 1rem 0.3rem;
+  position: relative;
+  text-align: center;
   /* Milk-glass */
-  background: rgba( 255, 255, 255, 0.20 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 5px );
--webkit-backdrop-filter: blur( 10.0px );
-border: 1px solid rgba( 255, 255, 255, 0.20 );
-border-radius: 0.4rem;
-cursor: url(images/glove2.png), auto;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.4rem;
+  cursor: url(images/glove2.png), auto;
 }
 
 /* Icons */
 .footer .icon-button i {
   color: white;
-  cursor: url(images/glove2.png), auto;  
-  transition: .3s ease;
- 
+  cursor: url(images/glove2.png), auto;
+  transition: 0.3s ease;
 }
 
 .impressum p {
@@ -641,7 +651,7 @@ cursor: url(images/glove2.png), auto;
   color: #000;
 }
 .footer .icon-button:hover {
-  background: rgba( 255, 255, 255, 0.50 );
+  background: rgba(255, 255, 255, 0.5);
   /* animation: none;  */
 }
 
@@ -655,14 +665,13 @@ CSS Grid layout for wider screens, when browser supports grid:
       left: -16rem;
       overflow-x: hidden;
       display: grid;
-      grid-template-columns: 17rem calc(100% );
+      grid-template-columns: 17rem calc(100%);
       grid-template-areas:
-        "nav header"
-        "nav main"
-        "nav sidebar"
-        "nav footer";
+        'nav header'
+        'nav main'
+        'nav sidebar'
+        'nav footer';
       transition: left ease-out 0.6s;
-     
     }
 
     .reveal {
@@ -671,20 +680,18 @@ CSS Grid layout for wider screens, when browser supports grid:
 
     .masthead {
       grid-area: header;
-
     }
 
     .main-area {
       grid-area: main;
-     }
+    }
 
     .sidebar {
       grid-area: sidebar;
       margin-bottom: 5rem;
-    }   
+    }
     .footer {
       grid-area: footer;
-      
     }
 
     .main-nav {
@@ -705,7 +712,6 @@ CSS Grid layout for wider screens, when browser supports grid:
       position: fixed;
       display: block;
       top: 1.5rem;
-   
     }
 
     .cards {
@@ -720,17 +726,16 @@ CSS Grid layout for wider screens, when browser supports grid:
       display: grid;
       color: var(--secondary-color);
       grid-template-columns: 8rem auto;
-      background: rgba( 255, 255, 255, 0.1 );
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-      backdrop-filter: blur( 2.5px );
-      -webkit-backdrop-filter: blur( 2.5px );
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(2.5px);
+      -webkit-backdrop-filter: blur(2.5px);
       border-radius: 10px;
-      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      border: 1px solid rgba(255, 255, 255, 0.18);
     }
 
     .cards a:focus,
     .cards a:hover {
-   
       cursor: url('images/glove2.png'), auto;
     }
     .twin {
@@ -738,12 +743,12 @@ CSS Grid layout for wider screens, when browser supports grid:
       margin-left: 3rem;
       padding: 2rem;
       border-radius: 0.3rem 0.3rem 0 0;
-   }
-    .twin:last-of-type {
-     margin-bottom: 4rem;
-     border-radius:0 0 0.3rem 0.3rem ;
-        }
     }
+    .twin:last-of-type {
+      margin-bottom: 4rem;
+      border-radius: 0 0 0.3rem 0.3rem;
+    }
+  }
 
   @media only screen and (min-width: 60rem) {
     .cards {
@@ -754,7 +759,6 @@ CSS Grid layout for wider screens, when browser supports grid:
       grid-gap: 1rem;
       justify-content: center;
     }
-    
 
     .card {
       margin: 0;
@@ -771,28 +775,27 @@ CSS Grid layout for wider screens, when browser supports grid:
       margin: 0 auto;
       padding: 1rem;
       border-radius: 0.3rem 0.3rem 0 0;
-   }
+    }
     .twin:last-of-type {
-     margin-bottom: 4rem;
-     border-radius:0 0 0.3rem 0.3rem ;
-        }
-     }
+      margin-bottom: 4rem;
+      border-radius: 0 0 0.3rem 0.3rem;
+    }
+  }
 
   @media only screen and (min-width: 78rem) {
     .site {
       grid-template-columns: 16rem calc(100% - 16rem) 16rem;
       grid-template-areas:
-        "nav header header"
-        "nav main sidebar"
-        "nav footer footer";     
+        'nav header header'
+        'nav main sidebar'
+        'nav footer footer';
     }
     .twin {
       margin: 0;
-      border-radius: 0.3rem 0 0 0 ;
-   
-     }
-     .twin:last-of-type {
-      border-radius:0 0 0 0.3rem ;
+      border-radius: 0.3rem 0 0 0;
+    }
+    .twin:last-of-type {
+      border-radius: 0 0 0 0.3rem;
     }
   }
 }

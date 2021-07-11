@@ -13,7 +13,7 @@
 
 html {
   box-sizing: border-box;
-  /* background-color: #050d1d; */
+  min-height: 100vh;
   scrollbar-width: thin;
   scrollbar-color: #022648 #00549a;
 }
@@ -722,7 +722,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
 
     .card {
-      margin: 1rem 0;
+      margin: 1rem auto;
       padding: 0.5rem;
       max-width: 30rem;
       display: grid;
@@ -755,7 +755,7 @@ CSS Grid layout for wider screens, when browser supports grid:
   @media only screen and (min-width: 60rem) {
     .cards {
       max-width: none;
-      margin: 1rem 0;
+      margin: 1rem auto;
       display: grid;
       grid-template-columns: repeat(2, 28rem);
       grid-gap: 1rem;
@@ -763,7 +763,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
 
     .card {
-      margin: 0;
+      margin: auto;
     }
 
     .double {

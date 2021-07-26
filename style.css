@@ -57,17 +57,18 @@ body {
 
 /* Let's get this party started */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
+  height: 8px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
   background-color: #050d1d;
-  border-radius: 10px;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #49a4ff;
+  border: 2px solid #050d1d;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
   background-color: #49a4ff;

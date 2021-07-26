@@ -63,31 +63,15 @@ body {
 ::-webkit-scrollbar-track {
   background-color: #050d1d;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-border-radius: 10px;
   background-color: #49a4ff;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
   background-color: #49a4ff;
 }
-
-/* ::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background-color: #00549a;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 6px;
-  background-color: var(--tertiary-color);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #49a4ff;
-} */
 
 body,
 button,
@@ -310,13 +294,6 @@ Header:
 /* Icons */
 .masthead .icon-button i {
   color: white;
-
-  /* height: 3rem;
-  width: 3rem;
-	left: 0;
-	line-height: 3rem;
-	position: absolute;	
-	border-radius: 3.6rem; */
   z-index: 10;
   cursor: url(images/glove2.png), auto;
   transition: 0.2s ease;
@@ -646,10 +623,7 @@ Footer:
 .impressum p {
   font-size: small;
 }
-.footer .icon-button i:hover {
-  /* animation: none;   */
-  color: #000;
-}
+
 .footer .icon-button:hover {
   background: rgba(255, 255, 255, 0.5);
   /* animation: none;  */

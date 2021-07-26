@@ -6,7 +6,7 @@ const doItNow = (evt, hard) => {
   confetti({
     colors: ['#235ac2', '#5384e0', '#95b4ec'],
     particleCount,
-    angle: r(90, 90 + direction * 30),
+    angle: r(0, 0 + direction * 30),
     spread: r(45, 80),
     origin: {
       x: evt.clientX / window.innerWidth,
@@ -23,9 +23,10 @@ const doItHard = (evt) => {
 };
 
 let lastX = 0;
-const footer = document.querySelector('footer');
-footer.addEventListener('mousemove', doIt);
-// footer.addEventListener('click', doItHard);
+// const footer = document.querySelector('footer');
+// footer.addEventListener('mousemove', doIt);
+const pointingHand = document.querySelector('.pointingHand');
+pointingHand.addEventListener('mousedown', doItHard);
 
 function r(mi, ma) {
   return parseInt(Math.random() * (ma - mi) + mi);

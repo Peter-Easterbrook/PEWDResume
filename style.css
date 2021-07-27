@@ -273,7 +273,7 @@ Header:
 }
 
 /* Wrapper */
-.masthead .icon-button {
+.masthead .iconButton {
   border-radius: 50%;
   display: inline-block;
   font-size: 2.25rem;
@@ -293,7 +293,7 @@ Header:
 }
 
 /* Icons */
-.masthead .icon-button i {
+.masthead .iconButton i {
   color: white;
   z-index: 10;
   cursor: url(images/glove2.png), auto;
@@ -303,7 +303,7 @@ Header:
 .masthead .github i {
   animation: iconColorSwitch 10s ease-in-out infinite;
 }
-.icon-button:hover {
+.iconButton:hover {
   background: rgba(255, 255, 255, 0.4);
 }
 
@@ -594,7 +594,7 @@ Footer:
 }
 
 /* Wrapper */
-.footer .icon-button {
+.footer .iconButton {
   /* border-radius: 3.6rem; */
   display: inline-block;
   font-size: 1.4rem;
@@ -615,7 +615,7 @@ Footer:
 }
 
 /* Icons */
-.footer .icon-button i {
+.footer .iconButton i {
   color: white;
   cursor: url(images/glove2.png), auto;
   transition: 0.3s ease;
@@ -625,7 +625,7 @@ Footer:
   font-size: small;
 }
 
-.footer .icon-button:hover {
+.footer .iconButton:hover {
   background: rgba(255, 255, 255, 0.5);
   /* animation: none;  */
 }

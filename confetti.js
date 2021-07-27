@@ -14,7 +14,7 @@ const doItNow = (evt, hard) => {
     },
   });
 };
-const doIt = (evt) => {
+const doIt = (evt, hard) => {
   doItNow(evt, false);
 };
 
@@ -23,8 +23,8 @@ const doItHard = (evt) => {
 };
 
 let lastX = 0;
-// const footer = document.querySelector('footer');
-// footer.addEventListener('mousemove', doIt);
+const navConfetti = document.querySelector('.main-nav');
+navConfetti.addEventListener('mousemove', doIt);
 const pointingHand = document.querySelector('.pointingHand');
 pointingHand.addEventListener('mousedown', doItHard);
 

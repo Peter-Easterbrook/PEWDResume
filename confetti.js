@@ -23,8 +23,8 @@ const doItHard = (evt) => {
 };
 
 let lastX = 0;
-const navConfetti = document.querySelector('.main-nav');
-navConfetti.addEventListener('mousemove', doIt);
+// const navConfetti = document.querySelector('.main-nav');
+// navConfetti.addEventListener('mousemove', doIt);
 const pointingHand = document.querySelector('.pointingHand');
 pointingHand.addEventListener('mousedown', doItHard);
 

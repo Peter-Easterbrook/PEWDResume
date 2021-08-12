@@ -43,6 +43,7 @@
     ></script>
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
     <script src="functions.js" defer></script>
+    <audio id="audio" src="pop.wav" autostart="false"></audio>
 
     <!-- <audio id="audio" src="images/gong.mp3" autostart="false"></audio> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -68,6 +69,8 @@
         class="float-left ml-5 trigger bounce"
         id="pointingHand"
         aria-expanded="false"
+        value="PLAY"
+        onclick="play()"
       >
         <!-- <i class="bi bi-arrow-left-circle"></i> -->
         <img
@@ -76,12 +79,12 @@
           class="mt-4 pointingHand"
         />
       </div>
-      <!-- <script>
+      <script>
         function play() {
           var audio = document.getElementById('audio');
           audio.play();
         }
-      </script> -->
+      </script>
 
       <div class="float-right mr-5 mt-4">
         <a

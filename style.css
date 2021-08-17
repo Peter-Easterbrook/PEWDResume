@@ -13,7 +13,7 @@
 
 html {
   box-sizing: border-box;
-  min-height: 100vh;
+  min-height: 102vh;
   scrollbar-width: thin;
   scrollbar-color: #022648 #00549a;
 }

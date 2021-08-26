@@ -1,7 +1,5 @@
 user-agent: Googlebot-Image
 disallow: / 
 
-user-agent: *
-disallow: /
 
 Sitemap: https://pe-wd-resume.vercel.app/sitemap.xml

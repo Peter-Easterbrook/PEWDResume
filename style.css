@@ -605,13 +605,13 @@ Footer:
   transition: 0.3s ease;
 }
 
-.impressum p {
-  font-size: small;
-}
-
 .footer .iconButton:hover {
   background: rgba(255, 255, 255, 0.5);
   /* animation: none;  */
+}
+
+.impressum p {
+  font-size: small;
 }
 
 /*--------------------------------------------------------------

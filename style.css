@@ -111,7 +111,7 @@ h6 {
 }
 .side-list {
   color: var(--secondary-color);
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 .side-list > ::marker {
   font-size: 0.8rem;
@@ -121,7 +121,7 @@ h6 {
   font-weight: 700;
 }
 .side-list > li {
-  padding-left: 0.5rem;
+  padding-left: 0.4rem;
 }
 
 figure {
@@ -274,6 +274,7 @@ Header:
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
 }
 
 /* Icons */
@@ -595,6 +596,7 @@ Footer:
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0.4rem;
+  transition: all 0.3s ease;
   cursor: url(images/glove2.png), auto;
 }
 

@@ -412,7 +412,6 @@ Navigation:
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  /*   background: #ccc;  */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -425,7 +424,6 @@ Navigation:
     center no-repeat;
   background-size: cover;
   border-radius: 50%;
-  /*   filter: brightness(1.2)contrast(1.2); */
 }
 .text {
   position: absolute;

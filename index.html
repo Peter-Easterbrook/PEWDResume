@@ -93,7 +93,7 @@
 
     <section class="main-nav">
       <nav class="side-nav">
-        <div class="px-3 mb-4">
+        <!-- <div class="px-3 mb-4">
           <div class="media d-flex align-items-center">
             <img
               src="images/Peter2017.jpg"
@@ -102,7 +102,23 @@
               class="mx-auto rounded-circle border border-light shadow-lg"
             />
           </div>
+        </div> -->
+        <div class="circle">
+          <div class="text">
+            <p>OneStep Web-Development - Peter Easterbrook-</p>
+          </div>
+          <div class="logo"></div>
         </div>
+        <script>
+          const text = document.querySelector('.text p');
+          text.innerHTML = text.innerHTML
+            .split('')
+            .map(
+              (char, i) =>
+                `<span style="transform:rotate(${i * 8.2}deg)">${char}</span>`
+            )
+            .join('');
+        </script>
         <h6 class="font-weight-normal text-uppercase px-3 pb-4 mb-0">
           projects
         </h6>
@@ -895,68 +911,6 @@
             </figure>
           </a>
         </li>
-
-        <!-- <li class="card-item">
-          <a href="https://react-tailwind-appt-app-2021.vercel.app/">
-            <figure class="card">
-              <img
-                class="logo-pulse"
-                src="images/tailwind.png"
-                alt="Link to css certificate."
-                style="filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5))"
-              />
-              <figcaption class="caption">
-                <h4 class="caption-title">Tailwind CSS v2.0</h4>
-                <p>
-                  Tailwind is a utility-first CSS framework without predefined
-                  components. Tailwind operates on a lower level by providing a
-                  set of CSS helper classes.
-                </p>
-              </figcaption>
-            </figure>
-          </a>
-        </li> -->
-
-        <!-- <li class="card-item">
-          <a
-            href="https://user-images.githubusercontent.com/59874288/98726049-4125e080-2396-11eb-92e3-74ab30345352.png"
-          >
-            <figure class="card">
-              <img
-                class="logo-pulse"
-                src="images/css.png"
-                alt="Link to css certificate."
-                style="filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5))"
-              />
-              <figcaption class="caption">
-                <h4 class="caption-title">Advanced CSS Grid</h4>
-                <p>
-                  With so many ways to structure a website, a comprehensive
-                  knowledge of all the options is crucial.
-                </p>
-              </figcaption>
-            </figure>
-          </a>
-        </li> -->
-
-        <!-- <li class="card-item">
-          <a
-            href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-1cac8c0f-ff62-492b-8e65-010a38d13d88.pdf"
-          >
-            <figure class="card">
-              <img
-                class="electron"
-                src="images/electron.png"
-                alt="Link to css certificate."
-                style="filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5))"
-              />
-              <figcaption class="caption">
-                <h4 class="caption-title">Electron.js</h4>
-                <p>Electron &amp; React JS Native Chat App with Firebase.</p>
-              </figcaption>
-            </figure>
-          </a>
-        </li> -->
       </ul>
     </main>
     <!--************Sidebar Section*****************-->

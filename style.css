@@ -432,11 +432,12 @@ Navigation:
   position: absolute;
   height: 140px;
   width: 140px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   background: url(https://user-images.githubusercontent.com/59874288/133302732-959892a4-7ab7-4c9f-a542-59b00f380d3b.jpg)
     center no-repeat;
   background-size: cover;
   border-radius: 50%;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 }
 .text {
   position: absolute;

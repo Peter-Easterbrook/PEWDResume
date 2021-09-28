@@ -16,7 +16,7 @@ html {
   position: relative;
   min-height: 100%;
   scrollbar-width: thin;
-  scrollbar-color: #022648 #00549a;
+  scrollbar-color: #0073e6 transparent;
 }
 
 *,
@@ -42,8 +42,8 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 0.6rem;
+  height: 0.6rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -51,11 +51,11 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #49a4ff;
-  /* border: 2px solid transparent; */
+  background-color: #0073e6;
+  border: 2px solid transparent;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-  background-color: #49a4ff;
+  background-color: #0073e6;
 }
 
 body,

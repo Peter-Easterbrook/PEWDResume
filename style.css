@@ -310,6 +310,7 @@ Header:
   color: #fff;
 }
 .bounce {
+  cursor: url('images/glove2.png'), auto;
   animation: bounce 2s;
   animation-iteration-count: infinite;
 }
@@ -332,7 +333,6 @@ Header:
 
 .bounce:hover {
   animation: none;
-  cursor: url('images/glove2.png'), auto;
 }
 
 /*--------------------------------------------------------------
@@ -356,6 +356,15 @@ Navigation:
   transition: 0.5s ease;
   scrollbar-width: thin;
   scrollbar-color: #022648 #00549a;
+}
+@media screen and (max-width: 600px) {
+  .main-nav,
+  .mastGit,
+  .pointingHand,
+  .bounce {
+    display: none;
+    animation: none;
+  }
 }
 
 .dropdown-toggle {

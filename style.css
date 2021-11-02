@@ -748,7 +748,6 @@ CSS Grid layout for wider screens, when browser supports grid:
       margin: 1rem auto;
       padding: 0.5rem;
       max-width: 26rem;
-      display: grid;
       color: var(--secondary-color);
       grid-template-columns: 8rem auto;
       background: rgba(255, 255, 255, 0.1);
@@ -789,6 +788,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
 
     .card {
+      display: grid;
       width: 28rem;
       margin: auto;
     }

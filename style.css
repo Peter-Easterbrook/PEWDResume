@@ -16,7 +16,7 @@ html {
   position: relative;
   min-height: 100%;
   scrollbar-width: thin;
-  scrollbar-color: #0073e6 transparent;
+  scrollbar-color: #000 #0073e6;
 }
 
 *,

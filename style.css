@@ -304,37 +304,6 @@ Header:
   background: rgba(255, 255, 255, 0.4);
 }
 
-/*-----Pointer Sidenav---------*/
-.bounce i {
-  font-size: 2.4rem;
-  color: #fff;
-}
-.bounce {
-  cursor: url('images/glove2.png'), auto;
-  animation: bounce 2s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes bounce {
-  0%,
-  25%,
-  50%,
-  75%,
-  100% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(-20px);
-  }
-  60% {
-    transform: translateX(-12px);
-  }
-}
-
-.bounce:hover {
-  animation: none;
-}
-
 /*--------------------------------------------------------------
 Navigation:
 --------------------------------------------------------------*/
@@ -363,7 +332,6 @@ Navigation:
   .pointingHand,
   .bounce {
     display: none;
-    animation: none;
   }
 }
 
@@ -708,6 +676,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 
     .main-area {
       grid-area: main;
+      margin-bottom: 0;
     }
 
     .sidebar {
@@ -748,6 +717,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       margin: 1rem auto;
       padding: 0.5rem;
       max-width: 26rem;
+      height: auto;
       color: var(--secondary-color);
       grid-template-columns: 8rem auto;
       background: rgba(255, 255, 255, 0.1);
@@ -778,6 +748,38 @@ CSS Grid layout for wider screens, when browser supports grid:
   }
 
   @media only screen and (min-width: 60rem) {
+    /*-----Pointer Sidenav---------*/
+    .bounce i {
+      font-size: 2.4rem;
+      color: #fff;
+    }
+    .bounce {
+      cursor: url('images/glove2.png'), auto;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%,
+      25%,
+      50%,
+      75%,
+      100% {
+        transform: translateX(0);
+      }
+      40% {
+        transform: translateX(-20px);
+      }
+      60% {
+        transform: translateX(-12px);
+      }
+    }
+
+    .bounce:hover {
+      animation: none;
+    }
+    .main-area {
+      margin-bottom: 0;
+    }
     .cards {
       max-width: none;
       margin: 1rem auto;
@@ -820,6 +822,10 @@ CSS Grid layout for wider screens, when browser supports grid:
         'nav main sidebar'
         'nav footer footer';
     }
+
+    .main-area {
+      margin-bottom: 0;
+    }
     .card {
       max-width: 30rem;
       margin: auto;
@@ -833,8 +839,17 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
   }
 }
+@media screen and (max-width: 78rem) {
+  .sidebar {
+    margin-top: 0;
+  }
+}
+
 @media screen and (max-width: 30rem) {
   .main-nav {
     display: none;
+  }
+  .main-area {
+    margin-bottom: 0;
   }
 }

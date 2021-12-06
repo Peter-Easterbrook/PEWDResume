@@ -13,8 +13,6 @@
 
 html {
   box-sizing: border-box;
-  position: relative;
-  min-height: 100%;
   scrollbar-width: thin;
   scrollbar-color: #000 #0073e6;
 }
@@ -28,6 +26,7 @@ html {
 }
 
 body {
+  min-height: 100vh;
   font-family: 'Raleway', sans-serif;
   background: var(--tertiary-color);
   animation: fadeInAnimation ease-out 3s 1 forwards;
@@ -45,7 +44,6 @@ body {
   width: 0.6rem;
   height: 0.6rem;
 }
-
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
@@ -575,11 +573,11 @@ Buttons
 Sidebar:
 --------------------------------------------------------------*/
 .sidebar {
-  margin-top: 9rem;
+  margin-top: 9.4rem;
 }
 
 .twin {
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
   font-size: 1rem;
   color: var(--secondary-color);
   font-weight: 300;

@@ -28,6 +28,7 @@ html {
 body {
   min-height: 100vh;
   font-family: 'Raleway', sans-serif;
+  text-rendering: optimizeSpeed;
   background: var(--tertiary-color);
   animation: fadeInAnimation ease-out 3s 1 forwards;
 }
@@ -350,67 +351,156 @@ Navigation:
     display: none;
   }
 }
+.reactList {
+  display: flex;
+  flex-direction: column;
+}
+.reactList .sidenavItem {
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 0.4rem;
+  width: 90%;
+  padding: 0.4rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
+.reactList .sidenavItem:hover {
+  background: var(--secondary-color);
+  color: var(--tertiary-color);
+  cursor: url(images/glove2.png), auto;
+}
+[data-css-icon] {
+  --animdur: 0.3s;
+  --loading-animdur: 0.8s;
+  --animtf: ease-in;
+  --bdw: 2px;
+  --bdrs: 50%;
+  --bgc: #457dfd;
+  --c: currentcolor;
+  --icon-size: 1rem;
+  --size: 2.5rem;
 
-.dropdown-toggle {
-  border-radius: 0.3rem;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+[data-css-icon] i {
+  align-items: center;
+  /* background-color: var(--bgc); */
+  border-radius: var(--bdrs);
+  box-sizing: border-box;
+  display: inline-flex;
+  height: var(--size);
+  justify-content: center;
+  position: relative;
+  transition: background-color var(--animdur) var(--animtf);
+  width: var(--size);
+}
+[data-css-icon] i::after,
+[data-css-icon] i::before {
+  transform-origin: 50% 50%;
+  transition: all var(--animdur) var(--animtf);
 }
 
-.main-nav ul,
-.nav-link {
-  justify-content: center;
+[data-css-icon*='down'] i::after {
+  background: transparent;
+  border-color: var(--c);
+  border-style: solid;
+  box-sizing: border-box;
+  content: '';
+  display: inline-block;
+  height: var(--icon-size);
   margin: 0;
-  padding: 0;
+  position: relative;
+  width: var(--icon-size);
+}
+[data-css-icon*='down'] i::after {
+  border-width: 0 var(--bdw) var(--bdw) 0;
+  top: calc(0px - (var(--icon-size) / 4));
+  transform: rotate(45deg);
+}
+
+[open] > summary > [data-css-icon*='down'] i::after {
+  top: var(--bdw);
+  transform: rotate(45deg) scale(-1);
+}
+
+details {
+  width: 14rem;
+}
+
+details {
+  height: var(--collapsed);
+  overflow: hidden;
+  transition: height 300ms cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}
+details[open] {
+  height: var(--expanded);
+}
+
+summary {
+  background: var(--tertiary-color);
+  border: 0;
+  border-radius: 0.4rem;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  list-style-type: none;
+  margin: 0.5rem 0;
+  outline: none;
+  padding-inline-end: 0.5rem;
+  padding-inline-start: 1rem;
+  user-select: none;
+}
+summary span:hover {
+  cursor: url(images/glove2.png), auto;
+}
+summary::marker {
+  display: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary + * {
+  color: #fff;
+  line-height: 1.6;
+  padding: 0.5rem;
+}
+.main-nav h6 {
+  margin: 1.2rem 0 0.8rem 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.main-nav ul {
   list-style-type: none;
   border-radius: 0.3rem;
   font-weight: 200;
 }
-.nav-link:hover {
-  color: #000;
-  font-weight: 200;
-}
 
 .main-nav li a {
+  width: 14rem;
   color: var(--secondary-color);
   font-size: 1rem;
   display: block;
   padding: 0.4em 0.8em;
   text-decoration: none;
-  transition: 0.3s ease;
+  list-style-type: none;
+  border-radius: 0.3rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
 }
 
 .main-nav li a:hover,
 .main-nav li a:focus {
   background-color: var(--primary-color);
-  text-decoration: none;
   cursor: url(images/glove2.png), auto;
   color: #000;
-  font-size: 1rem;
-  border-radius: 0;
 }
 
-.list-unstyled {
-  background-color: var(--tertiary-color);
-  border: 0;
-  color: var(--secondary-color);
-  width: 14rem;
-  line-height: 1.3;
-  border: 1px dashed #fffff7;
-}
-
-.dropdown-menu {
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
-  width: 13.6rem;
-  line-height: 1.3;
-  border: 1px dashed #fffff7;
-  transition: transform 0.3s ease-out;
-}
-
-.dropdown-menu .dropdown-item:hover {
-  background-color: var(--primary-color);
-  color: var(--tertiary-color);
-  border-radius: 0;
-}
 /*Spinning Text */
 .circle {
   position: relative;
@@ -660,7 +750,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       left: -16rem;
       overflow-x: hidden;
       display: grid;
-      grid-template-columns: 17rem calc(100%);
+      grid-template-columns: 21rem calc(100%);
       grid-template-areas:
         'nav header'
         'nav main'

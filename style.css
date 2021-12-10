@@ -160,7 +160,7 @@ img {
 }
 @keyframes spin {
   100% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 .logo-pulse {
@@ -429,6 +429,7 @@ Navigation:
 
 details {
   width: 14rem;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
 }
 
 details {
@@ -473,14 +474,25 @@ summary + * {
   margin: 1.2rem 0 0.8rem 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
 }
-.main-nav ul {
+.main-nav .about {
   list-style-type: none;
   border-radius: 0.3rem;
   font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-nav .about img {
+  width: 13.6rem;
+  height: 2.2rem;
+  margin: 0.4rem 0 0 0.2rem;
+  cursor: url(images/glove2.png), auto;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
 }
 
-.main-nav li a {
+.main-nav li .navLink {
   width: 14rem;
   color: var(--secondary-color);
   font-size: 1rem;
@@ -494,8 +506,8 @@ summary + * {
   transition: all 0.3s ease;
 }
 
-.main-nav li a:hover,
-.main-nav li a:focus {
+.main-nav li .navLink:hover,
+.main-nav li .navLink:focus {
   background-color: var(--primary-color);
   cursor: url(images/glove2.png), auto;
   color: #000;

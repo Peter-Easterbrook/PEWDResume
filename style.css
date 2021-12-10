@@ -66,7 +66,12 @@ li {
   line-height: 1.5;
   font-weight: 200;
 }
-
+.trigger {
+  position: fixed;
+  display: block;
+  top: 2.5rem;
+  left: clamp(2.4rem, 3vw, 3.5rem);
+}
 .pointingHand {
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
   width: clamp(2.4rem, 3.5vw, 5rem);
@@ -135,7 +140,6 @@ General styling
 img {
   margin: auto;
   display: block;
-  /* border: 0; */
   width: 90%;
   height: auto;
 }
@@ -155,6 +159,8 @@ img {
 }
 
 .electron {
+  width: 130px;
+  height: 130px;
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
   animation: spin 6s linear infinite;
 }
@@ -163,7 +169,9 @@ img {
     transform: rotate(-360deg);
   }
 }
-.logo-pulse {
+.logoPulse {
+  width: 130px;
+  height: 130px;
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
   transition: transform 1s ease;
   animation: in-out 1s infinite alternate;
@@ -188,6 +196,14 @@ img {
   100% {
     opacity: 0;
   }
+}
+
+.logoImg {
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  border: 1px solid #ccc;
+  width: 130px;
+  height: 130px;
+  border-radius: 0.3rem;
 }
 
 /*--------------------------------------------------------------
@@ -430,9 +446,6 @@ Navigation:
 details {
   width: 14rem;
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
-}
-
-details {
   height: var(--collapsed);
   overflow: hidden;
   transition: height 300ms cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -478,21 +491,17 @@ summary + * {
 }
 .main-nav .about {
   list-style-type: none;
-  border-radius: 0.3rem;
-  font-weight: 200;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-top: 8rem;
 }
 .main-nav .about img {
   width: 13.6rem;
   height: 2.2rem;
-  margin: 0.4rem 0 0 0.2rem;
+  margin: 0.4rem 0 0 -1.8rem;
   cursor: url(images/glove2.png), auto;
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
 }
 
-.main-nav li .navLink {
+/* .main-nav li .navLink {
   width: 14rem;
   color: var(--secondary-color);
   font-size: 1rem;
@@ -511,7 +520,7 @@ summary + * {
   background-color: var(--primary-color);
   cursor: url(images/glove2.png), auto;
   color: #000;
-}
+} */
 
 /*Spinning Text */
 .circle {
@@ -527,12 +536,10 @@ summary + * {
   position: absolute;
   height: 140px;
   width: 140px;
-  /* border: 1px solid #000; */
-  background: url(https://user-images.githubusercontent.com/59874288/133302732-959892a4-7ab7-4c9f-a542-59b00f380d3b.jpg)
-    center no-repeat;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: url(images/peter.png) center no-repeat;
   background-size: cover;
   border-radius: 50%;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 }
 .text {
   position: absolute;
@@ -593,32 +600,6 @@ Cards:
   margin-bottom: 0;
 }
 
-.git {
-  font-size: 6rem;
-  margin: 0 0.5rem 0 1.5rem;
-}
-.git .fab {
-  color: #000;
-  animation: github 1s ease-in-out infinite alternate;
-}
-@keyframes github {
-  from {
-    text-shadow: 0 0 2px #49a4ff, 0 0 4px #49a4ff, 0 0 8px #49a4ff,
-      0 0 12px #49a4ff, 0 0 16px #49a4ff, 0 0 20px #49a4ff, 0 0 24px #49a4ff;
-  }
-  to {
-    text-shadow: 0 0 3px #0073e6, 0 0 5px #0073e6, 0 0 10px #0073e6,
-      0 0 20px #0073e6, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6;
-  }
-}
-.logoImg {
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
-  border: 1px solid #ccc;
-  width: 130px;
-  height: 130px;
-  border-radius: 0.3rem;
-}
-
 /* ---------------------------------------------------------
 Buttons
 ----------------------------------------------------------------*/
@@ -626,13 +607,16 @@ Buttons
 .btn-group {
   margin-top: 1rem;
 }
+.btn-block {
+  padding: 0.5rem 1rem;
+}
 
 .btn,
 .badge {
   position: relative;
   background: transparent;
   text-transform: uppercase;
-  font-size: small;
+  font-size: 0.8rem;
   color: var(--text-color);
   overflow: hidden;
   border: 1px solid #fff;
@@ -762,7 +746,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       left: -16rem;
       overflow-x: hidden;
       display: grid;
-      grid-template-columns: 21rem calc(100%);
+      grid-template-columns: 16rem calc(100%);
       grid-template-areas:
         'nav header'
         'nav main'
@@ -807,12 +791,6 @@ CSS Grid layout for wider screens, when browser supports grid:
       display: flex;
     }
 
-    .trigger {
-      position: fixed;
-      display: block;
-      top: 1.5rem;
-    }
-
     .cards {
       margin: 0 auto;
       padding: 1rem;
@@ -831,13 +809,15 @@ CSS Grid layout for wider screens, when browser supports grid:
       -webkit-backdrop-filter: blur(2.5px);
       border-radius: 0.4rem;
       border: 1px solid rgba(255, 255, 255, 0.18);
+      transform-style: preserve-3d;
+      transform: perspective(1000px);
     }
 
     .cards a:focus,
     .cards a:hover {
       cursor: url('images/glove2.png'), auto;
     }
-    .card-item {
+    .cardItem {
       margin: auto;
     }
     .twin {

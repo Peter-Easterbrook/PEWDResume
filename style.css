@@ -446,7 +446,6 @@ Navigation:
 
 details {
   width: 14rem;
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
   height: var(--collapsed);
   overflow: hidden;
   transition: height 300ms cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -468,6 +467,7 @@ summary {
   padding-inline-end: 0.5rem;
   padding-inline-start: 1rem;
   user-select: none;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
 }
 summary span:hover {
   cursor: url(images/glove2.png), auto;

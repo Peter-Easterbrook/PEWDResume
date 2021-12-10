@@ -370,6 +370,7 @@ Navigation:
 .reactList {
   display: flex;
   flex-direction: column;
+  font-size: 0.9rem;
 }
 .reactList .sidenavItem {
   color: var(--secondary-color);

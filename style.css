@@ -393,10 +393,10 @@ Navigation:
   --animtf: ease-in;
   --bdw: 2px;
   --bdrs: 50%;
-  --bgc: #457dfd;
+  --bgc: var(--tertiary-color);
   --c: currentcolor;
   --icon-size: 1rem;
-  --size: 2.5rem;
+  --size: 2.4rem;
 
   align-items: center;
   cursor: pointer;
@@ -405,7 +405,7 @@ Navigation:
 }
 [data-css-icon] i {
   align-items: center;
-  /* background-color: var(--bgc); */
+  background-color: var(--bgc);
   border-radius: var(--bdrs);
   box-sizing: border-box;
   display: inline-flex;
@@ -457,7 +457,7 @@ details[open] {
 summary {
   background: var(--tertiary-color);
   border: 0;
-  border-radius: 0.4rem;
+  border-radius: 3rem;
   color: #fff;
   font-weight: 300;
   letter-spacing: 1px;

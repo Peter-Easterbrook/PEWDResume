@@ -338,8 +338,46 @@ Header:
 }
 
 /*--------------------------------------------------------------
-Navigation:
+Navigation: SideNav
 --------------------------------------------------------------*/
+/*Spinning Text */
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  position: absolute;
+  height: 140px;
+  width: 140px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+}
+.text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-weight: 300;
+  animation: rotateText 10s linear infinite;
+}
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.text span {
+  position: absolute;
+  left: 50%;
+  font-size: 1rem;
+  transform-origin: 0 100px;
+}
 .main-nav {
   min-height: 100%;
   top: 8rem;
@@ -375,9 +413,10 @@ Navigation:
 .reactList .sidenavItem {
   color: var(--secondary-color);
   text-decoration: none;
-  border-radius: 0.4rem;
+  border-radius: 3rem;
   width: 90%;
   padding: 0.4rem;
+  padding-left: 1rem;
   letter-spacing: 1px;
   font-weight: 300;
   transition: all 0.3s ease;
@@ -490,17 +529,6 @@ summary + * {
   letter-spacing: 1px;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
 }
-.main-nav .about {
-  list-style-type: none;
-  margin-top: 8rem;
-}
-.main-nav .about img {
-  width: 13.6rem;
-  height: 2.2rem;
-  margin: 0.4rem 0 0 -1.8rem;
-  cursor: url(images/glove2.png), auto;
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
-}
 
 /* .main-nav li .navLink {
   width: 14rem;
@@ -523,44 +551,6 @@ summary + * {
   color: #000;
 } */
 
-/*Spinning Text */
-.circle {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo {
-  position: absolute;
-  height: 140px;
-  width: 140px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 50%;
-}
-.text {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  font-weight: 300;
-  animation: rotateText 10s linear infinite;
-}
-@keyframes rotateText {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-.text span {
-  position: absolute;
-  left: 50%;
-  font-size: 1rem;
-  transform-origin: 0 100px;
-}
 /*--------------------------------------------------------------
 Cards:
 --------------------------------------------------------------*/

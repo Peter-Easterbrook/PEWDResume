@@ -37,34 +37,23 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
     <!-- JavaScript only -->
     <script src="confetti.js" defer></script>
     <script src="dropdown.js" defer></script>
     <script src="vanilla-tilt.min.js" defer></script>
-
+    
     <script
-      src="https://kit.fontawesome.com/93b32f94da.js"
-      crossorigin="anonymous"
-      defer
+    src="https://kit.fontawesome.com/93b32f94da.js"
+    crossorigin="anonymous"
+    defer
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js" integrity="sha512-mwNAdRfAgTFw7sywUyp8aLsHQN5qHd6PIX2K8zIbJLjGw0DyKriCK3sSs9IphpRqsNRvyRlP3HtbFtJIUofHJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
     <script src="functions.js" defer></script>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      src="https://www.googletagmanager.com/gtag/js?id=UA-158549795-1"
-      async
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
 
-      gtag('config', 'UA-158549795-1');
-    </script>
-    <!-- Google Analytics End -->
   </head>
 
   <body class="site">
@@ -349,7 +338,7 @@
 
     <main class="main-area">
       <ul class="cards">
-        <li class="cardItem double">
+        <li class="cardItem double" id="card-1">
           <figure
             class="card"
             data-tilt
@@ -406,7 +395,7 @@
           </figure>
         </li>
 
-        <li class="cardItem">
+        <li class="cardItem" id="card-2">
           <figure
             class="card"
             data-tilt
@@ -449,7 +438,7 @@
             </figcaption>
           </figure>
         </li>
-        <li class="cardItem">
+        <li class="cardItem" id="card-3">
           <figure
             class="card"
             data-tilt
@@ -498,7 +487,7 @@
             </figcaption>
           </figure>
         </li>
-        <li class="cardItem">
+        <li class="cardItem" id="card-4">
           <figure
             class="card"
             data-tilt
@@ -522,7 +511,7 @@
             </figcaption>
           </figure>
         </li>
-        <li class="cardItem">
+        <li class="cardItem" id="#card-5">
           <figure
             class="card"
             data-tilt
@@ -867,6 +856,23 @@
           </a>
         </li>
       </ul>
+      <script>
+        gsap.set("#card-1, #card-2, #card-3, #card-4, #card-5", {
+  autoAlpha: 0,
+  transformOrigin: "center center",
+  scale: 0
+});
+
+let heroTL = gsap.timeline({
+  defaults: {
+    stagger: { amount: 0.6, from: "start" },
+    autoAlpha: 1,
+    scale: 1,
+    ease: "back.out(1.7)"
+  }
+});
+heroTL.to("#card-5", {}).to("#card-4", {}).to("#card-1", {}).to("#card-2", {}).to("#card-3", {});
+      </script>
     </main>
     <!--************Sidebar Section*****************-->
     <section class="sidebar">

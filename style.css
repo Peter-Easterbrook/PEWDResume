@@ -14,7 +14,7 @@
 html {
   box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: #0073e6 #000;
+  scrollbar-color: #0600b6 #000;
 }
 
 *,
@@ -48,11 +48,11 @@ body {
   width: 0.4rem;
 }
 ::-webkit-scrollbar-track {
-  background-color: var(--tertiary-color);
+  background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: var(--secondary-color);
+  background-color: #0600b6;
   /* border: 1px solid transparent; */
 }
 /* ::-webkit-scrollbar-thumb:window-inactive {

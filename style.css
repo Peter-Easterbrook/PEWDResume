@@ -14,7 +14,7 @@
 html {
   box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: #000 #0073e6;
+  scrollbar-color: #0073e6 #000;
 }
 
 *,
@@ -364,6 +364,7 @@ Navigation: SideNav
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 .logo {
   position: absolute;

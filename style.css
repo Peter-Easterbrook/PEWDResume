@@ -82,7 +82,10 @@ a {
 }
 .pointingHand {
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
-  width: clamp(2.4rem, 3.5vw, 5rem);
+  width: 100%;
+  max-width: 67px;
+  height: 100%;
+  max-height: 35px;
 }
 
 .twin p {
@@ -205,6 +208,13 @@ img {
     opacity: 0;
   }
 }
+.trophy {
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  max-width: 387px;
+  width: 100%;
+  max-height: 242px;
+  height: 100%;
+}
 
 .logoImg {
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
@@ -212,6 +222,13 @@ img {
   width: 130px;
   height: 130px;
   border-radius: 0.3rem;
+}
+.d3img {
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  max-width: 387px;
+  width: 100%;
+  max-height: 387px;
+  height: 100%;
 }
 .logoImgRnd {
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
@@ -262,6 +279,7 @@ Header:
 .site-title,
 .site-subtitle,
 .content-title {
+  font-size: 1.3rem;
   color: #fffff7;
   font-weight: 200;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
@@ -768,7 +786,7 @@ Footer:
 CSS Grid layout for wider screens, when browser supports grid:
 --------------------------------------------------------------*/
 @supports (grid-area: auto) {
-  @media only screen and (min-width: 27rem) {
+  @media only screen and (min-width: 24rem) {
     .site {
       position: relative;
       left: -16rem;

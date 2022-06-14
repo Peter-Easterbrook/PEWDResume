@@ -213,6 +213,11 @@ img {
   height: 130px;
   border-radius: 0.3rem;
 }
+.logoImgRnd {
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  width: 130px;
+  height: 130px;
+}
 
 /*--------------------------------------------------------------
 Header:

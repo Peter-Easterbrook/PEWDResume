@@ -335,12 +335,12 @@
 
     <main class="main-area">
       <ul class="cards">
-        <li class="cardItem double" id="card-1">
+        <li class="cardItem double"  id="card-1">
           <figure
             class="card"
             data-tilt
-          
-          >
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"           >
             <br />
             <img
               class="mt-2 trophy"
@@ -396,8 +396,8 @@
           <figure
             class="card"
             data-tilt
-          
-          >
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"    >
             <img
               src="images/mongoNext.png"
               alt="Link to JavaScript certificates."
@@ -439,6 +439,8 @@
           <figure
             class="card"
             data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"
           
           >
             <img
@@ -488,6 +490,8 @@
           <figure
             class="card"
             data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"
           
           >
             <img class="logoImgRnd" src="images/node.png" alt="NodeJS logo." />
@@ -512,6 +516,8 @@
           <figure
             class="card"
             data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"
           
           >
             <img
@@ -542,10 +548,12 @@
             </figcaption>
           </figure>
         </li>
-        <li class="cardItem double " id="card-6">
+        <li class="cardItem double" id="card-6">
           <figure
             class="card"
             data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"
           
           >
           <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3NZ2AVLZ76ER" target="_blank">
@@ -604,6 +612,8 @@
           <figure
             class="card"
             data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"
           
           >
             <img
@@ -641,7 +651,9 @@
           >
             <figure
               class="card"
-              data-tilt>
+              data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3">
               <img
                 class="logoImgRnd"
                 src="images/graphql.png"
@@ -666,6 +678,8 @@
             <figure
               class="card"
               data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"
         
             >
               <img
@@ -695,6 +709,8 @@
             <figure
               class="card"
               data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"
         
             >
               <img
@@ -715,7 +731,9 @@
         <li class="cardItem "> 
             <figure
               class="card"
-              data-tilt      
+              data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"      
             >      
               <img
                 src="images/GitDisco.gif"
@@ -747,6 +765,8 @@
             <figure
               class="card"
               data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"
         
             >
               <img
@@ -770,6 +790,8 @@
             <figure
               class="card"
               data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"
         
             >
               <img
@@ -792,6 +814,8 @@
             <figure
               class="card"
               data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"
         
             >
               <img
@@ -814,6 +838,8 @@
             <figure
               class="card"
               data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"
         
             >
               <img
@@ -836,6 +862,8 @@
             <figure
               class="card"
               data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.3"
         
             >
               <img
@@ -888,7 +916,7 @@
           </li>
           <li>Anschrift: 1060 Wien, &#214;sterreich</li>
           <li>peter@easterbrook.at</li>
-          <!-- <li>Gewerbeschein Nr: 12-G-F 9406/02 Reg. ZI.: 101949F12</li> -->
+        
           <li>GSVA Nr: 5675 220370</li>
           <li>Interessen: Gym, Tauchen, Hiking.</li>
         </ul>
@@ -954,8 +982,11 @@
     <!-- <script>
       VanillaTilt.init(document.querySelectorAll('.card'), {
         max: 25,
-        speed: 1000,
-        glare: false,
+        speed: 400,
+        glare: true,
+        reverse: true,  // reverse the tilt direction            
+        scale: 1.05,    // change the scale of the element
+        perspective: 1000, // set the perspective of the tilted element
       });
     </script> -->
   </body>

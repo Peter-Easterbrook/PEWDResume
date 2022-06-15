@@ -23,9 +23,10 @@
       d,
       f,
       h,
-      g,
       m,
-      b =
+      g,
+      b,
+      v =
         ((u = Math.floor(1e3 / 60)),
         (d = {}),
         (f = 0),
@@ -52,8 +53,8 @@
               return clearTimeout(t);
             })),
         { frame: c, cancel: s }),
-      v =
-        ((m = {}),
+      p =
+        ((g = {}),
         function () {
           if (h) return h;
           if (!a && o) {
@@ -98,25 +99,25 @@
                 t.postMessage({ canvas: n }, [n]);
               }),
                 (t.fire = function (n, a, i) {
-                  if (g) return e(n, null), g;
+                  if (m) return e(n, null), m;
                   var o = Math.random().toString(36).slice(2);
-                  return (g = l(function (a) {
+                  return (m = l(function (a) {
                     function r(e) {
                       e.data.callback === o &&
-                        (delete m[o],
+                        (delete g[o],
                         t.removeEventListener('message', r),
-                        (g = null),
+                        (m = null),
                         i(),
                         a());
                     }
                     t.addEventListener('message', r),
                       e(n, o),
-                      (m[o] = r.bind(null, { data: { callback: o } }));
+                      (g[o] = r.bind(null, { data: { callback: o } }));
                   }));
                 }),
                 (t.reset = function () {
-                  for (var e in (t.postMessage({ reset: !0 }), m))
-                    m[e](), delete m[e];
+                  for (var e in (t.postMessage({ reset: !0 }), g))
+                    g[e](), delete g[e];
                 });
             })(h);
           }
@@ -147,36 +148,36 @@
         disableForReducedMotion: !1,
         scalar: 1,
       };
-    function p(t, e, n) {
+    function M(t, e, n) {
       return (function (t, e) {
         return e ? e(t) : t;
       })(t && null != t[e] ? t[e] : y[e], n);
     }
-    function M(t) {
+    function w(t) {
       return t < 0 ? 0 : Math.floor(t);
     }
-    function w(t) {
+    function x(t) {
       return parseInt(t, 16);
     }
-    function x(t) {
-      return t.map(C);
-    }
     function C(t) {
+      return t.map(k);
+    }
+    function k(t) {
       var e = String(t).replace(/[^0-9a-f]/gi, '');
       return (
         e.length < 6 && (e = e[0] + e[0] + e[1] + e[1] + e[2] + e[2]),
         {
-          r: w(e.substring(0, 2)),
-          g: w(e.substring(2, 4)),
-          b: w(e.substring(4, 6)),
+          r: x(e.substring(0, 2)),
+          g: x(e.substring(2, 4)),
+          b: x(e.substring(4, 6)),
         }
       );
     }
-    function k(t) {
+    function I(t) {
       (t.width = document.documentElement.clientWidth),
         (t.height = document.documentElement.clientHeight);
     }
-    function I(t) {
+    function S(t) {
       var e = t.getBoundingClientRect();
       (t.width = e.width), (t.height = e.height);
     }
@@ -189,7 +190,7 @@
           function l() {
             (c = s = null), d.clearRect(0, 0, o.width, o.height), r(), e();
           }
-          (c = b.frame(function e() {
+          (c = v.frame(function e() {
             !a ||
               (o.width === i.width && o.height === i.height) ||
               ((o.width = t.width = i.width), (o.height = t.height = i.height)),
@@ -201,12 +202,12 @@
                 return (function (t, e) {
                   (e.x += Math.cos(e.angle2D) * e.velocity + e.drift),
                     (e.y += Math.sin(e.angle2D) * e.velocity + e.gravity),
-                    (e.wobble += 0.1),
+                    (e.wobble += e.wobbleSpeed),
                     (e.velocity *= e.decay),
                     (e.tiltAngle += 0.1),
                     (e.tiltSin = Math.sin(e.tiltAngle)),
                     (e.tiltCos = Math.cos(e.tiltAngle)),
-                    (e.random = Math.random() + 5),
+                    (e.random = Math.random() + 2),
                     (e.wobbleX = e.x + 10 * e.scalar * Math.cos(e.wobble)),
                     (e.wobbleY = e.y + 10 * e.scalar * Math.sin(e.wobble));
                   var n = e.tick++ / e.totalTicks,
@@ -263,9 +264,8 @@
                     e.tick < e.totalTicks
                   );
                 })(d, t);
-              })).length
-                ? (c = b.frame(e))
-                : l();
+              })),
+              u.length ? (c = v.frame(e)) : l();
           })),
             (s = l);
         });
@@ -276,17 +276,17 @@
         canvas: t,
         promise: f,
         reset: function () {
-          c && b.cancel(c), s && s();
+          c && v.cancel(c), s && s();
         },
       };
     }
     function E(t, n) {
       var a,
         i = !t,
-        r = !!p(n || {}, 'resize'),
-        c = p(n, 'disableForReducedMotion', Boolean),
-        s = o && !!p(n || {}, 'useWorker') ? v() : null,
-        u = i ? k : I,
+        r = !!M(n || {}, 'resize'),
+        c = M(n, 'disableForReducedMotion', Boolean),
+        s = o && !!M(n || {}, 'useWorker') ? p() : null,
+        u = i ? I : S,
         d = !(!t || !s) && !!t.__confetti_initialized,
         f =
           'function' == typeof matchMedia &&
@@ -298,44 +298,44 @@
             l,
             c,
             s,
-            d = p(e, 'particleCount', M),
-            f = p(e, 'angle', Number),
-            h = p(e, 'spread', Number),
-            g = p(e, 'startVelocity', Number),
-            m = p(e, 'decay', Number),
-            b = p(e, 'gravity', Number),
-            v = p(e, 'drift', Number),
-            y = p(e, 'colors', x),
-            w = p(e, 'ticks', Number),
-            C = p(e, 'shapes'),
-            k = p(e, 'scalar'),
+            d = M(e, 'particleCount', w),
+            f = M(e, 'angle', Number),
+            h = M(e, 'spread', Number),
+            m = M(e, 'startVelocity', Number),
+            g = M(e, 'decay', Number),
+            b = M(e, 'gravity', Number),
+            v = M(e, 'drift', Number),
+            p = M(e, 'colors', C),
+            y = M(e, 'ticks', Number),
+            x = M(e, 'shapes'),
+            k = M(e, 'scalar'),
             I = (function (t) {
-              var e = p(t, 'origin', Object);
-              return (e.x = p(e, 'x', Number)), (e.y = p(e, 'y', Number)), e;
+              var e = M(t, 'origin', Object);
+              return (e.x = M(e, 'x', Number)), (e.y = M(e, 'y', Number)), e;
             })(e),
-            E = d,
-            S = [],
+            S = d,
+            E = [],
             F = t.width * I.x,
             N = t.height * I.y;
-          E--;
+          S--;
 
         )
-          S.push(
+          E.push(
             ((o = {
               x: F,
               y: N,
               angle: f,
               spread: h,
-              startVelocity: g,
-              color: y[E % y.length],
+              startVelocity: m,
+              color: p[S % p.length],
               shape:
-                C[
+                x[
                   ((c = 0),
-                  (s = C.length),
+                  (s = x.length),
                   Math.floor(Math.random() * (s - c)) + c)
                 ],
-              ticks: w,
-              decay: m,
+              ticks: y,
+              decay: g,
               gravity: b,
               drift: v,
               scalar: k,
@@ -348,16 +348,17 @@
               x: o.x,
               y: o.y,
               wobble: 10 * Math.random(),
+              wobbleSpeed: Math.min(0.11, 0.1 * Math.random() + 0.05),
               velocity: 0.5 * o.startVelocity + Math.random() * o.startVelocity,
               angle2D: -r + (0.5 * l - Math.random() * l),
-              tiltAngle: Math.random() * Math.PI,
+              tiltAngle: (0.5 * Math.random() + 0.25) * Math.PI,
               color: o.color,
               shape: o.shape,
               tick: 0,
               totalTicks: o.ticks,
               decay: o.decay,
               drift: o.drift,
-              random: Math.random() + 5,
+              random: Math.random() + 2,
               tiltSin: 0,
               tiltCos: 0,
               wobbleX: 0,
@@ -367,11 +368,11 @@
               scalar: o.scalar,
             })
           );
-        return a ? a.addFettis(S) : (a = T(t, S, u, n, i)).promise;
+        return a ? a.addFettis(E) : (a = T(t, E, u, n, i)).promise;
       }
-      function g(n) {
-        var o = c || p(n, 'disableForReducedMotion', Boolean),
-          g = p(n, 'zIndex', Number);
+      function m(n) {
+        var o = c || M(n, 'disableForReducedMotion', Boolean),
+          m = M(n, 'zIndex', Number);
         if (o && f)
           return l(function (t) {
             t();
@@ -390,10 +391,10 @@
                 (e.style.zIndex = t),
                 e
               );
-            })(g)),
+            })(m)),
             document.body.appendChild(t)),
           r && !d && u(t);
-        var m = { width: t.width, height: t.height };
+        var g = { width: t.width, height: t.height };
         function b() {
           if (s) {
             var e = {
@@ -408,7 +409,7 @@
               })
             );
           }
-          m.width = m.height = null;
+          g.width = g.height = null;
         }
         function v() {
           (a = null),
@@ -420,17 +421,25 @@
           (d = !0),
           s && (t.__confetti_initialized = !0),
           r && e.addEventListener('resize', b, !1),
-          s ? s.fire(n, m, v) : h(n, m, v)
+          s ? s.fire(n, g, v) : h(n, g, v)
         );
       }
       return (
-        (g.reset = function () {
+        (m.reset = function () {
           s && s.reset(), a && a.reset();
         }),
-        g
+        m
       );
     }
-    (n.exports = E(null, { useWorker: !0, resize: !0 })),
+    function F() {
+      return b || (b = E(null, { useWorker: !0, resize: !0 })), b;
+    }
+    (n.exports = function () {
+      return F().apply(this, arguments);
+    }),
+      (n.exports.reset = function () {
+        F().reset();
+      }),
       (n.exports.create = E);
   })(
     (function () {
@@ -441,8 +450,8 @@
   ),
     (t.confetti = e.exports);
 })(window, {});
-// import confetti from 'https://cdn.skypack.dev/canvas-confetti';
-// o "https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"
+
+//  "https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"
 const doItNow = (evt, hard) => {
   const direction = Math.sign(lastX - evt.clientX);
   lastX = evt.clientX;

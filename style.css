@@ -755,6 +755,26 @@ Footer:
   cursor: url(images/glove2.png), auto;
 }
 
+.footer .iconButton:nth-child(3) {
+  width: 13rem;
+}
+
+.footer .iconButton #time {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: var(--secondary-color);
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-feature-settings: 'tnum';
+  font-variant-numeric: tabular-nums;
+  transition: all 0.3s ease;
+}
+
 /* Icons */
 .footer .iconButton i {
   position: absolute;
@@ -768,7 +788,11 @@ Footer:
 }
 
 .footer .iconButton:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background-color: var(--secondary-color);
+}
+.footer .iconButton:hover i,
+.footer .iconButton:hover #time {
+  color: var(--tertiary-color);
   /* animation: none;  */
 }
 

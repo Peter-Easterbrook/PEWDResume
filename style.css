@@ -102,8 +102,7 @@ a {
 }
 .side-nav {
   color: var(--tertiary-color);
-  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px,
-    rgba(255, 255, 255, 0.4) 0 -3px 15px;
+  text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.6);
 }
 
 p,
@@ -651,7 +650,8 @@ Buttons
   overflow: hidden;
   border: 1px solid rgb(113, 113, 113);
   outline: none;
-  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: 2px;
   transition: all 0.3s ease;
 }
 

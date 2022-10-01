@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;300;400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;300;400;500;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
 /* Set core root defaults */
 :root {
   --primary-color: #e9f0fc;
@@ -9,6 +10,7 @@
   --text-color: hsla(210, 50%, 85%, 1);
   --shadow-color: hsla(210, 40%, 52%, 0.4);
   --bg-color: #141218;
+  --expanded: 100%;
 }
 
 html {
@@ -31,7 +33,7 @@ body {
   text-rendering: optimizeSpeed;
   user-select: none;
   overflow: auto;
-  font-family: 'Encode Sans', sans-serif;
+  /* font-family: 'Encode Sans', sans-serif; */
   animation: fadeInAnimation ease-out 3s 1 forwards;
 }
 @keyframes fadeInAnimation {
@@ -58,12 +60,13 @@ body,
 button,
 p,
 li {
-  font-family: 'Encode Sans', sans-serif;
-  font-size: 0.9rem;
+  /* font-family: 'Encode Sans', sans-serif; */
+  font-family: 'Philosopher', sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
   overflow-wrap: break-word;
   hyphens: auto;
-  font-weight: 200;
+  font-weight: lighter;
 }
 
 a {
@@ -275,7 +278,7 @@ Header:
 .content-title {
   font-size: 1.3rem;
   color: #fffff7;
-  font-weight: 200;
+  font-weight: 400;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
 }
 .title {
@@ -442,17 +445,17 @@ Navigation: SideNav
 .reactList {
   display: flex;
   flex-direction: column;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .reactList .sidenavItem {
   color: var(--secondary-color);
   text-decoration: none;
   border-radius: 3rem;
   width: 90%;
-  padding: 0.4rem;
+  padding: 0.3rem;
   padding-left: 1rem;
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: 400;
   transition: all 0.3s ease;
 }
 .reactList .sidenavItem:hover {
@@ -595,9 +598,9 @@ Cards:
 .caption-title {
   color: var(--secondary-color);
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
@@ -622,7 +625,7 @@ Buttons
   position: relative;
   background-color: var(--tertiary-color);
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 13px;
   color: var(--text-color);
   overflow: hidden;
   border: 1px solid rgb(113, 113, 113);

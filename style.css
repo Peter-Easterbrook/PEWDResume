@@ -11,6 +11,10 @@
   --shadow-color: hsla(210, 40%, 52%, 0.4);
   --bg-color: #141218;
   --expanded: 100%;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  --text-shadow-light: 0 2px 4px rgba(255, 255, 255, 0.4);
+  --transition: all 0.2s ease-out;
 }
 
 html {
@@ -252,10 +256,10 @@ Header:
   /* background-color: var(--tertiary-color); */
   /* Milk-glass effect */
   background: rgba(0, 7, 27, 0.6);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 3;
   font-size: 1rem;
   transition: all ease-out;
@@ -332,11 +336,11 @@ Header:
   text-align: center;
   /* Milk-glass code below */
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
+  transition: var(--transition);
 }
 .iconButton:hover {
   background: rgba(255, 255, 255, 0.4);
@@ -351,7 +355,7 @@ Header:
   color: white;
   z-index: 10;
   cursor: url(images/glove2.png), auto;
-  transition: 0.2s ease;
+  transition: var(--transition);
 }
 
 .masthead .github i {
@@ -425,13 +429,13 @@ Navigation: SideNav
   z-index: 6;
   /* background-color: var(--tertiary-color); */
   background: rgba(0, 7, 27, 0.6);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
-  border-right: 1px solid rgba(255, 255, 255, 0.18);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
   position: fixed;
   overflow-x: hidden;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
   scrollbar-width: thin;
   scrollbar-color: #022648 #00549a;
 }
@@ -457,7 +461,7 @@ Navigation: SideNav
   padding-left: 1rem;
   letter-spacing: 1px;
   font-weight: 400;
-  transition: all 0.3s ease;
+  transition: var(--transition);
 }
 .reactList .sidenavItem:hover {
   background: var(--secondary-color);
@@ -470,7 +474,7 @@ Navigation: SideNav
 [data-css-icon] {
   --animdur: 0.3s;
   --loading-animdur: 0.8s;
-  --animtf: ease-in;
+  --animtf: ease-out;
   --bdw: 2px;
   --bdrs: 50%;
   --bgc: var(--tertiary-color);
@@ -633,7 +637,7 @@ Buttons
   outline: none;
   font-weight: 300;
   letter-spacing: 2px;
-  transition: all 0.3s ease;
+  transition: var(--transition);
 }
 
 .btn:focus,
@@ -653,7 +657,7 @@ Buttons
   z-index: -1;
   transform-origin: bottom-left;
   transform: translateY(4rem);
-  transition: transform 0.3s ease-out;
+  transition: transform 0.2s ease-out;
 }
 .btn:hover,
 .badge:hover {
@@ -682,10 +686,10 @@ Sidebar:
   /* background-color: var(--tertiary-color); */
   /* 'Milk-glass' */
   background: rgba(0, 7, 27, 0.6);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: none;
   border-radius: 0.3rem 0 0 0;
 }
@@ -694,10 +698,10 @@ Sidebar:
   background-color: var(--tertiary-color);
   /* 'Milk-glass' */
   background: rgba(0, 7, 27, 0.6);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   text-align: left;
   border-radius: 0 0 0 0.3rem;
 }
@@ -706,14 +710,19 @@ Sidebar:
 Footer:
 --------------------------------------------------------------*/
 .footer {
+  bottom: 0;
   text-align: center;
   justify-content: center;
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 0.8rem;
+  padding: 1rem 0;
   /* 'Milk-glass' */
   background: rgba(0, 7, 27, 0.6);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Wrapper */
@@ -728,11 +737,11 @@ Footer:
   margin: 1rem 0.3rem;
   /* Milk-glass */
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: var(--transition);
   cursor: url(images/glove2.png), auto;
 }
 
@@ -753,7 +762,7 @@ Footer:
   letter-spacing: 2px;
   font-feature-settings: 'tnum';
   font-variant-numeric: tabular-nums;
-  transition: all 0.3s ease;
+  transition: var(--transition);
 }
 
 /* Icons */
@@ -765,7 +774,7 @@ Footer:
   text-align: center;
   color: white;
   cursor: url(images/glove2.png), auto;
-  transition: 0.3s ease;
+  transition: var(--transition);
 }
 
 .footer .iconButton:hover {
@@ -803,7 +812,7 @@ CSS Grid layout for wider screens, when browser supports grid:
         'nav main'
         'nav sidebar'
         'nav footer';
-      transition: left ease-out 0.6s;
+      transition: left 0.6s ease-out;
     }
 
     .reveal {
@@ -855,11 +864,11 @@ CSS Grid layout for wider screens, when browser supports grid:
       /* background-color: var(--tertiary-color); */
       grid-template-columns: 8rem auto;
       background: rgba(0, 7, 27, 0.6);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
       backdrop-filter: blur(2.5px);
       -webkit-backdrop-filter: blur(2.5px);
       border-radius: 0.4rem;
-      border: 1px solid rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       transform-style: preserve-3d;
       transform: perspective(1000px);
     }

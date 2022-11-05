@@ -397,7 +397,7 @@ Navigation: SideNav
   height: 100%;
   width: 100%;
   font-weight: 300;
-  animation: rotateText 10s linear infinite;
+  animation: rotateText 16s linear infinite;
 }
 @keyframes rotateText {
   0% {

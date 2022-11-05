@@ -15,6 +15,8 @@
   --text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
   --text-shadow-light: 0 2px 4px rgba(255, 255, 255, 0.4);
   --transition: all 0.2s ease-out;
+  --filter-drop-shadow: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+  --backdrop-filter: blur(2.5px);
 }
 
 html {
@@ -84,7 +86,7 @@ a {
   left: clamp(2.4rem, 3vw, 3.5rem);
 }
 .pointingHand {
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+  filter: var(--filter-drop-shadow);
   width: 100%;
   max-width: 67px;
   height: 100%;
@@ -158,7 +160,7 @@ img {
 }
 
 .float {
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  filter: var(--filter-drop-shadow);
   animation: up-down 1s infinite alternate;
 }
 
@@ -171,21 +173,21 @@ img {
   }
 }
 
-.electron {
+/* .electron {
   width: 130px;
   height: 130px;
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  filter: var(--filter-drop-shadow);
   animation: spin 6s linear infinite;
 }
 @keyframes spin {
   100% {
     transform: rotate(-360deg);
   }
-}
-.logoPulse {
+} */
+/* .logoPulse {
   width: 130px;
   height: 130px;
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  filter: var(--filter-drop-shadow);
   transition: transform 1s ease;
   animation: in-out 1s infinite alternate;
 }
@@ -196,8 +198,8 @@ img {
   to {
     transform: scale(1);
   }
-}
-.opacity {
+} */
+/* .opacity {
   animation: stretch 1.5s ease-out alternate infinite;
 }
 
@@ -209,9 +211,9 @@ img {
   100% {
     opacity: 0;
   }
-}
+} */
 .trophy {
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  filter: var(--filter-drop-shadow);
   max-width: 387px;
   width: 100%;
   max-height: 242px;
@@ -219,21 +221,21 @@ img {
 }
 
 .logoImg {
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  filter: var(--filter-drop-shadow);
   border: 1px solid #ccc;
   width: 130px;
   height: 130px;
   border-radius: 0.3rem;
 }
 .d3img {
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  filter: var(--filter-drop-shadow);
   max-width: 387px;
   width: 100%;
   max-height: 387px;
   height: 100%;
 }
 .logoImgRnd {
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 1px 1px rgba(255, 255, 255, 0.5));
   width: 130px;
   height: 130px;
 }
@@ -257,8 +259,7 @@ Header:
   /* Milk-glass effect */
   background: rgba(0, 7, 27, 0.6);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: var(--backdrop-filter);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 3;
   font-size: 1rem;
@@ -362,7 +363,7 @@ Header:
   animation: iconColorSwitch 10s ease-in-out infinite;
 }
 .masthead .github {
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  filter: var(--filter-drop-shadow);
   animation: pulseAnim 2s infinite;
 }
 @keyframes pulseAnim {
@@ -430,8 +431,8 @@ Navigation: SideNav
   /* background-color: var(--tertiary-color); */
   background: rgba(0, 7, 27, 0.6);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: var(--backdrop-filter);
+
   border-right: 1px solid rgba(255, 255, 255, 0.3);
   position: fixed;
   overflow-x: hidden;
@@ -551,7 +552,7 @@ summary {
   padding-inline-end: 0.5rem;
   padding-inline-start: 1rem;
   user-select: none;
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+  filter: var(--filter-drop-shadow);
 }
 summary span:hover {
   cursor: url(images/glove2.png), auto;
@@ -687,8 +688,8 @@ Sidebar:
   /* 'Milk-glass' */
   background: rgba(0, 7, 27, 0.6);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: var(--backdrop-filter);
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: none;
   border-radius: 0.3rem 0 0 0;
@@ -699,8 +700,8 @@ Sidebar:
   /* 'Milk-glass' */
   background: rgba(0, 7, 27, 0.6);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: var(--backdrop-filter);
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   text-align: left;
   border-radius: 0 0 0 0.3rem;
@@ -720,8 +721,7 @@ Footer:
   /* 'Milk-glass' */
   background: rgba(0, 7, 27, 0.6);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: var(--backdrop-filter);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -738,8 +738,7 @@ Footer:
   /* Milk-glass */
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: var(--backdrop-filter);
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: var(--transition);
   cursor: url(images/glove2.png), auto;
@@ -755,14 +754,13 @@ Footer:
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.2rem;
-  font-weight: 100;
+  font-weight: lighter;
   color: var(--secondary-color);
   text-align: center;
   justify-content: center;
   letter-spacing: 2px;
   font-feature-settings: 'tnum';
   font-variant-numeric: tabular-nums;
-  transition: var(--transition);
 }
 
 /* Icons */
@@ -774,7 +772,6 @@ Footer:
   text-align: center;
   color: white;
   cursor: url(images/glove2.png), auto;
-  transition: var(--transition);
 }
 
 .footer .iconButton:hover {
@@ -783,7 +780,6 @@ Footer:
 .footer .iconButton:hover i,
 .footer .iconButton:hover #time {
   color: var(--tertiary-color);
-  /* animation: none;  */
 }
 
 .impressum p {
@@ -865,8 +861,8 @@ CSS Grid layout for wider screens, when browser supports grid:
       grid-template-columns: 8rem auto;
       background: rgba(0, 7, 27, 0.6);
       box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(2.5px);
-      -webkit-backdrop-filter: blur(2.5px);
+      backdrop-filter: var(--backdrop-filter);
+
       border-radius: 0.4rem;
       border: 1px solid rgba(255, 255, 255, 0.3);
       transform-style: preserve-3d;

@@ -262,12 +262,10 @@ Header:
 
 @keyframes gm-slidein {
   from {
-    -webkit-transform: translate3d(0, -100%, 0);
     opacity: 0;
     transform: translate3d(0, -100%, 0);
   }
   to {
-    -webkit-transform: none;
     opacity: 1;
     transform: none;
   }
@@ -332,8 +330,6 @@ Header:
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: var(--transition);
 }
 .iconButton:hover {
@@ -553,9 +549,9 @@ summary span:hover {
 summary::marker {
   display: none;
 }
-summary::-webkit-details-marker {
+/* summary::-webkit-details-marker {
   display: none;
-}
+} */
 
 summary + * {
   color: #fff;
@@ -682,7 +678,6 @@ Sidebar:
   background: rgba(0, 7, 27, 0.6);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: var(--backdrop-filter);
-
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: none;
   border-radius: 0.3rem 0 0 0;

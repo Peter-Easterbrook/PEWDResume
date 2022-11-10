@@ -852,8 +852,6 @@ CSS Grid layout for wider screens, when browser supports grid:
 
       border-radius: 0.4rem;
       border: 1px solid rgba(255, 255, 255, 0.3);
-      transform-style: preserve-3d;
-      transform: perspective(1000px);
     }
 
     .cards a:focus,
@@ -863,9 +861,9 @@ CSS Grid layout for wider screens, when browser supports grid:
     .cardItem {
       margin: auto;
     }
-    .data-tilt {
+    /* .data-tilt {
       border-radius: 0.4rem;
-    }
+    } */
     .twin {
       max-width: 26rem;
       margin: 0 auto;

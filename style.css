@@ -17,6 +17,8 @@
   --transition: all 0.2s ease-out;
   --filter-drop-shadow: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
   --backdrop-filter: blur(2.5px);
+  --border-radius: 0.4rem;
+  --border-radius-circle: 50%;
 }
 
 html {
@@ -40,7 +42,6 @@ body {
   text-rendering: optimizeSpeed;
   user-select: none;
   overflow: auto;
-  /* font-family: 'Encode Sans', sans-serif; */
   animation: fadeInAnimation ease-out 3s 1 forwards;
 }
 @keyframes fadeInAnimation {
@@ -218,7 +219,7 @@ img {
   border: 1px solid #ccc;
   width: 130px;
   height: 130px;
-  border-radius: 0.3rem;
+  border-radius: var(--border-radius);
 }
 .d3img {
   filter: var(--filter-drop-shadow);
@@ -316,7 +317,7 @@ Header:
 
 /* Wrapper */
 .masthead .iconButton {
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   display: inline-block;
   font-size: 2.25rem;
   font-weight: 100;
@@ -375,7 +376,7 @@ Navigation: SideNav
   position: relative;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -386,7 +387,7 @@ Navigation: SideNav
   height: 140px;
   width: 140px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
 }
 .text {
   position: absolute;
@@ -850,7 +851,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
       backdrop-filter: var(--backdrop-filter);
 
-      border-radius: 0.4rem;
+      border-radius: var(--border-radius);
       border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
@@ -862,7 +863,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       margin: auto;
     }
     /* .data-tilt {
-      border-radius: 0.4rem;
+      border-radius: var(--border-radius);
     } */
     .twin {
       max-width: 26rem;

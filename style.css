@@ -53,7 +53,7 @@ body {
   }
 }
 
-body::-webkit-scrollbar {
+html::-webkit-scrollbar {
   display: none;
 }
 

@@ -97,6 +97,7 @@
           </div>
           <img class="logo" src="images/Peter4.png" alt="peter" />
         </div>
+        <!-- Rotating text -->
         <script>
           const text = document.querySelector('.text p');
           text.innerHTML = text.innerHTML
@@ -362,7 +363,7 @@
     <main class="main-area">
       <ul class="cards">
         <li class="cardItem double" id="card-1">
-          <figure class="card">
+          <figure class="card tilt">
             <br />
             <img
               class="mt-2 trophy"
@@ -415,7 +416,7 @@
         </li>
 
         <li class="cardItem">
-          <figure class="card">
+          <figure class="card tilt">
             <img
               src="images/mongoNext.png"
               alt="Link to JavaScript certificates."
@@ -450,7 +451,7 @@
           </figure>
         </li>
         <li class="cardItem">
-          <figure class="card">
+          <figure class="card tilt">
             <img
               src="images/react_logo.gif"
               alt="React certificate link."
@@ -488,7 +489,7 @@
           </figure>
         </li>
         <li class="cardItem">
-          <figure class="card">
+          <figure class="card tilt">
             <img class="logoImgRnd" src="images/node.png" alt="NodeJS logo." />
             <figcaption class="caption">
               <h1 class="caption-title">Node &amp; EJS Shop App</h1>
@@ -513,7 +514,7 @@
           </figure>
         </li>
         <li class="cardItem">
-          <figure class="card">
+          <figure class="card tilt">
             <img
               src="images/FCC.png"
               alt="Link to the FCC certificates."
@@ -543,7 +544,7 @@
           </figure>
         </li>
         <li class="cardItem double">
-          <figure class="card">
+          <figure class="card tilt">
             <a
               href="https://www.coursera.org/account/accomplishments/specialization/certificate/3NZ2AVLZ76ER"
               target="_blank"
@@ -604,7 +605,7 @@
         </li>
 
         <li class="cardItem">
-          <figure class="card">
+          <figure class="card tilt">
             <img
               src="images/vue.gif"
               alt="Link to certificate."
@@ -635,7 +636,7 @@
           </figure>
         </li>
         <li class="cardItem">
-          <figure class="card">
+          <figure class="card tilt">
             <img
               class="logoImgRnd mt-4"
               src="images/graphql.png"
@@ -662,7 +663,7 @@
           <a
             href="https://www.youracclaim.com/badges/62085c98-af57-4278-b0b4-6586cf42ff0d/linked_in_profile"
           >
-            <figure class="card" -glare -max-glare="0.3">
+            <figure class="card tilt">
               <img
                 class="d3img"
                 src="images/GoogleIT.png"
@@ -688,7 +689,7 @@
             href="https://user-images.githubusercontent.com/59874288/98723328-81835f80-2392-11eb-9ec4-70d1aa7de13d.png"
             style="margin-bottom: -0.1rem"
           >
-            <figure class="card" -glare -max-glare="0.3">
+            <figure class="card tilt">
               <img
                 src="images/javascriptNew.gif"
                 alt="Link to certificate."
@@ -705,7 +706,7 @@
           </a>
         </li>
         <li class="cardItem">
-          <figure class="card">
+          <figure class="card tilt">
             <img
               src="images/GitDisco.gif"
               alt="Link to certificate."
@@ -743,7 +744,7 @@
           <a
             href="https://www.coursera.org/account/accomplishments/certificate/VN3EKPL25CN7"
           >
-            <figure class="card" -glare -max-glare="0.3">
+            <figure class="card tilt">
               <img
                 class="logoImgRnd"
                 src="images/python.png"
@@ -762,7 +763,7 @@
         </li>
         <li class="cardItem">
           <a href="https://peter-easterbrook.github.io/50Projects50Days/">
-            <figure class="card" -glare -max-glare="0.3">
+            <figure class="card tilt">
               <img
                 src="images/50Days.gif"
                 alt="Link to certificate."
@@ -780,7 +781,7 @@
 
         <li class="cardItem">
           <a href="https://bladerunner.onestepweb.dev/">
-            <figure class="card" -glare -max-glare="0.3">
+            <figure class="card tilt">
               <img
                 src="images/BRPoster.gif"
                 alt="Link to certificate."
@@ -798,7 +799,7 @@
         </li>
         <li class="cardItem">
           <a href="http://easterbrook.at/">
-            <figure class="card" -glare -max-glare="0.3">
+            <figure class="card tilt">
               <img
                 src="images/LL2020.webp"
                 alt="Link to website."
@@ -816,7 +817,7 @@
         </li>
         <li class="cardItem">
           <a href="https://qualifications.onestepweb.dev/">
-            <figure class="card" -glare -max-glare="0.3">
+            <figure class="card tilt">
               <img
                 src="images/OneStep2021.png"
                 alt="Link to certificates."
@@ -922,9 +923,10 @@
       let year = d.getFullYear();
       document.getElementById('year').innerHTML = year;
     </script>
+
     <script src="vanilla-tilt.min.js"></script>
     <script>
-      VanillaTilt.init(document.querySelectorAll('.card'), {
+      VanillaTilt.init(document.querySelectorAll('.tilt'), {
         max: 15,
         speed: 300,
         glare: true,

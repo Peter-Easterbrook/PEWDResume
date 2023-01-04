@@ -29,6 +29,7 @@
 
 html {
   box-sizing: border-box;
+  background-color: #000;
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #0600b6 #000;
@@ -48,7 +49,7 @@ body {
   text-rendering: optimizeSpeed;
   user-select: none;
   overflow: auto;
-  animation: fadeInAnimation ease-out 3s 1 forwards;
+  animation: fadeInAnimation 3s ease-out 1 forwards;
 }
 @keyframes fadeInAnimation {
   0% {

@@ -706,9 +706,7 @@ Footer:
 .footer {
   bottom: 0;
   text-align: center;
-  justify-content: center;
   width: 100%;
-  height: 4rem;
   padding: 1rem 0;
   margin-top: auto;
   /* 'Milk-glass' */

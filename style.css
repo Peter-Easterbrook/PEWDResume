@@ -31,6 +31,11 @@ html {
   scrollbar-color: #0600b6 #000;
 }
 
+html,
+body {
+  min-height: auto;
+}
+
 *,
 *:before,
 *:after {
@@ -40,7 +45,6 @@ html {
 }
 
 body {
-  min-height: 105vh;
   background-color: #000;
   text-rendering: optimizeSpeed;
   user-select: none;

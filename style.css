@@ -23,17 +23,18 @@
     0 41.8px 33.4px rgba(0, 115, 230, 0.086),
     0 100px 80px rgba(0, 115, 230, 0.12);
 }
+* {
+  font-family: 'Philosopher', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+}
 
 html {
+  min-height: 100vh;
   box-sizing: border-box;
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #0600b6 #000;
-}
-
-html,
-body {
-  min-height: auto;
 }
 
 *,
@@ -45,10 +46,12 @@ body {
 }
 
 body {
+  min-height: 100vh;
   background-color: #000;
   text-rendering: optimizeSpeed;
   user-select: none;
   overflow: auto;
+  line-height: calc(1em + 0.5rem);
   animation: fadeInAnimation 3s ease-out 1 forwards;
 }
 @keyframes fadeInAnimation {
@@ -67,18 +70,30 @@ html::-webkit-scrollbar {
 body,
 button,
 p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 li {
-  /* font-family: 'Encode Sans', sans-serif; */
-  font-family: 'Philosopher', sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
   overflow-wrap: break-word;
   hyphens: auto;
+  color: #fff;
+  text-shadow: var(--text-shadow);
+  font-size: 1rem;
   font-weight: lighter;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  text-shadow: var(--text-shadow);
+}
 a {
   text-decoration: none;
+  color: inherit;
+  text-shadow: var(--text-shadow);
 }
 .trigger {
   position: fixed;
@@ -708,11 +723,11 @@ Sidebar:
 Footer:
 --------------------------------------------------------------*/
 .footer {
-  bottom: 0;
   text-align: center;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
   margin-top: auto;
+  letter-spacing: 1px;
   /* 'Milk-glass' */
   background: rgba(0, 7, 27, 0.6);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);

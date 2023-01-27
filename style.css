@@ -32,6 +32,7 @@
 
 html {
   min-height: 100vh;
+  min-height: 100dvh;
   box-sizing: border-box;
   scroll-behavior: smooth;
   scrollbar-width: thin;
@@ -48,6 +49,7 @@ html {
 
 body {
   min-height: 100vh;
+  min-height: 100dvh;
   background-color: #000;
   text-rendering: optimizeSpeed;
   user-select: none;
@@ -83,18 +85,20 @@ li {
   color: #fff;
   text-shadow: var(--text-shadow);
   font-size: 1rem;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 ul {
   list-style: none;
   padding: 0;
   text-shadow: var(--text-shadow);
+  font-weight: 400;
 }
 a {
   text-decoration: none;
   color: inherit;
   text-shadow: var(--text-shadow);
+  font-weight: 400;
 }
 .trigger {
   position: fixed;
@@ -122,16 +126,12 @@ a {
   hyphens: auto;
   text-justify: auto;
 }
-.side-nav {
-  color: var(--tertiary-color);
-  text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.6);
-}
 
-p,
+/* p,
 h6 {
   margin-bottom: 1.5em;
   color: var(--secondary-color);
-}
+} */
 .list {
   color: var(--secondary-color);
   padding-left: 2rem;
@@ -299,8 +299,6 @@ Header:
 .content-title {
   font-size: 1.3rem;
   color: #fffff7;
-  font-weight: 400;
-  text-shadow: var(--text-shadow);
 }
 .title {
   display: grid;
@@ -343,7 +341,6 @@ Header:
   position: relative;
   display: inline-block;
   font-size: 2.25rem;
-  font-weight: 100;
   width: 3.2rem;
   height: 3.2rem;
   line-height: 3rem;
@@ -413,7 +410,6 @@ Navigation: SideNav
   position: absolute;
   height: 100%;
   width: 100%;
-  font-weight: 300;
   animation: rotateText 16s linear infinite;
 }
 @keyframes rotateText {
@@ -435,7 +431,6 @@ Navigation: SideNav
   top: 8rem;
   padding: 1rem;
   font-size: 1rem;
-  font-weight: 200;
   width: 16rem;
   z-index: 6;
   /* background-color: var(--tertiary-color); */
@@ -471,7 +466,6 @@ Navigation: SideNav
   padding: 0.3rem;
   padding-left: 1rem;
   letter-spacing: 1px;
-  font-weight: 400;
   margin-bottom: 0.3rem;
   transition: var(--transition-out);
 }
@@ -556,7 +550,6 @@ summary {
   border: 1px solid rgb(87, 87, 87);
   border-radius: 3rem;
   color: #fff;
-  font-weight: 300;
   letter-spacing: 1px;
   list-style-type: none;
   margin: 0.5rem 0;
@@ -585,7 +578,6 @@ summary + * {
   margin: 1.2rem 0 0.8rem 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-shadow: var(--text-shadow);
 }
 
 /*--------------------------------------------------------------
@@ -593,7 +585,7 @@ Cards:
 --------------------------------------------------------------*/
 .main-area {
   margin-top: 7rem;
-  margin-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 .cards {
@@ -618,8 +610,6 @@ Cards:
   margin: 0;
   font-size: 1.4rem;
   line-height: 1rem;
-  font-weight: 400;
-  text-shadow: var(--text-shadow);
 }
 
 .caption p {
@@ -647,7 +637,6 @@ Buttons
   color: var(--text-color);
   overflow: hidden;
   border: 1px solid rgb(113, 113, 113);
-  font-weight: 300;
   letter-spacing: 2px;
   outline: none;
   box-shadow: var(--box-shadow-card);
@@ -696,7 +685,6 @@ Sidebar:
   /* margin-top: 8rem; */
   font-size: 1rem;
   color: var(--secondary-color);
-  font-weight: 300;
   text-align: center;
   /* background-color: var(--tertiary-color); */
   /* 'Milk-glass' */
@@ -742,7 +730,6 @@ Footer:
   border-radius: 3rem;
   display: inline-block;
   font-size: 1.4rem;
-  font-weight: 100;
   height: 3rem;
   width: 3rem;
   margin: 1rem 0.3rem;
@@ -765,7 +752,6 @@ Footer:
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.2rem;
-  font-weight: lighter;
   color: var(--secondary-color);
   text-align: center;
   justify-content: center;

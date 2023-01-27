@@ -107,7 +107,6 @@ a {
   left: clamp(2.4rem, 3vw, 3.5rem);
 }
 .pointingHand {
-  filter: var(--filter-drop-shadow);
   width: 100%;
   max-width: 67px;
   height: 100%;
@@ -176,7 +175,7 @@ img {
   height: auto;
 }
 
-.float {
+/* .float {
   filter: var(--filter-drop-shadow);
   animation: up-down 1s infinite alternate;
 }
@@ -188,7 +187,7 @@ img {
   to {
     transform: translateY(4px);
   }
-}
+} */
 
 /* .electron {
   width: 130px;
@@ -267,6 +266,9 @@ Header:
   left: 0;
   right: 0;
   padding: 0 1em;
+  display: flex;
+  justify-content: space-around;
+
   text-align: center;
   align-items: center;
   vertical-align: middle;
@@ -280,7 +282,6 @@ Header:
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 3;
   font-size: 1rem;
-  /* transition: all ease-out; */
   animation: gm-slidein 3s ease-out;
 }
 
@@ -301,22 +302,18 @@ Header:
   color: #fffff7;
 }
 .title {
-  display: grid;
-  place-items: center;
-  margin-top: 1rem;
-  animation: fill-in 2s ease-out 3s;
+  margin: 0 auto;
 }
 .site-title {
   font-size: clamp(1.6rem, 2.5vw + 1rem, 3rem);
-  margin: auto 0;
   opacity: 0;
-  animation: fill-in 2s ease-in 2s forwards;
+  animation: fill-in 2s ease-out 2s forwards;
 }
 
 .site-subtitle {
   font-size: clamp(1rem, 2.2vw + 1rem, 2.4rem);
   opacity: 0;
-  animation: fill-in 2s ease-in 2.5s forwards;
+  animation: fill-in 2s ease-out 2.5s forwards;
 }
 
 @keyframes fill-in {
@@ -326,13 +323,11 @@ Header:
 }
 /*  Masthead Icons */
 .mastGit {
-  text-align: right;
-  margin-top: -5.5rem;
-  margin-right: 3rem;
+  margin-right: 4rem;
 }
 @media screen and (max-width: 768px) {
   .mastGit {
-    margin-top: -4rem;
+    margin-right: 2rem;
   }
 }
 
@@ -351,6 +346,7 @@ Header:
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5px);
   border-radius: var(--border-radius-circle);
+  cursor: url(images/glove2.png), auto;
   transition: var(--transition-out);
 }
 .masthead .iconButton:hover {
@@ -366,7 +362,6 @@ Header:
   text-align: center;
   color: white;
   z-index: 10;
-  cursor: url(images/glove2.png), auto;
 }
 
 .masthead .github {
@@ -557,7 +552,6 @@ summary {
   padding-inline-end: 0.5rem;
   padding-inline-start: 1rem;
   user-select: none;
-  filter: var(--filter-drop-shadow);
 }
 summary span:hover {
   cursor: url(images/glove2.png), auto;
@@ -571,13 +565,7 @@ summary::marker {
 
 summary + * {
   color: #fff;
-  line-height: 1.6;
   padding: 0.5rem;
-}
-.main-nav h6 {
-  margin: 1.2rem 0 0.8rem 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 /*--------------------------------------------------------------
@@ -716,7 +704,6 @@ Footer:
   width: 100%;
   padding: 1.2rem 0;
   margin-top: auto;
-  letter-spacing: 1px;
   /* 'Milk-glass' */
   background: rgba(0, 7, 27, 0.6);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
@@ -786,6 +773,7 @@ Footer:
 .impressum p {
   line-height: 50%;
   font-size: small;
+  letter-spacing: 2px;
 }
 .copyright {
   display: flex;

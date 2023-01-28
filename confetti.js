@@ -1,16 +1,17 @@
 const doItNow = (evt, hard) => {
   const direction = Math.sign(lastX - evt.clientX);
   lastX = evt.clientX;
-  const particleCount = hard ? r(200, 300) : r(100, 150);
+  const particleCount = hard ? r(150, 300) : r(50, 100);
   confetti({
     colors: ['#235ac2', '#5384e0', '#95b4ec'],
     particleCount,
-    angle: r(0, 0 + direction * 30),
-    spread: r(45, 80),
+    angle: 330,
+    spread: 80,
     origin: {
       x: evt.clientX / window.innerWidth,
       y: evt.clientY / window.innerHeight,
     },
+    drift: -1 * direction,
   });
 };
 const doIt = (evt, hard) => {
@@ -22,7 +23,7 @@ const doItHard = (evt) => {
 };
 
 let lastX = 0;
-// const navConfetti = document.querySelector('.main-nav');
+// const navConfetti = document.querySelector('.masthead');
 // navConfetti.addEventListener('mousemove', doIt);
 const pointingHand = document.querySelector('.pointingHand');
 pointingHand.addEventListener('mousedown', doItHard);

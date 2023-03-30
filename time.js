@@ -5,11 +5,11 @@
 
     var hours = d.getHours(),
       minutes = d.getMinutes(),
-      ampm = 'AM';
+      ampm = 'pm';
 
     if (hours > 12) {
       hours -= 12;
-      ampm = 'PM';
+      ampm = 'pm';
     } else if (hours === 0) {
       hours = 12;
     }
@@ -19,7 +19,7 @@
     }
 
     var sepClass = '';
-    if (d.getSeconds() % 2 === 1) sepClass = 'trans';
+    if (d.getMinutes() % 2 === 1) sepClass = 'trans';
 
     var sep = '<span class="' + sepClass + '">:</span>';
 

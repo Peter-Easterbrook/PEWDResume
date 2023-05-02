@@ -772,7 +772,8 @@ Footer:
 }
 
 .footer .iconButton:nth-child(3) {
-  width: 11rem;
+  width: 11.2rem;
+  padding: 0;
 }
 
 .footer .iconButton #time {

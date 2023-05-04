@@ -400,6 +400,7 @@ Navigation: SideNav
   width: 140px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--border-radius-circle);
+  filter: brightness(1.1);
 }
 /* .text {
   position: absolute;
@@ -434,6 +435,7 @@ Navigation: SideNav
   color: #fff;
   z-index: 1;
   text-align: center;
+  letter-spacing: 1px;
   animation: spinZ 20s linear infinite;
 }
 

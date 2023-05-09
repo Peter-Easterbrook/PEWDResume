@@ -400,7 +400,7 @@ Navigation: SideNav
   width: 140px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--border-radius-circle);
-  filter: brightness(1.1);
+  /* filter: brightness(1.1); */
 }
 /* .text {
   position: absolute;

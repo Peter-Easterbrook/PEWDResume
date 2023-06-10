@@ -1020,13 +1020,10 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
   }
 }
-@media screen and (max-width: 78rem) {
+@media screen and (max-width: 1248px) {
   .sidebar {
     margin-top: 0;
   }
-.tilt {
-display:none;
-}
 }
 
 @media screen and (max-width: 30rem) {

@@ -162,6 +162,8 @@ h6 {
 
 figure {
   margin: 0;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
 }
 
 /*--------------------------------------------------------------
@@ -750,7 +752,7 @@ Footer:
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.footer #footerScale {
+.footer .footerScale {
   transform: scale(0);
   transition: var(--transition-out);
 }
@@ -769,7 +771,6 @@ Footer:
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: var(--backdrop-filter);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: var(--transition-out);
   cursor: url(images/glove2.png), auto;
 }
 
@@ -803,7 +804,7 @@ Footer:
   cursor: url(images/glove2.png), auto;
   transition: var(--transition-out);
 }
-.footer:hover #footerScale {
+.footer:hover .footerScale {
   transform: scale(1);
   transition: var(--transition-in);
 }

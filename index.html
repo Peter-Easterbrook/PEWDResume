@@ -48,10 +48,10 @@
       rel="stylesheet"
     />
     <!-- JavaScript only -->
+    <script src="modal.js" defer></script>
     <script src="confetti.js" defer></script>
     <script src="dropdown.js" defer></script>
     <script src="removeTilt.js" defer></script>
-
     <script src="sideTrigger.js" defer></script>
     <script src="time.js" defer></script>
 
@@ -65,6 +65,7 @@
   </head>
 
   <body class="site">
+    <uc-modal> </uc-modal>
     <header class="masthead">
       <div
         class="trigger bounce"
@@ -110,9 +111,6 @@
             <span data-css-icon="down">React Apps<i></i></span>
           </summary>
           <div class="reactList">
-            <a href="https://second-hooks.web.app/" class="sidenavItem"
-              >Global Events 2023</a
-            >
             <a
               href="https://second-hooks.ew.r.appspot.com/"
               class="sidenavItem"
@@ -128,13 +126,15 @@
             <a class="sidenavItem" href="https://gitsearch.onestepweb.dev/">
               GitHub Search 2022
             </a>
+            <a
+              href="https://dev-collaboration-2021.web.app/"
+              class="sidenavItem"
+              >Dev Collaboration 2021</a
+            >
             <a href="https://sushi.onestepweb.dev/" class="sidenavItem"
               >Food order App 2021</a
             >
 
-            <!-- <a href="https://react-theme-hooks.vercel.app/" class="sidenavItem"
-              >Theme &amp; Hooks 2021
-            </a> -->
             <a
               class="sidenavItem"
               href="https://react-css-animation-2021.vercel.app/"
@@ -458,9 +458,9 @@
                   >global divebase app 2023</a
                 >
                 <a
-                  href="https://dev-collaboration-2021.web.app/"
+                  href="https://globalevents2023.onrender.com/"
                   class="badge rounded-pill my-2"
-                  >collaboration app 2021</a
+                  >Top Global Events 2023</a
                 >
                 <a
                   href="https://property-marketplace-2021.vercel.app"
@@ -912,7 +912,12 @@
       let year = d.getFullYear();
       document.getElementById('year').innerHTML = year;
     </script>
-
+    <script>
+      const modal = document.querySelector('uc-modal');
+      setTimeout(() => {
+        modal.open();
+      }, 2000);
+    </script>
     <script src="vanilla-tilt.min.js"></script>
     <script>
       const initVanillaTiltOnLargeScreens = () => {

@@ -90,7 +90,7 @@ class Modal extends HTMLElement {
             #icon-space img {
               border-radius: 50%;
               display: block;
-              margin: -2rem auto 2rem;
+              margin:  0 auto; 
               width: 15vmin;            
               filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
             }
@@ -106,8 +106,9 @@ class Modal extends HTMLElement {
                     2rem
                    );
                 font-weight: 300;
-                margin: 0 0 0.15em 0;
+                margin:1rem auto;
                 letter-spacing: 0.1em;
+                line-height: calc(1em + 1rem);
                 text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
                 z-index: 11;
             }

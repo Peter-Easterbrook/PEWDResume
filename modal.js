@@ -59,7 +59,7 @@ class Modal extends HTMLElement {
               position: absolute;
               width: 8rem;
               height: 200%;
-              background: #ff6600;
+              background: #0be4ff;
                          z-index: -10;
               animation: borderRotate 4s linear infinite;
             }
@@ -99,7 +99,7 @@ class Modal extends HTMLElement {
               font-family: 'Oswald', sans-serif;
                 padding: 1rem;                
                 font-family: 'Oswald', sans-serif;
-                color: #ff6600;
+                color: #0be4ff;
                 font-size: clamp( 
                     0.6rem,
                     3.5vw,
@@ -158,7 +158,7 @@ class Modal extends HTMLElement {
               display: inline-block;
               background-color: rgba(48, 55, 62, 1);
               color: #fff;
-              border: 1px solid #ff6600;
+              border: 1px solid #0be4ff;
               font-family: 'Oswald', sans-serif;
               font-size: 0.7rem;
               text-transform: uppercase;
@@ -174,7 +174,7 @@ class Modal extends HTMLElement {
             z-index: 11;
             }
             #actions button:hover {
-              background-color: #ff6600;
+              background-color: #0be4ff;
               cursor: url(images/glove2.png),auto;
               transition: all 0.2s ease-out;
             }
@@ -197,7 +197,7 @@ class Modal extends HTMLElement {
             </header>
             <section id="main">
             <p>
-            Please note, the following pages are for dev purposes, hosted for free so slow loading and won't display correctly on older PC's.
+            Please note, the following pages are for demo purposes and hosted on free tiers so slow-loading.
           </p><slot></slot>
             </section>
             <section id="actions"> 

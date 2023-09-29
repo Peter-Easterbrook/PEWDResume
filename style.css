@@ -618,7 +618,7 @@ Scroller
 ------------------------------------------------------*/
 
 .scroller {
-  margin: 9rem auto 0;
+  margin: 9rem auto -1rem;
   max-width: 800px;
 }
 
@@ -629,10 +629,6 @@ Scroller
   gap: 1rem;
 }
 
-.scroller__inner img {
-  height: 10rem;
-  width: 10rem;
-}
 .scroller__inner li img {
   height: 2.4em;
   width: 2.4rem;

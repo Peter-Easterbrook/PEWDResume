@@ -925,7 +925,6 @@ CSS Grid layout for wider screens, when browser supports grid:
       grid-template-columns: 16rem calc(100%);
       grid-template-areas:
         'nav header'
-        'nav scroller'
         'nav main'
         'nav sidebar'
         'nav footer';
@@ -1111,10 +1110,14 @@ CSS Grid layout for wider screens, when browser supports grid:
 }
 
 @media screen and (max-width: 30rem) {
+  .scroller {
+    display: none;
+  }
   .main-nav {
     display: none;
   }
   .main-area {
-    margin-bottom: 0;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
   }
 }

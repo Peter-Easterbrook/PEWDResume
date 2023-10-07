@@ -52,7 +52,7 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  margin: 0;
   min-height: 100dvh;
   background-color: #000;
   text-rendering: optimizeSpeed;
@@ -408,26 +408,7 @@ Navigation: SideNav
   border-radius: var(--border-radius-circle);
   /* filter: brightness(1.1); */
 }
-/* .text {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  animation: rotateText 16s linear infinite;
-}
-@keyframes rotateText {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-.text span {
-  position: absolute;
-  left: 50%;
-  font-size: 1rem;
-  transform-origin: 0 100px;
-} */
+
 .emblem {
   position: absolute;
   left: 0;
@@ -789,15 +770,12 @@ Buttons
 Sidebar:
 --------------------------------------------------------------*/
 .sidebar {
-  margin-top: 9.4rem;
+  margin-top: 2rem;
 }
 
 .twin {
-  /* margin-top: 8rem; */
-  font-size: 1rem;
   color: var(--secondary-color);
   text-align: center;
-  /* background-color: var(--tertiary-color); */
   /* 'Milk-glass' */
   background: rgba(0, 7, 27, 0.6);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
@@ -805,6 +783,11 @@ Sidebar:
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: none;
   border-radius: 0.3rem 0 0 0;
+}
+.twin h1,
+.twin p {
+  font-size: 1rem;
+  font-weight: lighter;
 }
 
 .twin:last-of-type {
@@ -826,7 +809,7 @@ Footer:
   text-align: center;
   width: 100%;
   padding: 1.2rem 0;
-  margin-top: auto;
+  flex-grow: 1;
   /* 'Milk-glass' */
   background: rgba(0, 7, 27, 0.6);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);

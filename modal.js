@@ -92,7 +92,7 @@ class Modal extends HTMLElement {
               display: block;
               margin:  0 auto; 
               width: 15vmin;            
-              filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+              filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
             }
 
             header {
@@ -160,21 +160,24 @@ class Modal extends HTMLElement {
               color: #fff;
               border: 1px solid #0be4ff;
               font-family: 'Oswald', sans-serif;
-              font-size: 0.7rem;
+              font-size: 1rem;
               text-transform: uppercase;
+              letter-spacing: 0.1em;
               font-weight: 300;
               letter-spacing: 3px;
-              padding: 1rem 1.5rem;
+              padding: 1rem 2.5rem;
               overflow: hidden;
               margin-top: clamp(1rem,2.5vw,2rem);
               border-radius: 3rem;
               transition: all 0.4s ease-in;
             cursor: pointer;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
             filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
             z-index: 11;
             }
-            #actions button:hover {
+                #actions button:hover {
               background-color: #0be4ff;
+              color: #000;
               cursor: url(images/glove2.png),auto;
               transition: all 0.2s ease-out;
             }
@@ -201,7 +204,7 @@ class Modal extends HTMLElement {
           </p><slot></slot>
             </section>
             <section id="actions"> 
-                <button id="confirm-btn">Okay</button>
+                <button id="confirm-btn">OK</button>
             </section>
         </div>
     `;

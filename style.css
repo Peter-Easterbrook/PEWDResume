@@ -837,10 +837,11 @@ Footer:
   backdrop-filter: var(--backdrop-filter);
   border: 1px solid rgba(255, 255, 255, 0.3);
   cursor: url(images/glove2.png), auto;
+  transition: var(--transition-out);
 }
 
 .footer .iconButton:nth-child(3) {
-  width: 11.2rem;
+  min-width: 10rem;
   padding: 0;
 }
 
@@ -866,6 +867,7 @@ Footer:
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+  font-weight: lighter;
   cursor: url(images/glove2.png), auto;
   transition: var(--transition-out);
 }

@@ -811,10 +811,10 @@ Footer:
   padding: 1.2rem 0;
   flex-grow: 1;
   /* 'Milk-glass' */
-  background: transparent;
-  /* box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  background: rgba(0, 7, 27, 0.6);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: var(--backdrop-filter);
-  border-top: 1px solid rgba(255, 255, 255, 0.3); */
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .footer .footerScale {
@@ -911,6 +911,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       grid-template-columns: 16rem calc(100%);
       grid-template-areas:
         'nav header'
+        'nav carousel'
         'nav main'
         'nav sidebar'
         'nav footer';
@@ -923,6 +924,10 @@ CSS Grid layout for wider screens, when browser supports grid:
 
     .masthead {
       grid-area: header;
+    }
+
+    .scroller {
+      grid-area: carousel;
     }
 
     .main-area {
@@ -1069,6 +1074,7 @@ CSS Grid layout for wider screens, when browser supports grid:
       grid-template-columns: 16rem calc(100% - 16rem) 16rem;
       grid-template-areas:
         'nav header header'
+        'nav carousel carousel'
         'nav main sidebar'
         'nav footer footer';
     }

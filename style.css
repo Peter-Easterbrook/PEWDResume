@@ -676,9 +676,9 @@ Scroller
 /*--------------------------------------------------------------
 Cards:
 --------------------------------------------------------------*/
-.main-area {
+/* .main-area {
   padding-bottom: 1rem;
-}
+} */
 
 .cards {
   margin: 1rem auto;
@@ -810,11 +810,12 @@ Footer:
   /* width: fit content; */
   padding: 1.2rem 0;
   flex-grow: 1;
+  background-color: transparent;
   /* 'Milk-glass' */
-  background: rgba(0, 7, 27, 0.6);
+  /* background: rgba(0, 7, 27, 0.6);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
   backdrop-filter: var(--backdrop-filter);
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3); */
 }
 
 .footer .footerScale {
@@ -932,7 +933,6 @@ CSS Grid layout for wider screens, when browser supports grid:
 
     .main-area {
       grid-area: main;
-      margin-bottom: 0;
     }
 
     .sidebar {
@@ -940,7 +940,7 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
     .footer {
       grid-area: footer;
-      height: 100%;
+      height: auto;
       width: 100vw;
     }
 
@@ -1092,6 +1092,11 @@ CSS Grid layout for wider screens, when browser supports grid:
     }
     .twin:last-of-type {
       border-radius: 0 0 0 0.3rem;
+    }
+    .footer {
+      grid-area: footer;
+      height: 100%;
+      width: 100vw;
     }
   }
 }

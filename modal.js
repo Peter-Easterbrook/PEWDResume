@@ -60,7 +60,7 @@ class Modal extends HTMLElement {
               width: 8rem;
               height: 200%;
               background: #0be4ff;
-                         z-index: -10;
+                         z-index: -1;
               animation: borderRotate 4s linear infinite;
             }
             @keyframes borderRotate {

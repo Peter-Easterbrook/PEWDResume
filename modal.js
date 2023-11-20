@@ -5,6 +5,7 @@ class Modal extends HTMLElement {
     this.isOpen = false;
     this.shadowRoot.innerHTML = `
         <style>
+  
             #backdrop {
                 position: fixed;
                 top: 0;
@@ -29,9 +30,10 @@ class Modal extends HTMLElement {
 
             #modal {
               position: absolute;
-              left: 65%;
-              top: 50%;
-              transform: translate(-50%, -50%);
+  left: 65%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
               width: 60vmin;
               height: 60vmin;
               padding: 2rem;
@@ -188,7 +190,12 @@ class Modal extends HTMLElement {
               transform: scale(0.9);
              box-shadow: inset 0 0 15px #000;
             }
-      
+            @media only screen and (max-width: 600px) {
+              #backdrop, #modal {
+                display: none;
+              }
+            }
+    
         </style>
         <div id="backdrop"></div>
         <div id="modal">

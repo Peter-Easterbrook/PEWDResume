@@ -1,5 +1,12 @@
-user-agent: Googlebot-Image
-disallow: / 
+User-agent: *
+Disallow: /images/*
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.png$
+Disallow: /*.gif$
+Disallow: /*.bmp$
+Disallow: /*.svg$
+Disallow: /*.gif$
 
 
 Sitemap: https://pe-wd-resume.vercel.app/sitemap.xml

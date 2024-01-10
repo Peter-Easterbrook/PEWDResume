@@ -93,7 +93,7 @@ class Modal extends HTMLElement {
               border-radius: 50%;
               display: block;
               margin:  0 auto; 
-              width: 15vmin;            
+              width: 20vmin;            
               filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
             }
 
@@ -200,7 +200,7 @@ class Modal extends HTMLElement {
         <div id="backdrop"></div>
         <div id="modal">
         <div id="icon-space">
-        <img src="https://user-images.githubusercontent.com/59874288/117998857-92faf380-b344-11eb-8185-97423f9542e8.png" />
+        <img src="images/OneStepLogo2024.webp" />
       </div>
             <header>
               <slot name="title">Welcome to OneStepWeb Development</slot>

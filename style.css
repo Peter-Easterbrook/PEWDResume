@@ -39,8 +39,6 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scrollbar-width: thin;
-  scrollbar-color: #0600b6 #000;
 }
 
 *,

@@ -200,7 +200,7 @@ class Modal extends HTMLElement {
         <div id="backdrop"></div>
         <div id="modal">
         <div id="icon-space">
-        <img src="images/oswd-logo25.png" />
+        <img src="images/osw-logo-25.png" />
       </div>
             <header>
               <slot name="title">Welcome to OneStepWeb Development</slot>

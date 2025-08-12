@@ -29,14 +29,14 @@ class Modal extends HTMLElement {
             }
 
             #modal {
-              position: absolute;
-  left: 65%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+              position: fixed;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
               width: 60vmin;
               height: 60vmin;
-              padding: 2rem;
+              padding: clamp(1rem, 3vw, 2rem);
               opacity: 0;
               border-radius:50%;
               background: rgb(48, 55, 62);
@@ -45,16 +45,18 @@ class Modal extends HTMLElement {
                 rgba(48, 55, 62, 1) 0%,
                 rgba(14, 16, 18, 1) 100%
               );
-              z-index: 10;
+              z-index: 1000;
               display: flex;
               flex-direction: column;
               justify-content: center;
-                      align-items: center;
+              align-items: center;
               overflow: hidden;
               text-align: center;
               box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
               pointer-events: none;
               transition: all 0.3s ease-out;
+              margin: 0 !important;
+              box-sizing: border-box;
             }
             #modal::before {
               content: "";
@@ -93,34 +95,34 @@ class Modal extends HTMLElement {
               border-radius: 50%;
               display: block;
               margin:  0 auto; 
-              width: 20vmin;            
+              width: clamp(10vmin, 15vmin, 20vmin);            
               filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
             }
 
             header {
               font-family: 'Oswald', sans-serif;
-                padding: 1rem;                
-                font-family: 'Oswald', sans-serif;
-                color: #0be4ff;
-                font-size: clamp( 
-                    0.6rem,
-                    3.5vw,
-                    2rem
-                   );
-                font-weight: 300;
-                margin:1rem auto;
-                letter-spacing: 0.1em;
-                line-height: calc(1em + 1rem);
-                text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-                z-index: 11;
+              padding: clamp(0.3rem, 1.5vw, 1rem);                
+              font-family: 'Oswald', sans-serif;
+              color: #0be4ff;
+              font-size: clamp( 
+                  0.8rem,
+                  2.5vw,
+                  1.5rem
+                 );
+              font-weight: 300;
+              margin: clamp(0.3rem, 1.5vw, 1rem) auto;
+              letter-spacing: 0.1em;
+              line-height: calc(1em + 1rem);
+              text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+              z-index: 11;
             }
 
             #main p {
               font-family: 'Oswald', sans-serif;
               font-size: clamp( 
-                  0.4rem,
-                  3.5vw,
-                  1.5rem           
+                  0.6rem,
+                  2vw,
+                  1rem           
                );
               overflow-wrap: break-word;
               hyphens: auto;
@@ -142,7 +144,7 @@ class Modal extends HTMLElement {
             }               
 
             #main {
-                padding: 0 2rem;
+                padding: 0 clamp(1rem, 3vw, 2rem);
                 color: #fff;
                 text-align: center;      
                 z-index: 11;
@@ -150,7 +152,7 @@ class Modal extends HTMLElement {
 
             #actions {
               align-self: middle;
-                padding: 1rem;
+                padding: clamp(0.3rem, 1.5vw, 1rem);
                 display: flex;
                 justify-content: flex-end;       
             }
@@ -162,20 +164,20 @@ class Modal extends HTMLElement {
               color: #fff;
               border: 1px solid #0be4ff;
               font-family: 'Oswald', sans-serif;
-              font-size: 1rem;
+              font-size: clamp(0.7rem, 1.5vw, 1rem);
               text-transform: uppercase;
               letter-spacing: 0.1em;
               font-weight: 300;
               letter-spacing: 3px;
-              padding: 1rem 2.5rem;
+              padding: clamp(0.4rem, 1.5vw, 1rem) clamp(1rem, 3vw, 2.5rem);
               overflow: hidden;
-              margin-top: clamp(1rem,2.5vw,2rem);
+              margin-top: clamp(0.2rem, 1vw, 2rem);
               border-radius: 3rem;
               transition: all 0.4s ease-in;
-            cursor: pointer;
-            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
-            z-index: 11;
+              cursor: pointer;
+              text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+              filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+              z-index: 11;
             }
                 #actions button:hover {
               background-color: #0be4ff;
@@ -190,6 +192,47 @@ class Modal extends HTMLElement {
               transform: scale(0.9);
              box-shadow: inset 0 0 15px #000;
             }
+            @media only screen and (max-width: 1366px) {
+              #modal {
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                width: 50vmin;
+                height: 50vmin;
+                padding: 1rem;
+                transform: translate(-50%, -50%);
+              }
+              
+              #icon-space img {
+                width: 12vmin;
+              }
+              
+              header {
+                font-size: clamp(0.7rem, 2vw, 1.2rem);
+                margin: 0.2rem auto;
+                padding: 0.2rem;
+              }
+              
+              #main {
+                padding: 0 1rem;
+              }
+              
+              #main p {
+                font-size: clamp(0.5rem, 1.5vw, 0.8rem);
+                letter-spacing: 1px;
+              }
+              
+              #actions {
+                padding: 0.2rem;
+              }
+              
+              #actions button {
+                font-size: clamp(0.6rem, 1.2vw, 0.8rem);
+                padding: clamp(0.3rem, 1vw, 0.6rem) clamp(0.8rem, 2.5vw, 1.2rem);
+                margin-top: 0.2rem;
+              }
+            }
+            
             @media only screen and (max-width: 600px) {
               #backdrop, #modal {
                 display: none;

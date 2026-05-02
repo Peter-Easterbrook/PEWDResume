@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US" id="vantajs">
   <head>
     <meta charset="UTF-8" />
@@ -57,7 +57,10 @@
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap"
       as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
     />
     <noscript>
       <link
@@ -292,10 +295,7 @@
             <span data-css-icon="down">Weather Apps<i></i></span>
           </summary>
           <div class="reactList">
-            <a
-              class="sidenavItem"
-              href="https://weather.onestepweb.dev/"
-            >
+            <a class="sidenavItem" href="https://weather.onestepweb.dev/">
               OpenWeatherMap App w/ Recharts 2023
             </a>
             <a
@@ -339,73 +339,44 @@
     <div class="scroller" data-speed="fast">
       <ul class="tag-list scroller__inner">
         <li>
-          <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" />
+          <img src="images/svg-icons/css.svg" alt="W3 CSS" />
         </li>
         <li>
-          <img src="https://qualifications.onestepweb.dev/svg/greensock.svg" />
+          <img src="images/svg-icons/greensock.svg" alt="GreenSock" />
         </li>
         <li>
-          <img
-            src="https://upload.vectorlogo.zone/logos/getbootstrap/images/987f8f6c-263a-47b1-a85d-853cfca215d9.svg"
-            alt="bootstrap"
-          />
+          <img src="images/svg-icons/bootstrap.svg" alt="Bootstrap" />
         </li>
         <li>
-          <img
-            src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/cypress-icon.svg"
-          />
+          <img src="images/svg-icons/cypress.svg" alt="Cypress" />
         </li>
 
         <li>
-          <img
-            src="https://qualifications.onestepweb.dev/svg/docker.svg"
-            alt="someImg"
-          />
+          <img src="images/svg-icons/docker.svg" alt="Docker" />
         </li>
         <li>
-          <img
-            src="https://qualifications.onestepweb.dev/svg/github.svg"
-            alt="someImg"
-          />
+          <img src="images/svg-icons/github.svg" alt="GitHub" />
         </li>
         <li>
-          <img
-            src="https://www.vectorlogo.zone/logos/d3js/d3js-icon.svg"
-            alt="someImg"
-          />
+          <img src="images/svg-icons/d3js.svg" alt="D3.js" />
         </li>
         <li>
-          <img
-            src="https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg"
-            alt="someImg"
-          />
+          <img src="images/svg-icons/graphql.svg" alt="GraphQL" />
         </li>
         <li>
-          <img
-            src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg"
-            alt="someImg"
-          />
+          <img src="images/svg-icons/nodejs.svg" alt="Node.js" />
         </li>
         <li>
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
-            alt="someImg"
-          />
+          <img src="images/svg-icons/redux.svg" alt="Redux" />
         </li>
         <li>
-          <img
-            src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"
-            alt="mongodb"
-          />
+          <img src="images/svg-icons/mongodb.svg" alt="MongoDB" />
         </li>
         <li>
-          <img src="https://qualifications.onestepweb.dev/svg/figma.svg" />
+          <img src="images/svg-icons/figma.svg" alt="Figma" />
         </li>
         <li>
-          <img
-            src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
-            alt="mongodb"
-          />
+          <img src="images/svg-icons/reactjs.svg" alt="React" />
         </li>
       </ul>
     </div>
@@ -501,7 +472,7 @@
                   class="badge rounded-pill my-2"
                   >Public events app 2021</a
                 > -->
-                <!-- 
+                <!--
                 <a
                   href="https://meetups.onestepweb.dev/"
                   class="badge rounded-pill my-2"
@@ -1023,7 +994,7 @@
             }`;
           }
           this.element.dispatchEvent(
-            new CustomEvent('tiltChange', { detail: t })
+            new CustomEvent('tiltChange', { detail: t }),
           );
           this.updateCall = null;
         }

@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="reply-to" content="peter.easterbrook@gmail.com" />
     <meta
       name="description"
       content="Peter Easterbrook's Web Development Resume and Project Portfolio"
@@ -14,10 +13,34 @@
       content="Peter Easterbrook, Web Development, Resume, Portfolio, JavaScript, React, Node.js, D3.js, Projects"
     />
     <meta name="author" content="Peter Easterbrook" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.onestepweb.dev/" />
+    <meta
+      property="og:title"
+      content="Peter Easterbrook | Web Developer Resume &amp; Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Peter Easterbrook's Web Development Resume and Project Portfolio"
+    />
     <meta
       property="og:image"
       content="https://user-images.githubusercontent.com/59874288/99916616-75d95680-2d0b-11eb-9104-3f3c1bc9d237.gif"
     />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Peter Easterbrook | Web Developer Resume &amp; Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Peter Easterbrook's Web Development Resume and Project Portfolio"
+    />
+    <meta
+      name="twitter:image"
+      content="https://user-images.githubusercontent.com/59874288/99916616-75d95680-2d0b-11eb-9104-3f3c1bc9d237.gif"
+    />
+    <link rel="canonical" href="https://www.onestepweb.dev/" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -45,7 +68,7 @@
     <meta name="theme-color" content="#030813" />
     <!--The code below forces all links to open in a new tab-->
     <base target="_blank" />
-    <title>WebDev Resume</title>
+    <title>Peter Easterbrook | Web Developer Resume &amp; Portfolio</title>
     <!-- CSS only -->
     <link
       rel="stylesheet"
@@ -978,39 +1001,6 @@
     </script>
     <script src="vanilla-tilt.min.js"></script>
     <script>
-      class t {
-        // ...
-        update() {
-          let t = this.getValues();
-          this.element.style.transform =
-            'perspective(' +
-            this.settings.perspective +
-            'px) rotateX(' +
-            ('x' === this.settings.axis ? 0 : t.tiltY) +
-            'deg) rotateY(' +
-            ('y' === this.settings.axis ? 0 : t.tiltX) +
-            'deg) scale3d(' +
-            this.settings.scale +
-            ', ' +
-            this.settings.scale +
-            ', ' +
-            this.settings.scale +
-            ')';
-          if (this.glare) {
-            this.glareElement.style.transform = `rotate(${t.angle}deg) translate(-50%, -50%)`;
-            this.glareElement.style.opacity = `${
-              (t.percentageY * this.settings['max-glare']) / 100
-            }`;
-          }
-          this.element.dispatchEvent(
-            new CustomEvent('tiltChange', { detail: t }),
-          );
-          this.updateCall = null;
-        }
-        // ...
-      }
-    </script>
-    <script>
       let vanillaTiltInitialized = false;
 
       const initVanillaTiltOnLargeScreens = () => {
@@ -1065,6 +1055,9 @@
         speed: 1.4,
       });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"
+      defer
+    ></script>
   </body>
 </html>
